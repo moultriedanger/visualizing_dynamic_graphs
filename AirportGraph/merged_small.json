@@ -1,0 +1,308 @@
+[
+ {
+   "FIELD1": 0,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "47.449162",
+   "origin_longitude": "-122.311134",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 2044,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "41.4117012024",
+   "origin_longitude": "-81.8498001099",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 5361,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "38.3731",
+   "origin_longitude": "-81.593201",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 5517,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "35.2140007019043",
+   "origin_longitude": "-80.94309997558594",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 7937,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "29.533701",
+   "origin_longitude": "-98.469803",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 9104,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "29.99340057373047",
+   "origin_longitude": "-90.25800323486328",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 10451,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "40.692501",
+   "origin_longitude": "-74.168701",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 14332,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "42.3643",
+   "origin_longitude": "-71.005203",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 16998,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "43.585463",
+   "origin_longitude": "-96.741152",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 17502,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "39.048801",
+   "origin_longitude": "-84.667801",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 20350,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "42.212398529052734",
+   "origin_longitude": "-83.35340118408203",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 24600,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "38.9445",
+   "origin_longitude": "-77.455803",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 26636,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "43.1189",
+   "origin_longitude": "-77.672401",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 28305,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "36.1245002746582",
+   "origin_longitude": "-86.6781997680664",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 29924,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "39.1754",
+   "origin_longitude": "-76.668297",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 31977,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "40.49150085",
+   "origin_longitude": "-80.23290253",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 34498,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "33.435302",
+   "origin_longitude": "-112.005905",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 36639,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "33.6367",
+   "origin_longitude": "-84.428101",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 40590,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "32.898602",
+   "origin_longitude": "-80.040497",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 40887,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "43.1399",
+   "origin_longitude": "-89.337502",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 42619,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "35.04240036010742",
+   "origin_longitude": "-89.97669982910156",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 45087,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "40.039819",
+   "origin_longitude": "-88.276249",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 45694,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "25.79319953918457",
+   "origin_longitude": "-80.29060363769531",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 48002,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "28.429399490356445",
+   "origin_longitude": "-81.30899810791016",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 49860,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "32.896801",
+   "origin_longitude": "-97.038002",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 52930,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "36.083361",
+   "origin_longitude": "-115.151817",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 54951,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "42.932598",
+   "origin_longitude": "-71.435699",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 55810,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "30.197535",
+   "origin_longitude": "-97.662015",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 56847,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "42.74829864501953",
+   "origin_longitude": "-73.80169677734375",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 58302,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "38.805801",
+   "origin_longitude": "-104.700996",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 58939,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "38.748697",
+   "origin_longitude": "-90.370003",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 61600,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "42.94720077514648",
+   "origin_longitude": "-87.89659881591797",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 64080,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "35.877602",
+   "origin_longitude": "-78.787498",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ },
+ {
+   "FIELD1": 65548,
+   "year": 1990,
+   "month": 1,
+   "origin_latitude": "37.3255",
+   "origin_longitude": "-79.975403",
+   "destination_latitude": 41.9786,
+   "destination_longitude": -87.9048
+ }
+]
