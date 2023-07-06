@@ -17,12 +17,14 @@ const projection = d3.geoAlbers().scale(1280).translate([480, 300]);
 const scales = {
   // used to scale airport bubbles
   airports: d3.scaleSqrt()
-    .range([4, 18]),
+    // .range([4, 18]),
+    .range([1.5, 2.5]),
 
   // used to scale number of segments per line
   segments: d3.scaleLinear()
     .domain([0, hypotenuse])
-    .range([1, 10])
+    // .range([20, 30])
+    .range([10, 20])
 };
 
 // have these already created for easier drawing
@@ -75,7 +77,6 @@ function processData(values) {
     link.target.incoming += link.count;
   });
 
-  console.log(flights);
 
   // remove airports out of bounds
   // let old = airports.length;
@@ -151,6 +152,11 @@ function drawMap(map) {
 }
 
 function drawAirports(airports) {
+
+  var color = d3.scaleLinear()
+  .domain([0, 3])  
+  .range(["red", "green"]); 
+
   // adjust scale
   // const extent = d3.extent(airports, d => d.outgoing);
   // scales.airports.domain(extent);
@@ -160,10 +166,11 @@ function drawAirports(airports) {
     .data(airports, d => d.iata)
     .enter()
     .append("circle")
-    .attr("r",  4)
+    .attr("r",  d => scales.airports(d.outgoing))
     .attr("cx", d => d.x) // calculated on load
     .attr("cy", d => d.y) // calculated on load
     .attr("class", "airport")
+    .style("fill", function(d) { return color(d.cluster); })
     .each(function(d) {
       // adds the circle object to our airport
       // makes it fast to select airports on hover
@@ -184,9 +191,10 @@ function drawPolygons(airports) {
     };
   });
 
+  console.log(geojson);
   // calculate voronoi polygons
   const polygons = d3.geoVoronoi().polygons(geojson);
-  console.log(polygons);
+  // console.log(polygons);
 
   g.voronoi.selectAll("path")
     .data(polygons.features)
@@ -257,12 +265,17 @@ function drawFlights(airports, flights) {
     .x(airport => airport.x)
     .y(airport => airport.y);
 
+  var color = d3.scaleLinear()
+  .domain([0, 3])  
+  .range(["red", "green"]); 
+
   let links = g.flights.selectAll("path.flight")
     .data(bundle.paths)
     .enter()
     .append("path")
     .attr("d", line)
     .attr("class", "flight")
+    .style("stroke", function(d) { return color(d[0].cluster); })
     .each(function(d) {
       // adds the path object to our source airport
       // makes it fast to select outgoing paths
@@ -275,7 +288,7 @@ function drawFlights(airports, flights) {
     .alphaDecay(0.1)
     // nearby nodes attract each other
     .force("charge", d3.forceManyBody()
-      .strength(20)
+      .strength(10)
       .distanceMax(scales.airports.range()[1] * 2)
     )
     // edges want to be as short as possible

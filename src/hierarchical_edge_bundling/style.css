@@ -22,14 +22,14 @@ body {
 }
 
 .airport {
-  fill: white;
+  /* fill: white; */
   opacity: 0.6;
   stroke: #252525;
 }
 
 .flight {
   fill: none;
-  stroke: #252525;
+  /* stroke: #252525; */
   stroke-width: 1px;
   stroke-opacity: 0.1;
 }
