@@ -53,28 +53,25 @@ let flight_info = null;
 
 function on_reading_data(datas){
     flight_info = datas
+   
+    let x1 = flight_info['origin_longitude']
+    let y1 = (flight_info['origin_latitude'])
+    let x2 = flight_info['destination_longitude']
+    let y2 = (flight_info['destination_latitude'])
+    // console.log(x1,y1,x2,y2)
 
-    // console.log(flight_info)
+    let new_origin = projection([x1, y1]);
+    let new_dest = projection([x2, y2]);
+    //console.log(translate(new_origin));
+    console.log(new_dest);
 
-    // for(let i = 0; i< flight_info.length; i++ ){
-        // console.log(i)
-        let x1 = flight_info['origin_longitude']
-        let y1 = (flight_info['origin_latitude'])
-        let x2 = flight_info['destination_longitude']
-        let y2 = (flight_info['destination_latitude'])
-        // console.log(x1,y1,x2,y2)
-
-        let new_origin = projection([x1, y1]);
-        let new_dest = projection([x2, y2]);
-        //console.log(translate(new_origin));
-        console.log(new_dest);
-
-        svg.append('line')
-            .attr('x1', new_origin[0])  
-            .attr('y1', new_origin[1])
-            .attr('x2', new_dest[0])
-            .attr('y2', new_dest[1])
-            .style("stroke-width", 20)
+    svg.append('line')
+        .attr('x1', new_origin[0])  
+        .attr('y1', new_origin[1])
+        .attr('x2', new_dest[0])
+        .attr('y2', new_dest[1])
+        .style("stroke-width", 1)
+        .style('stroke', 'green')
 
 }
     
