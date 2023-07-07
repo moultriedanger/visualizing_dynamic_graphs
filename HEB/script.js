@@ -5,7 +5,6 @@ const urls = {  // source: https://observablehq.com/@mbostock/u-s-airports-voron
 
   flights: "100_flights.csv"
 };
-
 const svg  = d3.select("svg");
 
 const width  = parseInt(svg.attr("width"));
@@ -23,6 +22,7 @@ const scales = {
 
   // used to scale number of segments per line
   segments: d3.scaleLinear()
+    //What value the 
     .domain([0, hypotenuse])
     .range([1, 10])
 };
@@ -74,33 +74,41 @@ function processData(values) {
   flights.forEach(function(link) {
     link.source = iata.get(link.origin);
     link.target = iata.get(link.destination);
-    // console.log(link);
-    link.source.outgoing += link.count;
-    link.target.incoming += link.count;
+    
+    link.source.outgoing += 1;
+    link.target.incoming += 1;
   });
 
-  // // remove airports out of bounds
-  // let old = airports.length;
-  // airports = airports.filter(airport => airport.x >= 0 && airport.y >= 0);
-  // console.log(" removed: " + (old - airports.length) + " airports out of bounds");
+  // link.source = iata.get(link.origin);
+  //   link.target = iata.get(link.destination);
+    
+  //   link.source.outgoing += link.count;
+  //   link.target.incoming += link.count;
+
+  // remove airports out of bounds
+  let old = airports.length;
+  console.log(airports.length);
+  airports = airports.filter(airport => airport.x >= 0 && airport.y >= 0);
+  console.log(" removed: " + (old - airports.length) + " airports out of bounds");
 
   // // remove airports with NA state
   // old = airports.length;
   // airports = airports.filter(airport => airport.state !== "NA");
   // console.log(" removed: " + (old - airports.length) + " airports with NA state");
 
-  // // remove airports without any flights
-  // old = airports.length;
-  // airports = airports.filter(airport => airport.outgoing > 0 && airport.incoming > 0);
-  // console.log(" removed: " + (old - airports.length) + " airports without flights");
+  // remove airports without any flights
+  old = airports.length;
+  console.log(airports.length);
+  airports = airports.filter(airport => airport.outgoing > 0 && airport.incoming > 0);
+  console.log(" removed: " + (old - airports.length) + " airports without flights");
 
-  // // sort airports by outgoing degree
-  // airports.sort((a, b) => d3.descending(a.outgoing, b.outgoing));
+  // sort airports by outgoing degree
+  airports.sort((a, b) => d3.descending(a.outgoing, b.outgoing));
 
   // // keep only the top airports
-  // old = airports.length;
-  // airports = airports.slice(0, 50);
-  // console.log(" removed: " + (old - airports.length) + " airports with low outgoing degree");
+  old = airports.length;
+  airports = airports.slice(0, 50);
+  console.log(" removed: " + (old - airports.length) + " airports with low outgoing degree");
 
   // done filtering airports can draw
   drawAirports(airports);
@@ -109,10 +117,10 @@ function processData(values) {
   // reset map to only include airports post-filter
   iata = new Map(airports.map(node => [node.iata, node]));
 
-  // filter out flights that are not between airports we have leftover
-  // old = flights.length;
-  // flights = flights.filter(link => iata.has(link.source.iata) && iata.has(link.target.iata));
-  // console.log(" removed: " + (old - flights.length) + " flights");
+  //filter out flights that are not between airports we have leftover
+  old = flights.length;
+  flights = flights.filter(link => iata.has(link.source.iata) && iata.has(link.target.iata));
+  console.log(" removed: " + (old - flights.length) + " flights");
 
   // done filtering flights can draw
   drawFlights(airports, flights);
@@ -217,7 +225,8 @@ function drawPolygons(airports) {
       tooltip.attr("y", airport.y);
 
       // set the tooltip text
-      tooltip.text(airport.name + " in " + airport.city + ", " + airport.state);
+      tooltip.text(airport.name);
+      //" in " + airport.city + ", " + airport.state
 
       // double check if the anchor needs to be changed
       let bbox = tooltip.node().getBBox();
@@ -274,16 +283,16 @@ function drawFlights(airports, flights) {
   // https://github.com/d3/d3-force
   let layout = d3.forceSimulation()
     // settle at a layout faster
-    .alphaDecay(0.1)
+    .alphaDecay(.1)
     // nearby nodes attract each other
     .force("charge", d3.forceManyBody()
-      .strength(50)
+      .strength(10)
       .distanceMax(scales.airports.range()[1] * 2)
     )
     // edges want to be as short as possible
     // prevents too much stretching
     .force("link", d3.forceLink()
-      .strength(0.7)
+      .strength(.9)
       .distance(0)
     )
     .on("tick", function(d) {
