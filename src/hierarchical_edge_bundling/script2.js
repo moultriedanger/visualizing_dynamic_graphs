@@ -166,16 +166,32 @@ function drawAirports(airports) {
     .data(airports, d => d.iata)
     .enter()
     .append("circle")
-    .attr("r",  d => scales.airports(d.outgoing))
+    // .attr("r",  d => scales.airports(d.outgoing))
+    .attr("r",  4)
     .attr("cx", d => d.x) // calculated on load
     .attr("cy", d => d.y) // calculated on load
     .attr("class", "airport")
-    .style("fill", function(d) { return color(d.cluster); })
+    // .style("fill", function(d) { return color(d.cluster); })
     .each(function(d) {
       // adds the circle object to our airport
       // makes it fast to select airports on hover
       d.bubble = this;
-    });
+    })
+    .on("mouseover", function(d) {
+      d.flights.forEach(x => {
+        x.style['stroke'] = "red";
+        x.style["stroke-width"] = 5;
+        x.style['stroke-opacity'] = 1;
+      });
+    })
+    .on("mouseout", function(d) {
+      d.flights.forEach(x => { 
+        x.style['stroke'] = "black";
+        x.style["stroke-width"] = 1;
+        x.style['stroke-opacity'] = 0.1;
+      });
+    })
+    
 }
 
 function drawPolygons(airports) {
@@ -258,6 +274,7 @@ function drawPolygons(airports) {
 function drawFlights(airports, flights) {
   // break each flight between airports into multiple segments
   let bundle = generateSegments(airports, flights);
+  console.log(bundle);
 
   // https://github.com/d3/d3-shape#curveBundle
   let line = d3.line()
@@ -275,17 +292,31 @@ function drawFlights(airports, flights) {
     .append("path")
     .attr("d", line)
     .attr("class", "flight")
-    .style("stroke", function(d) { return color(d[0].cluster); })
+    // .style("stroke", function(d) { return color(d[0].cluster); })
+    .style("stroke", "black")
+    .style("stroke-width", 1)
     .each(function(d) {
       // adds the path object to our source airport
       // makes it fast to select outgoing paths
       d[0].flights.push(this);
+    })
+    .on("mouseover", function(d) {
+      console.log(this);
+      this.style['stroke'] = "red";
+      this.style["stroke-width"] = 10;
+      this.style['stroke-opacity'] = 1;
+    })
+    .on("mouseout", function(d) {
+      this.style['stroke'] = "black";
+      this.style["stroke-width"] = 1;
+      this.style['stroke-opacity'] = 0.1;
     });
 
   // https://github.com/d3/d3-force
   let layout = d3.forceSimulation()
     // settle at a layout faster
     .alphaDecay(0.1)
+    // .alphaDecay(1)
     // nearby nodes attract each other
     .force("charge", d3.forceManyBody()
       .strength(10)
