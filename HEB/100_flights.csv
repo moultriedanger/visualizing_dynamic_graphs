@@ -1,0 +1,700 @@
+,origin,destination,Origin_city,Destination_city,Fly_date,year,month,name_x,origin_latitude,origin_longitude,name_y,destination_latitude,destination_longitude
+3512014,STL,ALO,"St. Louis, MO","Waterloo, IA",1991-08-01,1991,8,St Louis Lambert International Airport,38.748697,-90.370003,Waterloo Regional Airport,42.55709838867188,-92.40029907226562
+1906999,BNA,AUS,"Nashville, TN","Austin, TX",2001-05-01,2001,5,Nashville International Airport,36.1245002746582,-86.6781997680664,Austin Bergstrom International Airport,30.197535,-97.662015
+489942,LAX,HNL,"Los Angeles, CA","Honolulu, HI",1990-03-01,1990,3,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Daniel K Inouye International Airport,21.32062,-157.924228
+2229824,RDU,MCI,"Raleigh, NC","Kansas City, MO",2002-09-01,2002,9,Raleigh Durham International Airport,35.877602,-78.787498,Kansas City International Airport,39.2976,-94.713898
+3295125,JAC,CPR,"Jackson, WY","Casper, WY",2004-06-01,2004,6,Jackson Hole Airport,43.6072998046875,-110.73799896240234,Casper-Natrona County International Airport,42.908001,-106.463997
+1588590,CVG,CVG,"Cincinnati, OH","Cincinnati, OH",2002-12-01,2002,12,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+198854,SAT,PIT,"San Antonio, TX","Pittsburgh, PA",1990-09-01,1990,9,San Antonio International Airport,29.533701,-98.469803,Pittsburgh International Airport,40.49150085,-80.23290253
+642057,ORD,SNA,"Chicago, IL","Santa Ana, CA",1995-11-01,1995,11,Chicago O'Hare International Airport,41.9786,-87.9048,John Wayne Orange County International Airport,33.675701,-117.867996
+2893206,IAH,ICT,"Houston, TX","Wichita, KS",2006-10-01,2006,10,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,Wichita Eisenhower National Airport,37.649899,-97.433098
+1045300,ORD,GRR,"Chicago, IL","Grand Rapids, MI",2008-07-01,2008,7,Chicago O'Hare International Airport,41.9786,-87.9048,Gerald R. Ford International Airport,42.88079834,-85.52279663
+722722,CMH,CLT,"Columbus, OH","Charlotte, NC",1998-02-01,1998,2,John Glenn Columbus International Airport,39.998001,-82.891899,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+2889573,LAS,ICT,"Las Vegas, NV","Wichita, KS",1990-10-01,1990,10,Harry Reid International Airport,36.083361,-115.151817,Wichita Eisenhower National Airport,37.649899,-97.433098
+758813,LAS,IAD,"Las Vegas, NV","Washington, DC",2008-06-01,2008,6,Harry Reid International Airport,36.083361,-115.151817,Washington Dulles International Airport,38.9445,-77.455803
+1517797,MSP,PHX,"Minneapolis, MN","Phoenix, AZ",1992-06-01,1992,6,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+573730,ABQ,LAX,"Albuquerque, NM","Los Angeles, CA",2006-05-01,2006,5,Albuquerque International Sunport,35.040199,-106.609001,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+2839304,DFW,ABQ,"Dallas, TX","Albuquerque, NM",1999-03-01,1999,3,Dallas Fort Worth International Airport,32.896801,-97.038002,Albuquerque International Sunport,35.040199,-106.609001
+1223200,IAH,MSP,"Houston, TX","Minneapolis, MN",1990-03-01,1990,3,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+3129279,BUF,ROC,"Buffalo, NY","Rochester, NY",1994-11-01,1994,11,Buffalo Niagara International Airport,42.94049835,-78.73220062,Frederick Douglass Greater Rochester International Airport,43.1189,-77.672401
+796792,CVG,DTW,"Cincinnati, OH","Detroit, MI",2007-08-01,2007,8,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+3274848,RDU,PVD,"Raleigh, NC","Providence, RI",1993-02-01,1993,2,Raleigh Durham International Airport,35.877602,-78.787498,Theodore Francis Green State Airport,41.725038,-71.425668
+214954,MIA,PIT,"Miami, FL","Pittsburgh, PA",2001-10-01,2001,10,Miami International Airport,25.79319953918457,-80.29060363769531,Pittsburgh International Airport,40.49150085,-80.23290253
+3390108,ATL,TLH,"Atlanta, GA","Tallahassee, FL",2007-12-01,2007,12,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Tallahassee Regional Airport,30.3965,-84.350304
+3165728,PHL,FLL,"Philadelphia, PA","Fort Lauderdale, FL",2004-02-01,2004,2,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702
+821368,DFW,DTW,"Dallas, TX","Detroit, MI",2008-04-01,2008,4,Dallas Fort Worth International Airport,32.896801,-97.038002,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+1693766,SLC,JFK,"Salt Lake City, UT","New York, NY",2008-03-01,2008,3,Salt Lake City International Airport,40.785749,-111.979746,John F Kennedy International Airport,40.639447,-73.779317
+2236820,DCA,MCI,"Washington, DC","Kansas City, MO",1994-10-01,1994,10,Ronald Reagan Washington National Airport,38.8521,-77.037697,Kansas City International Airport,39.2976,-94.713898
+511992,BOS,LAX,"Boston, MA","Los Angeles, CA",2000-06-01,2000,6,Logan International Airport,42.3643,-71.005203,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+1409017,CLE,IAH,"Cleveland, OH","Houston, TX",1990-11-01,1990,11,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+3316507,PHL,JAX,"Philadelphia, PA","Jacksonville, FL",1994-11-01,1994,11,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Jacksonville International Airport,30.49410057067871,-81.68789672851562
+2418306,RDU,DCA,"Raleigh, NC","Washington, DC",1997-03-01,1997,3,Raleigh Durham International Airport,35.877602,-78.787498,Ronald Reagan Washington National Airport,38.8521,-77.037697
+371106,LAX,STL,"Los Angeles, CA","St. Louis, MO",1999-06-01,1999,6,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,St Louis Lambert International Airport,38.748697,-90.370003
+577068,OGG,LAX,"Kahului, HI","Los Angeles, CA",1994-02-01,1994,2,Kahului International Airport,20.898543,-156.431212,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+504896,SEA,LAX,"Seattle, WA","Los Angeles, CA",1998-08-01,1998,8,Seattle–Tacoma International Airport,47.449162,-122.311134,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+1404189,VLD,ATL,"Valdosta, GA","Atlanta, GA",2004-01-01,2004,1,Valdosta Regional Airport,30.78249931335449,-83.27670288085938,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+2521570,ELP,SAN,"El Paso, TX","San Diego, CA",2007-12-01,2007,12,El Paso International Airport,31.80719948,-106.3779984,San Diego International Airport,32.7336006165,-117.190002441
+1144601,MSO,GEG,"Missoula, MT","Spokane, WA",2005-03-01,2005,3,Missoula International Airport,46.91630173,-114.0910034,Spokane International Airport,47.6199,-117.533997
+1008465,LAS,SLC,"Las Vegas, NV","Salt Lake City, UT",2006-02-01,2006,2,Harry Reid International Airport,36.083361,-115.151817,Salt Lake City International Airport,40.785749,-111.979746
+1422382,BWI,IAH,"Baltimore, MD","Houston, TX",1995-11-01,1995,11,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+1754500,SJC,SFO,"San Jose, CA","San Francisco, CA",1995-11-01,1995,11,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188,San Francisco International Airport,37.61899948120117,-122.375
+3289032,JFK,FWA,"New York, NY","Fort Wayne, IN",2004-05-01,2004,5,John F Kennedy International Airport,40.639447,-73.779317,Fort Wayne International Airport,40.9785,-85.195099
+1876696,LGA,CLE,"New York, NY","Cleveland, OH",2005-07-01,2005,7,La Guardia Airport,40.777199,-73.872597,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+3186157,EWR,CAE,"Newark, NJ","Columbia, SC",2000-02-01,2000,2,Newark Liberty International Airport,40.692501,-74.168701,Columbia Metropolitan Airport,33.938801,-81.119499
+2044335,GSO,PHL,"Greensboro, NC","Philadelphia, PA",1995-01-01,1995,1,Piedmont Triad International Airport,36.097801,-79.937302,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+1562925,SEA,EAT,"Seattle, WA","Wenatchee, WA",2007-07-01,2007,7,Seattle–Tacoma International Airport,47.449162,-122.311134,Pangborn Memorial Airport,47.3988990784,-120.207000732
+810377,MEM,DTW,"Memphis, TN","Detroit, MI",1990-01-01,1990,1,Memphis International Airport,35.04240036010742,-89.97669982910156,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+1758667,SAN,SFO,"San Diego, CA","San Francisco, CA",2001-03-01,2001,3,San Diego International Airport,32.7336006165,-117.190002441,San Francisco International Airport,37.61899948120117,-122.375
+2979159,BNA,MCO,"Nashville, TN","Orlando, FL",2003-07-01,2003,7,Nashville International Airport,36.1245002746582,-86.6781997680664,Orlando International Airport,28.429399490356445,-81.30899810791016
+1972346,BWI,HOU,"Baltimore, MD","Houston, TX",2003-03-01,2003,3,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,William P Hobby Airport,29.645399,-95.2789
+3268434,DTW,PVD,"Detroit, MI","Providence, RI",1997-03-01,1997,3,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Theodore Francis Green State Airport,41.725038,-71.425668
+2106329,DTW,MKE,"Detroit, MI","Milwaukee, WI",2008-01-01,2008,1,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,General Mitchell International Airport,42.94720077514648,-87.89659881591797
+467404,YIP,MEM,"Detroit, MI","Memphis, TN",2006-11-01,2006,11,Willow Run Airport,42.23789978,-83.53040314,Memphis International Airport,35.04240036010742,-89.97669982910156
+2075836,BUF,PHL,"Buffalo, NY","Philadelphia, PA",2003-07-01,2003,7,Buffalo Niagara International Airport,42.94049835,-78.73220062,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+149250,SNA,ORD,"Santa Ana, CA","Chicago, IL",2001-05-01,2001,5,John Wayne Orange County International Airport,33.675701,-117.867996,Chicago O'Hare International Airport,41.9786,-87.9048
+143720,AZO,ORD,"Kalamazoo, MI","Chicago, IL",2005-08-01,2005,8,Kalamazoo Battle Creek International Airport,42.234901428222656,-85.5521011352539,Chicago O'Hare International Airport,41.9786,-87.9048
+1710340,IAD,SFO,"Washington, DC","San Francisco, CA",1992-01-01,1992,1,Washington Dulles International Airport,38.9445,-77.455803,San Francisco International Airport,37.61899948120117,-122.375
+3147175,ATL,FLL,"Atlanta, GA","Fort Lauderdale, FL",2003-11-01,2003,11,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702
+535146,LAS,LAX,"Las Vegas, NV","Los Angeles, CA",2001-11-01,2001,11,Harry Reid International Airport,36.083361,-115.151817,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+1450723,OMA,IAH,"Omaha, NE","Houston, TX",2000-04-01,2000,4,Eppley Airfield,41.3032,-95.894096,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+659165,CVG,CLT,"Cincinnati, OH","Charlotte, NC",2008-04-01,2008,4,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+2210308,SEA,MCI,"Seattle, WA","Kansas City, MO",2002-06-01,2002,6,Seattle–Tacoma International Airport,47.449162,-122.311134,Kansas City International Airport,39.2976,-94.713898
+1603891,DFW,CVG,"Dallas, TX","Cincinnati, OH",2001-11-01,2001,11,Dallas Fort Worth International Airport,32.896801,-97.038002,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+1638584,GRB,CVG,"Green Bay, WI","Cincinnati, OH",2006-04-01,2006,4,Austin Straubel International Airport,44.483459,-88.130805,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+2548476,SAN,ELP,"San Diego, CA","El Paso, TX",2005-12-01,2005,12,San Diego International Airport,32.7336006165,-117.190002441,El Paso International Airport,31.80719948,-106.3779984
+558285,HNL,LAX,"Honolulu, HI","Los Angeles, CA",2004-07-01,2004,7,Daniel K Inouye International Airport,21.32062,-157.924228,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+2041156,RDU,PHL,"Raleigh, NC","Philadelphia, PA",1994-02-01,1994,2,Raleigh Durham International Airport,35.877602,-78.787498,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+1356376,DCA,ATL,"Washington, DC","Atlanta, GA",1998-03-01,1998,3,Ronald Reagan Washington National Airport,38.8521,-77.037697,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+1519688,OMA,PHX,"Omaha, NE","Phoenix, AZ",1995-07-01,1995,7,Eppley Airfield,41.3032,-95.894096,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+653534,CRW,CLT,"Charleston, WV","Charlotte, NC",2009-07-01,2009,7,Yeager Airport,38.3731,-81.593201,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+3217686,LGA,RIC,"New York, NY","Richmond, VA",1994-08-01,1994,8,La Guardia Airport,40.777199,-73.872597,Richmond International Airport,37.50519943237305,-77.3197021484375
+1314469,ORD,ATL,"Chicago, IL","Atlanta, GA",2004-02-01,2004,2,Chicago O'Hare International Airport,41.9786,-87.9048,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+3004869,IND,MCO,"Indianapolis, IN","Orlando, FL",1997-05-01,1997,5,Indianapolis International Airport,39.7173,-86.294403,Orlando International Airport,28.429399490356445,-81.30899810791016
+1260804,LAX,ANC,"Los Angeles, CA","Anchorage, AK",2000-02-01,2000,2,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Ted Stevens Anchorage International Airport,61.1744,-149.996002
+1372620,LEX,ATL,"Lexington, KY","Atlanta, GA",2006-10-01,2006,10,Blue Grass Airport,38.036499,-84.605904,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+986372,ACT,DFW,"Waco, TX","Dallas, TX",2005-09-01,2005,9,Waco Regional Airport,31.611299514770508,-97.23049926757812,Dallas Fort Worth International Airport,32.896801,-97.038002
+1111520,LAX,EWR,"Los Angeles, CA","Newark, NJ",1995-07-01,1995,7,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Newark Liberty International Airport,40.692501,-74.168701
+2233006,OMA,MCI,"Omaha, NE","Kansas City, MO",2009-10-01,2009,10,Eppley Airfield,41.3032,-95.894096,Kansas City International Airport,39.2976,-94.713898
+735696,AFW,CLT,"Dallas, TX","Charlotte, NC",2007-11-01,2007,11,Perot Field/Fort Worth Alliance Airport,32.99044,-97.31947,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+1853304,DTW,CLE,"Detroit, MI","Cleveland, OH",2000-04-01,2000,4,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+2094368,DFW,COS,"Dallas, TX","Colorado Springs, CO",1991-06-01,1991,6,Dallas Fort Worth International Airport,32.896801,-97.038002,City of Colorado Springs Municipal Airport,38.805801,-104.700996
+3356803,SYR,ILN,"Syracuse, NY","Wilmington, OH",2007-09-01,2007,9,Syracuse Hancock International Airport,43.11119842529297,-76.1063003540039,Wilmington Airpark,39.427898407,-83.792098999
+2491245,DAL,LBB,"Dallas, TX","Lubbock, TX",2003-06-01,2003,6,Dallas Love Field,32.847099,-96.851799,Lubbock Preston Smith International Airport,33.663601,-101.822998
+2979361,BNA,MCO,"Nashville, TN","Orlando, FL",2006-02-01,2006,2,Nashville International Airport,36.1245002746582,-86.6781997680664,Orlando International Airport,28.429399490356445,-81.30899810791016
+2214322,CVG,MCI,"Cincinnati, OH","Kansas City, MO",2006-02-01,2006,2,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Kansas City International Airport,39.2976,-94.713898
+2873574,FLL,MDW,"Fort Lauderdale, FL","Chicago, IL",2004-11-01,2004,11,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702,Chicago Midway International Airport,41.785999,-87.752403
+2448960,PHX,CMH,"Phoenix, AZ","Columbus, OH",2002-02-01,2002,2,Phoenix Sky Harbor International Airport,33.435302,-112.005905,John Glenn Columbus International Airport,39.998001,-82.891899
+2993425,DFW,MCO,"Dallas, TX","Orlando, FL",2008-05-01,2008,5,Dallas Fort Worth International Airport,32.896801,-97.038002,Orlando International Airport,28.429399490356445,-81.30899810791016
+2030033,ORD,PHL,"Chicago, IL","Philadelphia, PA",1994-02-01,1994,2,Chicago O'Hare International Airport,41.9786,-87.9048,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+3546741,LAX,SBP,"Los Angeles, CA","San Luis Obispo, CA",2009-12-01,2009,12,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,San Luis County Regional Airport,35.2368011475,-120.641998291
+42751,MEM,ORD,"Memphis, TN","Chicago, IL",1991-04-01,1991,4,Memphis International Airport,35.04240036010742,-89.97669982910156,Chicago O'Hare International Airport,41.9786,-87.9048
+3280348,BGR,PVD,"Bangor, ME","Providence, RI",1993-09-01,1993,9,Bangor International Airport,44.8074,-68.828102,Theodore Francis Green State Airport,41.725038,-71.425668
+773591,MDT,IAD,"Harrisburg, PA","Washington, DC",2003-07-01,2003,7,Harrisburg International Airport,40.193501,-76.763397,Washington Dulles International Airport,38.9445,-77.455803
+217305,ORD,PIT,"Chicago, IL","Pittsburgh, PA",1994-03-01,1994,3,Chicago O'Hare International Airport,41.9786,-87.9048,Pittsburgh International Airport,40.49150085,-80.23290253
+2490148,AUS,LBB,"Austin, TX","Lubbock, TX",1999-07-01,1999,7,Austin Bergstrom International Airport,30.197535,-97.662015,Lubbock Preston Smith International Airport,33.663601,-101.822998
+1354150,TPA,ATL,"Tampa, FL","Atlanta, GA",1996-05-01,1996,5,Tampa International Airport,27.975500106811523,-82.533203125,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+3095018,DCA,DAY,"Washington, DC","Dayton, OH",1997-09-01,1997,9,Ronald Reagan Washington National Airport,38.8521,-77.037697,James M Cox Dayton International Airport,39.902401,-84.219398
+1286141,BOS,ATL,"Boston, MA","Atlanta, GA",2002-10-01,2002,10,Logan International Airport,42.3643,-71.005203,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+851418,DCA,DTW,"Washington, DC","Detroit, MI",2004-01-01,2004,1,Ronald Reagan Washington National Airport,38.8521,-77.037697,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+1771789,PDX,SMF,"Portland, OR","Sacramento, CA",2004-03-01,2004,3,Portland International Airport,45.58869934,-122.5979996,Sacramento International Airport,38.69540023803711,-121.59100341796876
+1686925,DCA,JFK,"Washington, DC","New York, NY",2004-07-01,2004,7,Ronald Reagan Washington National Airport,38.8521,-77.037697,John F Kennedy International Airport,40.639447,-73.779317
+1914709,LAS,AUS,"Las Vegas, NV","Austin, TX",2003-08-01,2003,8,Harry Reid International Airport,36.083361,-115.151817,Austin Bergstrom International Airport,30.197535,-97.662015
+1224979,BUF,MSP,"Buffalo, NY","Minneapolis, MN",2007-07-01,2007,7,Buffalo Niagara International Airport,42.94049835,-78.73220062,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+2712052,ORD,SEA,"Chicago, IL","Seattle, WA",2006-11-01,2006,11,Chicago O'Hare International Airport,41.9786,-87.9048,Seattle–Tacoma International Airport,47.449162,-122.311134
+1984203,ABQ,HOU,"Albuquerque, NM","Houston, TX",1991-08-01,1991,8,Albuquerque International Sunport,35.040199,-106.609001,William P Hobby Airport,29.645399,-95.2789
+14124,EWR,ORD,"Newark, NJ","Chicago, IL",2008-10-01,2008,10,Newark Liberty International Airport,40.692501,-74.168701,Chicago O'Hare International Airport,41.9786,-87.9048
+1438297,DFW,IAH,"Dallas, TX","Houston, TX",1998-10-01,1998,10,Dallas Fort Worth International Airport,32.896801,-97.038002,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+1913701,DFW,AUS,"Dallas, TX","Austin, TX",1998-06-01,1998,6,Dallas Fort Worth International Airport,32.896801,-97.038002,Austin Bergstrom International Airport,30.197535,-97.662015
+1682995,SFO,JFK,"San Francisco, CA","New York, NY",1994-09-01,1994,9,San Francisco International Airport,37.61899948120117,-122.375,John F Kennedy International Airport,40.639447,-73.779317
+1931591,EWR,TPA,"Newark, NJ","Tampa, FL",1994-12-01,1994,12,Newark Liberty International Airport,40.692501,-74.168701,Tampa International Airport,27.975500106811523,-82.533203125
+1089309,DFW,EWR,"Dallas, TX","Newark, NJ",1990-07-01,1990,7,Dallas Fort Worth International Airport,32.896801,-97.038002,Newark Liberty International Airport,40.692501,-74.168701
+1540591,SLC,PHX,"Salt Lake City, UT","Phoenix, AZ",2007-04-01,2007,4,Salt Lake City International Airport,40.785749,-111.979746,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+2028824,MCO,PHL,"Orlando, FL","Philadelphia, PA",2006-04-01,2006,4,Orlando International Airport,28.429399490356445,-81.30899810791016,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+3119256,BWI,ROC,"Baltimore, MD","Rochester, NY",1994-11-01,1994,11,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Frederick Douglass Greater Rochester International Airport,43.1189,-77.672401
+298415,SFO,LAS,"San Francisco, CA","Las Vegas, NV",1999-09-01,1999,9,San Francisco International Airport,37.61899948120117,-122.375,Harry Reid International Airport,36.083361,-115.151817
+1950234,STL,TPA,"St. Louis, MO","Tampa, FL",2008-03-01,2008,3,St Louis Lambert International Airport,38.748697,-90.370003,Tampa International Airport,27.975500106811523,-82.533203125
+1470815,PNS,IAH,"Pensacola, FL","Houston, TX",1991-08-01,1991,8,Pensacola International Airport,30.4734,-87.1866,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+2518953,IAH,SAN,"Houston, TX","San Diego, CA",2005-10-01,2005,10,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,San Diego International Airport,32.7336006165,-117.190002441
+2952786,BUF,BWI,"Buffalo, NY","Baltimore, MD",2007-11-01,2007,11,Buffalo Niagara International Airport,42.94049835,-78.73220062,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+1226437,AZO,MSP,"Kalamazoo, MI","Minneapolis, MN",1991-06-01,1991,6,Kalamazoo Battle Creek International Airport,42.234901428222656,-85.5521011352539,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+1871877,STL,CLE,"St. Louis, MO","Cleveland, OH",1992-09-01,1992,9,St Louis Lambert International Airport,38.748697,-90.370003,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+809354,MSN,DTW,"Madison, WI","Detroit, MI",1993-06-01,1993,6,Dane County Regional Truax Field,43.1399,-89.337502,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+2017754,PIT,PHL,"Pittsburgh, PA","Philadelphia, PA",1994-11-01,1994,11,Pittsburgh International Airport,40.49150085,-80.23290253,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+3429326,CLT,ROA,"Charlotte, NC","Roanoke, VA",2002-12-01,2002,12,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Roanoke–Blacksburg Regional Airport,37.3255,-79.975403
+2975804,DTW,MCO,"Detroit, MI","Orlando, FL",1996-06-01,1996,6,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Orlando International Airport,28.429399490356445,-81.30899810791016
+1176810,MIA,MSP,"Miami, FL","Minneapolis, MN",1994-06-01,1994,6,Miami International Airport,25.79319953918457,-80.29060363769531,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+1189380,MKE,MSP,"Milwaukee, WI","Minneapolis, MN",1994-01-01,1994,1,General Mitchell International Airport,42.94720077514648,-87.89659881591797,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+1964495,CMH,TPA,"Columbus, OH","Tampa, FL",2009-02-01,2009,2,John Glenn Columbus International Airport,39.998001,-82.891899,Tampa International Airport,27.975500106811523,-82.533203125
+1010310,STL,SLC,"St. Louis, MO","Salt Lake City, UT",1999-03-01,1999,3,St Louis Lambert International Airport,38.748697,-90.370003,Salt Lake City International Airport,40.785749,-111.979746
+1004686,ORD,SLC,"Chicago, IL","Salt Lake City, UT",2004-09-01,2004,9,Chicago O'Hare International Airport,41.9786,-87.9048,Salt Lake City International Airport,40.785749,-111.979746
+263013,BFD,PIT,"Bradford, PA","Pittsburgh, PA",2006-01-01,2006,1,Bradford Regional Airport,41.8031005859375,-78.64009857177734,Pittsburgh International Airport,40.49150085,-80.23290253
+617988,MFR,PDX,"Medford, OR","Portland, OR",2009-06-01,2009,6,Rogue Valley International Medford Airport,42.37419891357422,-122.8730010986328,Portland International Airport,45.58869934,-122.5979996
+2559213,EKO,MSO,"Elko, NV","Missoula, MT",2003-07-01,2003,7,Elko Regional Airport,40.82490158081055,-115.79199981689452,Missoula International Airport,46.91630173,-114.0910034
+2153656,CVG,SYR,"Cincinnati, OH","Syracuse, NY",2006-08-01,2006,8,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Syracuse Hancock International Airport,43.11119842529297,-76.1063003540039
+970766,IAH,DFW,"Houston, TX","Dallas, TX",2003-05-01,2003,5,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,Dallas Fort Worth International Airport,32.896801,-97.038002
+2934180,LGA,BWI,"New York, NY","Baltimore, MD",2007-06-01,2007,6,La Guardia Airport,40.777199,-73.872597,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+1168516,PIT,MSP,"Pittsburgh, PA","Minneapolis, MN",2008-11-01,2008,11,Pittsburgh International Airport,40.49150085,-80.23290253,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+3093637,PVD,DAY,"Providence, RI","Dayton, OH",2007-10-01,2007,10,Theodore Francis Green State Airport,41.725038,-71.425668,James M Cox Dayton International Airport,39.902401,-84.219398
+847473,DAY,DTW,"Dayton, OH","Detroit, MI",1998-03-01,1998,3,James M Cox Dayton International Airport,39.902401,-84.219398,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+2409423,MEM,DCA,"Memphis, TN","Washington, DC",1997-01-01,1997,1,Memphis International Airport,35.04240036010742,-89.97669982910156,Ronald Reagan Washington National Airport,38.8521,-77.037697
+3276484,TPA,PVD,"Tampa, FL","Providence, RI",2002-12-01,2002,12,Tampa International Airport,27.975500106811523,-82.533203125,Theodore Francis Green State Airport,41.725038,-71.425668
+424748,DFW,MEM,"Dallas, TX","Memphis, TN",1996-04-01,1996,4,Dallas Fort Worth International Airport,32.896801,-97.038002,Memphis International Airport,35.04240036010742,-89.97669982910156
+680099,ORD,CLT,"Chicago, IL","Charlotte, NC",2001-02-01,2001,2,Chicago O'Hare International Airport,41.9786,-87.9048,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+1091722,MHT,EWR,"Manchester, NH","Newark, NJ",1992-07-01,1992,7,Manchester-Boston Regional Airport,42.932598,-71.435699,Newark Liberty International Airport,40.692501,-74.168701
+2199474,TPA,IND,"Tampa, FL","Indianapolis, IN",1996-01-01,1996,1,Tampa International Airport,27.975500106811523,-82.533203125,Indianapolis International Airport,39.7173,-86.294403
+156987,BMI,ORD,"Bloomington, IL","Chicago, IL",2002-01-01,2002,1,Central Illinois Regional Airport at Bloomington-Normal,40.4771,-88.915901,Chicago O'Hare International Airport,41.9786,-87.9048
+2610805,CMH,BOS,"Columbus, OH","Boston, MA",2000-08-01,2000,8,John Glenn Columbus International Airport,39.998001,-82.891899,Logan International Airport,42.3643,-71.005203
+2239948,SLC,MCI,"Salt Lake City, UT","Kansas City, MO",1994-03-01,1994,3,Salt Lake City International Airport,40.785749,-111.979746,Kansas City International Airport,39.2976,-94.713898
+1316478,DFW,ATL,"Dallas, TX","Atlanta, GA",1995-08-01,1995,8,Dallas Fort Worth International Airport,32.896801,-97.038002,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+8390,SAT,ORD,"San Antonio, TX","Chicago, IL",1997-09-01,1997,9,San Antonio International Airport,29.533701,-98.469803,Chicago O'Hare International Airport,41.9786,-87.9048
+3530404,ROC,BGM,"Rochester, NY","Binghamton, NY",2003-05-01,2003,5,Frederick Douglass Greater Rochester International Airport,43.1189,-77.672401,Greater Binghamton/Edwin A Link field,42.20869827,-75.97979736
+2756122,DTW,GRB,"Detroit, MI","Green Bay, WI",2006-07-01,2006,7,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Austin Straubel International Airport,44.483459,-88.130805
+3008548,MCI,MCO,"Kansas City, MO","Orlando, FL",2009-02-01,2009,2,Kansas City International Airport,39.2976,-94.713898,Orlando International Airport,28.429399490356445,-81.30899810791016
+1365672,TOL,ATL,"Toledo, OH","Atlanta, GA",1997-07-01,1997,7,Eugene F. Kranz Toledo Express Airport,41.5868,-83.8078,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+348054,MCO,STL,"Orlando, FL","St. Louis, MO",1997-05-01,1997,5,Orlando International Airport,28.429399490356445,-81.30899810791016,St Louis Lambert International Airport,38.748697,-90.370003
+870197,TVC,DTW,"Traverse City, MI","Detroit, MI",1991-09-01,1991,9,Cherry Capital Airport,44.74140167236328,-85.58219909667969,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+2529842,SLC,TUS,"Salt Lake City, UT","Tucson, AZ",1992-12-01,1992,12,Salt Lake City International Airport,40.785749,-111.979746,Tucson International Airport / Morris Air National Guard Base,32.115004,-110.938053
+1816992,ORD,OKC,"Chicago, IL","Oklahoma City, OK",1994-12-01,1994,12,Chicago O'Hare International Airport,41.9786,-87.9048,Will Rogers World Airport,35.393101,-97.6007
+2251662,ORD,MSN,"Chicago, IL","Madison, WI",1991-11-01,1991,11,Chicago O'Hare International Airport,41.9786,-87.9048,Dane County Regional Truax Field,43.1399,-89.337502
+2579971,MCO,BOS,"Orlando, FL","Boston, MA",1996-02-01,1996,2,Orlando International Airport,28.429399490356445,-81.30899810791016,Logan International Airport,42.3643,-71.005203
+609052,ANC,PDX,"Anchorage, AK","Portland, OR",1996-10-01,1996,10,Ted Stevens Anchorage International Airport,61.1744,-149.996002,Portland International Airport,45.58869934,-122.5979996
+505499,SEA,LAX,"Seattle, WA","Los Angeles, CA",2003-11-01,2003,11,Seattle–Tacoma International Airport,47.449162,-122.311134,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+2731635,MDW,SEA,"Chicago, IL","Seattle, WA",1993-02-01,1993,2,Chicago Midway International Airport,41.785999,-87.752403,Seattle–Tacoma International Airport,47.449162,-122.311134
+1151457,CLE,MSP,"Cleveland, OH","Minneapolis, MN",2002-02-01,2002,2,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+837524,JFK,DTW,"New York, NY","Detroit, MI",1995-02-01,1995,2,John F Kennedy International Airport,40.639447,-73.779317,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+537872,STL,LAX,"St. Louis, MO","Los Angeles, CA",1992-09-01,1992,9,St Louis Lambert International Airport,38.748697,-90.370003,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+3092267,MKE,DAY,"Milwaukee, WI","Dayton, OH",2008-09-01,2008,9,General Mitchell International Airport,42.94720077514648,-87.89659881591797,James M Cox Dayton International Airport,39.902401,-84.219398
+3556724,MSP,ABR,"Minneapolis, MN","Aberdeen, SD",2005-05-01,2005,5,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Aberdeen Regional Airport,45.449100494384766,-98.42179870605467
+2191247,LGA,IND,"New York, NY","Indianapolis, IN",1991-09-01,1991,9,La Guardia Airport,40.777199,-73.872597,Indianapolis International Airport,39.7173,-86.294403
+1995892,SYR,ABE,"Syracuse, NY","Allentown, PA",2002-04-01,2002,4,Syracuse Hancock International Airport,43.11119842529297,-76.1063003540039,Lehigh Valley International Airport,40.651773,-75.442797
+2798123,FLL,LGA,"Fort Lauderdale, FL","New York, NY",2005-02-01,2005,2,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702,La Guardia Airport,40.777199,-73.872597
+707236,TPA,CLT,"Tampa, FL","Charlotte, NC",1992-10-01,1992,10,Tampa International Airport,27.975500106811523,-82.533203125,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+3402373,MCO,PBI,"Orlando, FL","West Palm Beach, FL",2005-06-01,2005,6,Orlando International Airport,28.429399490356445,-81.30899810791016,Palm Beach International Airport,26.68320083618164,-80.09559631347656
+1996147,IND,ABE,"Indianapolis, IN","Allentown, PA",2009-12-01,2009,12,Indianapolis International Airport,39.7173,-86.294403,Lehigh Valley International Airport,40.651773,-75.442797
+1627087,TOL,CVG,"Toledo, OH","Cincinnati, OH",2005-04-01,2005,4,Eugene F. Kranz Toledo Express Airport,41.5868,-83.8078,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+1377489,PBI,ATL,"West Palm Beach, FL","Atlanta, GA",2001-04-01,2001,4,Palm Beach International Airport,26.68320083618164,-80.09559631347656,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+3249583,LBB,DAL,"Lubbock, TX","Dallas, TX",1995-11-01,1995,11,Lubbock Preston Smith International Airport,33.663601,-101.822998,Dallas Love Field,32.847099,-96.851799
+1111899,LAX,EWR,"Los Angeles, CA","Newark, NJ",1999-06-01,1999,6,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Newark Liberty International Airport,40.692501,-74.168701
+1017684,LAX,SLC,"Los Angeles, CA","Salt Lake City, UT",2005-01-01,2005,1,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Salt Lake City International Airport,40.785749,-111.979746
+368554,MCI,STL,"Kansas City, MO","St. Louis, MO",1990-03-01,1990,3,Kansas City International Airport,39.2976,-94.713898,St Louis Lambert International Airport,38.748697,-90.370003
+1451851,IND,IAH,"Indianapolis, IN","Houston, TX",1994-06-01,1994,6,Indianapolis International Airport,39.7173,-86.294403,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+909203,MEM,DFW,"Memphis, TN","Dallas, TX",2005-05-01,2005,5,Memphis International Airport,35.04240036010742,-89.97669982910156,Dallas Fort Worth International Airport,32.896801,-97.038002
+1183061,DFW,MSP,"Dallas, TX","Minneapolis, MN",1998-01-01,1998,1,Dallas Fort Worth International Airport,32.896801,-97.038002,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+51421,DFW,ORD,"Dallas, TX","Chicago, IL",2001-01-01,2001,1,Dallas Fort Worth International Airport,32.896801,-97.038002,Chicago O'Hare International Airport,41.9786,-87.9048
+1737959,LAX,SFO,"Los Angeles, CA","San Francisco, CA",2008-10-01,2008,10,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,San Francisco International Airport,37.61899948120117,-122.375
+403545,CLT,MEM,"Charlotte, NC","Memphis, TN",2009-12-01,2009,12,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Memphis International Airport,35.04240036010742,-89.97669982910156
+1290436,DTW,ATL,"Detroit, MI","Atlanta, GA",1998-02-01,1998,2,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+1288666,CVG,ATL,"Cincinnati, OH","Atlanta, GA",2009-12-01,2009,12,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+1531752,SFO,PHX,"San Francisco, CA","Phoenix, AZ",2005-11-01,2005,11,San Francisco International Airport,37.61899948120117,-122.375,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+1850467,BOS,CLE,"Boston, MA","Cleveland, OH",2002-09-01,2002,9,Logan International Airport,42.3643,-71.005203,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+654522,MSY,CLT,"New Orleans, LA","Charlotte, NC",2003-10-01,2003,10,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+3241465,MSY,DAL,"New Orleans, LA","Dallas, TX",1994-02-01,1994,2,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328,Dallas Love Field,32.847099,-96.851799
+555811,HNL,LAX,"Honolulu, HI","Los Angeles, CA",1994-04-01,1994,4,Daniel K Inouye International Airport,21.32062,-157.924228,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+68318,LGA,ORD,"New York, NY","Chicago, IL",2006-08-01,2006,8,La Guardia Airport,40.777199,-73.872597,Chicago O'Hare International Airport,41.9786,-87.9048
+3164665,BDL,FLL,"Hartford, CT","Fort Lauderdale, FL",2001-08-01,2001,8,Bradley International Airport,41.93851,-72.688066,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702
+1425370,PHX,IAH,"Phoenix, AZ","Houston, TX",2002-11-01,2002,11,Phoenix Sky Harbor International Airport,33.435302,-112.005905,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+2375666,ATL,BUF,"Atlanta, GA","Buffalo, NY",1991-08-01,1991,8,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Buffalo Niagara International Airport,42.94049835,-78.73220062
+1052127,ANC,FAI,"Anchorage, AK","Fairbanks, AK",2002-03-01,2002,3,Ted Stevens Anchorage International Airport,61.1744,-149.996002,Fairbanks International Airport,64.81510162,-147.8560028
+2825473,SJC,RFD,"San Jose, CA","Rockford, IL",2003-10-01,2003,10,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188,Chicago Rockford International Airport,42.1954,-89.097198
+1815395,ATL,OKC,"Atlanta, GA","Oklahoma City, OK",2005-04-01,2005,4,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Will Rogers World Airport,35.393101,-97.6007
+3576521,CEC,EKA,"Crescent City, CA","Eureka, CA",2004-11-01,2004,11,Jack Mc Namara Field Airport,41.78020096,-124.2369995,Murray Field,40.8033981323,-124.112998962
+2980403,BWI,MCO,"Baltimore, MD","Orlando, FL",2004-05-01,2004,5,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Orlando International Airport,28.429399490356445,-81.30899810791016
+1522893,LIT,PHX,"Little Rock, AR","Phoenix, AZ",1997-01-01,1997,1,Bill & Hillary Clinton National Airport/Adams Field,34.729582,-92.223728,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+613419,GEG,PDX,"Spokane, WA","Portland, OR",1990-01-01,1990,1,Spokane International Airport,47.6199,-117.533997,Portland International Airport,45.58869934,-122.5979996
+467300,YIP,MEM,"Detroit, MI","Memphis, TN",2000-03-01,2000,3,Willow Run Airport,42.23789978,-83.53040314,Memphis International Airport,35.04240036010742,-89.97669982910156
+2666981,BWI,BDL,"Baltimore, MD","Hartford, CT",2000-02-01,2000,2,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Bradley International Airport,41.93851,-72.688066
+2356353,TPA,MIA,"Tampa, FL","Miami, FL",2004-12-01,2004,12,Tampa International Airport,27.975500106811523,-82.533203125,Miami International Airport,25.79319953918457,-80.29060363769531
+1363389,SAV,ATL,"Savannah, GA","Atlanta, GA",2004-09-01,2004,9,Savannah Hilton Head International Airport,32.12760162,-81.20210266,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+3105218,PIT,ALB,"Pittsburgh, PA","Albany, NY",1999-12-01,1999,12,Pittsburgh International Airport,40.49150085,-80.23290253,Albany International Airport,42.74829864501953,-73.80169677734375
+2355098,DAY,MIA,"Dayton, OH","Miami, FL",2005-12-01,2005,12,James M Cox Dayton International Airport,39.902401,-84.219398,Miami International Airport,25.79319953918457,-80.29060363769531
+3391082,MCO,TLH,"Orlando, FL","Tallahassee, FL",1990-08-01,1990,8,Orlando International Airport,28.429399490356445,-81.30899810791016,Tallahassee Regional Airport,30.3965,-84.350304
+2701109,DFW,SPS,"Dallas, TX","Wichita Falls, TX",2008-03-01,2008,3,Dallas Fort Worth International Airport,32.896801,-97.038002,Sheppard Air Force Base / Wichita Falls Municipal Airport,33.9888,-98.491898
+2430940,JAX,DCA,"Jacksonville, FL","Washington, DC",1992-12-01,1992,12,Jacksonville International Airport,30.49410057067871,-81.68789672851562,Ronald Reagan Washington National Airport,38.8521,-77.037697
+2917331,IAD,BWI,"Washington, DC","Baltimore, MD",2000-05-01,2000,5,Washington Dulles International Airport,38.9445,-77.455803,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+186878,SLC,OAK,"Salt Lake City, UT","Oakland, CA",1998-05-01,1998,5,Salt Lake City International Airport,40.785749,-111.979746,Metropolitan Oakland International Airport,37.721298,-122.221001
+664631,BNA,CLT,"Nashville, TN","Charlotte, NC",1991-06-01,1991,6,Nashville International Airport,36.1245002746582,-86.6781997680664,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+2798405,FLL,LGA,"Fort Lauderdale, FL","New York, NY",2008-06-01,2008,6,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702,La Guardia Airport,40.777199,-73.872597
+1512053,LAS,PHX,"Las Vegas, NV","Phoenix, AZ",2003-08-01,2003,8,Harry Reid International Airport,36.083361,-115.151817,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+1133837,MYR,EWR,"Myrtle Beach, SC","Newark, NJ",2002-06-01,2002,6,Myrtle Beach International Airport,33.6796989441,-78.9282989502,Newark Liberty International Airport,40.692501,-74.168701
+3285876,DTW,FWA,"Detroit, MI","Fort Wayne, IN",2008-12-01,2008,12,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Fort Wayne International Airport,40.9785,-85.195099
+1175503,MEM,MSP,"Memphis, TN","Minneapolis, MN",2002-04-01,2002,4,Memphis International Airport,35.04240036010742,-89.97669982910156,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+1206948,DCA,MSP,"Washington, DC","Minneapolis, MN",1992-02-01,1992,2,Ronald Reagan Washington National Airport,38.8521,-77.037697,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+1860544,PHX,CLE,"Phoenix, AZ","Cleveland, OH",2002-11-01,2002,11,Phoenix Sky Harbor International Airport,33.435302,-112.005905,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+1760761,SEA,SMF,"Seattle, WA","Sacramento, CA",2007-12-01,2007,12,Seattle–Tacoma International Airport,47.449162,-122.311134,Sacramento International Airport,38.69540023803711,-121.59100341796876
+359272,MSP,STL,"Minneapolis, MN","St. Louis, MO",1992-02-01,1992,2,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,St Louis Lambert International Airport,38.748697,-90.370003
+2030539,ORD,PHL,"Chicago, IL","Philadelphia, PA",1997-06-01,1997,6,Chicago O'Hare International Airport,41.9786,-87.9048,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2025866,MIA,PHL,"Miami, FL","Philadelphia, PA",1995-01-01,1995,1,Miami International Airport,25.79319953918457,-80.29060363769531,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+1579872,SNA,SJC,"Santa Ana, CA","San Jose, CA",1991-01-01,1991,1,John Wayne Orange County International Airport,33.675701,-117.867996,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188
+3568903,OGG,ITO,"Kahului, HI","Hilo, HI",1990-01-01,1990,1,Kahului International Airport,20.898543,-156.431212,Hilo International Airport,19.721399,-155.048004
+1725488,LAS,SFO,"Las Vegas, NV","San Francisco, CA",2009-04-01,2009,4,Harry Reid International Airport,36.083361,-115.151817,San Francisco International Airport,37.61899948120117,-122.375
+1996029,IND,ABE,"Indianapolis, IN","Allentown, PA",2004-05-01,2004,5,Indianapolis International Airport,39.7173,-86.294403,Lehigh Valley International Airport,40.651773,-75.442797
+3227344,DTW,GSO,"Detroit, MI","Greensboro, NC",2005-09-01,2005,9,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Piedmont Triad International Airport,36.097801,-79.937302
+1616397,IND,CVG,"Indianapolis, IN","Cincinnati, OH",1993-05-01,1993,5,Indianapolis International Airport,39.7173,-86.294403,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+1010305,STL,SLC,"St. Louis, MO","Salt Lake City, UT",1999-02-01,1999,2,St Louis Lambert International Airport,38.748697,-90.370003,Salt Lake City International Airport,40.785749,-111.979746
+611351,SLC,PDX,"Salt Lake City, UT","Portland, OR",1998-11-01,1998,11,Salt Lake City International Airport,40.785749,-111.979746,Portland International Airport,45.58869934,-122.5979996
+504160,SEA,LAX,"Seattle, WA","Los Angeles, CA",1992-11-01,1992,11,Seattle–Tacoma International Airport,47.449162,-122.311134,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+2654926,EUG,EKO,"Eugene, OR","Elko, NV",1994-05-01,1994,5,Mahlon Sweet Field,44.12459945678711,-123.21199798583984,Elko Regional Airport,40.82490158081055,-115.79199981689452
+3054960,CAE,RDU,"Columbia, SC","Raleigh, NC",1990-04-01,1990,4,Columbia Metropolitan Airport,33.938801,-81.119499,Raleigh Durham International Airport,35.877602,-78.787498
+3072992,PHL,MDT,"Philadelphia, PA","Harrisburg, PA",2007-02-01,2007,2,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Harrisburg International Airport,40.193501,-76.763397
+2216109,BNA,MCI,"Nashville, TN","Kansas City, MO",1997-02-01,1997,2,Nashville International Airport,36.1245002746582,-86.6781997680664,Kansas City International Airport,39.2976,-94.713898
+2455829,STL,CMH,"St. Louis, MO","Columbus, OH",1995-08-01,1995,8,St Louis Lambert International Airport,38.748697,-90.370003,John Glenn Columbus International Airport,39.998001,-82.891899
+2736857,GTF,SEA,"Great Falls, MT","Seattle, WA",2005-06-01,2005,6,Great Falls International Airport,47.48199844,-111.3710022,Seattle–Tacoma International Airport,47.449162,-122.311134
+1177210,MIA,MSP,"Miami, FL","Minneapolis, MN",2004-08-01,2004,8,Miami International Airport,25.79319953918457,-80.29060363769531,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+415411,PHX,MEM,"Phoenix, AZ","Memphis, TN",2005-08-01,2005,8,Phoenix Sky Harbor International Airport,33.435302,-112.005905,Memphis International Airport,35.04240036010742,-89.97669982910156
+835897,PVD,DTW,"Providence, RI","Detroit, MI",2007-11-01,2007,11,Theodore Francis Green State Airport,41.725038,-71.425668,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+2983675,ATL,MCO,"Atlanta, GA","Orlando, FL",1998-01-01,1998,1,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Orlando International Airport,28.429399490356445,-81.30899810791016
+2335098,MEM,MIA,"Memphis, TN","Miami, FL",2008-10-01,2008,10,Memphis International Airport,35.04240036010742,-89.97669982910156,Miami International Airport,25.79319953918457,-80.29060363769531
+3365453,IAD,PWM,"Washington, DC","Portland, ME",2008-08-01,2008,8,Washington Dulles International Airport,38.9445,-77.455803,Portland International Jetport,43.646198,-70.309303
+2503375,ORD,SAN,"Chicago, IL","San Diego, CA",2003-05-01,2003,5,Chicago O'Hare International Airport,41.9786,-87.9048,San Diego International Airport,32.7336006165,-117.190002441
+2567318,DTW,BOS,"Detroit, MI","Boston, MA",1998-03-01,1998,3,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Logan International Airport,42.3643,-71.005203
+3256437,DAY,YIP,"Dayton, OH","Detroit, MI",2001-08-01,2001,8,James M Cox Dayton International Airport,39.902401,-84.219398,Willow Run Airport,42.23789978,-83.53040314
+3242560,ATL,DAL,"Atlanta, GA","Dallas, TX",2002-03-01,2002,3,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Dallas Love Field,32.847099,-96.851799
+2237470,MDW,MCI,"Chicago, IL","Kansas City, MO",1990-09-01,1990,9,Chicago Midway International Airport,41.785999,-87.752403,Kansas City International Airport,39.2976,-94.713898
+2969337,SAT,MCO,"San Antonio, TX","Orlando, FL",2005-08-01,2005,8,San Antonio International Airport,29.533701,-98.469803,Orlando International Airport,28.429399490356445,-81.30899810791016
+2449664,ATL,CMH,"Atlanta, GA","Columbus, OH",1995-12-01,1995,12,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,John Glenn Columbus International Airport,39.998001,-82.891899
+1546993,CMH,PHX,"Columbus, OH","Phoenix, AZ",2004-03-01,2004,3,John Glenn Columbus International Airport,39.998001,-82.891899,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+1338519,SYR,ATL,"Syracuse, NY","Atlanta, GA",2003-06-01,2003,6,Syracuse Hancock International Airport,43.11119842529297,-76.1063003540039,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+3088113,MEM,DAY,"Memphis, TN","Dayton, OH",2004-02-01,2004,2,Memphis International Airport,35.04240036010742,-89.97669982910156,James M Cox Dayton International Airport,39.902401,-84.219398
+804371,PIT,DTW,"Pittsburgh, PA","Detroit, MI",2001-01-01,2001,1,Pittsburgh International Airport,40.49150085,-80.23290253,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+2001302,CLT,PHL,"Charlotte, NC","Philadelphia, PA",1997-05-01,1997,5,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2169207,EWR,IND,"Newark, NJ","Indianapolis, IN",1990-12-01,1990,12,Newark Liberty International Airport,40.692501,-74.168701,Indianapolis International Airport,39.7173,-86.294403
+770277,LAX,IAD,"Los Angeles, CA","Washington, DC",1995-10-01,1995,10,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Washington Dulles International Airport,38.9445,-77.455803
+735181,SAN,CLT,"San Diego, CA","Charlotte, NC",2000-07-01,2000,7,San Diego International Airport,32.7336006165,-117.190002441,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+3567865,HNL,ITO,"Honolulu, HI","Hilo, HI",1994-02-01,1994,2,Daniel K Inouye International Airport,21.32062,-157.924228,Hilo International Airport,19.721399,-155.048004
+813558,MIA,DTW,"Miami, FL","Detroit, MI",2002-10-01,2002,10,Miami International Airport,25.79319953918457,-80.29060363769531,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+3067634,PIT,MDT,"Pittsburgh, PA","Harrisburg, PA",1993-08-01,1993,8,Pittsburgh International Airport,40.49150085,-80.23290253,Harrisburg International Airport,40.193501,-76.763397
+1112696,LAX,EWR,"Los Angeles, CA","Newark, NJ",2005-05-01,2005,5,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Newark Liberty International Airport,40.692501,-74.168701
+155247,YIP,ORD,"Detroit, MI","Chicago, IL",2004-10-01,2004,10,Willow Run Airport,42.23789978,-83.53040314,Chicago O'Hare International Airport,41.9786,-87.9048
+3190829,HSV,CAE,"Huntsville, AL","Columbia, SC",2006-11-01,2006,11,Huntsville International Carl T Jones Field,34.637199,-86.775101,Columbia Metropolitan Airport,33.938801,-81.119499
+1763787,ORD,SMF,"Chicago, IL","Sacramento, CA",2007-07-01,2007,7,Chicago O'Hare International Airport,41.9786,-87.9048,Sacramento International Airport,38.69540023803711,-121.59100341796876
+3469848,ORD,MYR,"Chicago, IL","Myrtle Beach, SC",2005-07-01,2005,7,Chicago O'Hare International Airport,41.9786,-87.9048,Myrtle Beach International Airport,33.6796989441,-78.9282989502
+1160013,CVG,MSP,"Cincinnati, OH","Minneapolis, MN",1995-03-01,1995,3,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+2473217,ORD,LIT,"Chicago, IL","Little Rock, AR",2002-08-01,2002,8,Chicago O'Hare International Airport,41.9786,-87.9048,Bill & Hillary Clinton National Airport/Adams Field,34.729582,-92.223728
+425473,DFW,MEM,"Dallas, TX","Memphis, TN",2002-07-01,2002,7,Dallas Fort Worth International Airport,32.896801,-97.038002,Memphis International Airport,35.04240036010742,-89.97669982910156
+1969285,SAT,HOU,"San Antonio, TX","Houston, TX",1998-06-01,1998,6,San Antonio International Airport,29.533701,-98.469803,William P Hobby Airport,29.645399,-95.2789
+282667,MHT,LAS,"Manchester, NH","Las Vegas, NV",2005-05-01,2005,5,Manchester-Boston Regional Airport,42.932598,-71.435699,Harry Reid International Airport,36.083361,-115.151817
+510847,EWR,LAX,"Newark, NJ","Los Angeles, CA",2006-01-01,2006,1,Newark Liberty International Airport,40.692501,-74.168701,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+1828314,HOU,OKC,"Houston, TX","Oklahoma City, OK",2002-08-01,2002,8,William P Hobby Airport,29.645399,-95.2789,Will Rogers World Airport,35.393101,-97.6007
+1587990,BOS,CVG,"Boston, MA","Cincinnati, OH",2003-10-01,2003,10,Logan International Airport,42.3643,-71.005203,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+2323059,EWR,MIA,"Newark, NJ","Miami, FL",2002-04-01,2002,4,Newark Liberty International Airport,40.692501,-74.168701,Miami International Airport,25.79319953918457,-80.29060363769531
+410795,DTW,MEM,"Detroit, MI","Memphis, TN",2004-11-01,2004,11,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Memphis International Airport,35.04240036010742,-89.97669982910156
+470849,CLT,BHM,"Charlotte, NC","Birmingham, AL",1997-06-01,1997,6,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Birmingham-Shuttlesworth International Airport,33.562901,-86.753502
+1462065,JAX,IAH,"Jacksonville, FL","Houston, TX",1990-11-01,1990,11,Jacksonville International Airport,30.49410057067871,-81.68789672851562,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+3344329,LRD,TOL,"Laredo, TX","Toledo, OH",2005-07-01,2005,7,Laredo International Airport,27.543800354003903,-99.46160125732422,Eugene F. Kranz Toledo Express Airport,41.5868,-83.8078
+57490,ALB,ORD,"Albany, NY","Chicago, IL",2000-02-01,2000,2,Albany International Airport,42.74829864501953,-73.80169677734375,Chicago O'Hare International Airport,41.9786,-87.9048
+1736782,LAX,SFO,"Los Angeles, CA","San Francisco, CA",2005-01-01,2005,1,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,San Francisco International Airport,37.61899948120117,-122.375
+2521914,ILN,SAN,"Wilmington, OH","San Diego, CA",2006-02-01,2006,2,Wilmington Airpark,39.427898407,-83.792098999,San Diego International Airport,32.7336006165,-117.190002441
+2191539,LGA,IND,"New York, NY","Indianapolis, IN",1997-01-01,1997,1,La Guardia Airport,40.777199,-73.872597,Indianapolis International Airport,39.7173,-86.294403
+582935,EUG,LAX,"Eugene, OR","Los Angeles, CA",2002-04-01,2002,4,Mahlon Sweet Field,44.12459945678711,-123.21199798583984,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+1159669,FSD,MSP,"Sioux Falls, SD","Minneapolis, MN",2009-12-01,2009,12,Sioux Falls Regional Airport / Joe Foss Field,43.585463,-96.741152,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+2908233,CLE,BWI,"Cleveland, OH","Baltimore, MD",1999-06-01,1999,6,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+2311456,DAL,MSY,"Dallas, TX","New Orleans, LA",1993-02-01,1993,2,Dallas Love Field,32.847099,-96.851799,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328
+971359,IAH,DFW,"Houston, TX","Dallas, TX",2005-08-01,2005,8,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,Dallas Fort Worth International Airport,32.896801,-97.038002
+2761448,CLE,LGA,"Cleveland, OH","New York, NY",2002-01-01,2002,1,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099,La Guardia Airport,40.777199,-73.872597
+1837969,STL,OMA,"St. Louis, MO","Omaha, NE",2003-07-01,2003,7,St Louis Lambert International Airport,38.748697,-90.370003,Eppley Airfield,41.3032,-95.894096
+294058,LAX,LAS,"Los Angeles, CA","Las Vegas, NV",1994-09-01,1994,9,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Harry Reid International Airport,36.083361,-115.151817
+1879587,PVD,CLE,"Providence, RI","Cleveland, OH",1998-07-01,1998,7,Theodore Francis Green State Airport,41.725038,-71.425668,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+1207220,DCA,MSP,"Washington, DC","Minneapolis, MN",1996-04-01,1996,4,Ronald Reagan Washington National Airport,38.8521,-77.037697,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+638471,SAN,RNO,"San Diego, CA","Reno, NV",1994-08-01,1994,8,San Diego International Airport,32.7336006165,-117.190002441,Reno Tahoe International Airport,39.49909973144531,-119.76799774169922
+2583564,ORD,BOS,"Chicago, IL","Boston, MA",2009-08-01,2009,8,Chicago O'Hare International Airport,41.9786,-87.9048,Logan International Airport,42.3643,-71.005203
+2525243,ORD,TUS,"Chicago, IL","Tucson, AZ",1993-07-01,1993,7,Chicago O'Hare International Airport,41.9786,-87.9048,Tucson International Airport / Morris Air National Guard Base,32.115004,-110.938053
+1531191,SFO,PHX,"San Francisco, CA","Phoenix, AZ",2000-06-01,2000,6,San Francisco International Airport,37.61899948120117,-122.375,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+2302081,ORD,MSY,"Chicago, IL","New Orleans, LA",2007-06-01,2007,6,Chicago O'Hare International Airport,41.9786,-87.9048,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328
+1778508,CLT,BNA,"Charlotte, NC","Nashville, TN",1993-07-01,1993,7,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Nashville International Airport,36.1245002746582,-86.6781997680664
+801374,BNA,DTW,"Nashville, TN","Detroit, MI",2009-10-01,2009,10,Nashville International Airport,36.1245002746582,-86.6781997680664,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+1475998,OKC,IAH,"Oklahoma City, OK","Houston, TX",1998-05-01,1998,5,Will Rogers World Airport,35.393101,-97.6007,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+3126266,PWM,ROC,"Portland, ME","Rochester, NY",2006-02-01,2006,2,Portland International Jetport,43.646198,-70.309303,Frederick Douglass Greater Rochester International Airport,43.1189,-77.672401
+1654473,BNA,JFK,"Nashville, TN","New York, NY",1991-09-01,1991,9,Nashville International Airport,36.1245002746582,-86.6781997680664,John F Kennedy International Airport,40.639447,-73.779317
+2667329,BWI,BDL,"Baltimore, MD","Hartford, CT",2008-12-01,2008,12,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Bradley International Airport,41.93851,-72.688066
+1742695,TUS,SFO,"Tucson, AZ","San Francisco, CA",2003-08-01,2003,8,Tucson International Airport / Morris Air National Guard Base,32.115004,-110.938053,San Francisco International Airport,37.61899948120117,-122.375
+587496,XNA,LAX,"Fayetteville, AR","Los Angeles, CA",2007-08-01,2007,8,Northwest Arkansas National Airport,36.281898,-94.306801,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+406817,EWR,MEM,"Newark, NJ","Memphis, TN",2003-12-01,2003,12,Newark Liberty International Airport,40.692501,-74.168701,Memphis International Airport,35.04240036010742,-89.97669982910156
+748763,PHX,IAD,"Phoenix, AZ","Washington, DC",1998-01-01,1998,1,Phoenix Sky Harbor International Airport,33.435302,-112.005905,Washington Dulles International Airport,38.9445,-77.455803
+1145813,PDX,GEG,"Portland, OR","Spokane, WA",1992-04-01,1992,4,Portland International Airport,45.58869934,-122.5979996,Spokane International Airport,47.6199,-117.533997
+88995,FLL,ORD,"Fort Lauderdale, FL","Chicago, IL",2003-06-01,2003,6,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702,Chicago O'Hare International Airport,41.9786,-87.9048
+2101789,CLT,MKE,"Charlotte, NC","Milwaukee, WI",1991-07-01,1991,7,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,General Mitchell International Airport,42.94720077514648,-87.89659881591797
+1289345,DTW,ATL,"Detroit, MI","Atlanta, GA",1990-02-01,1990,2,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+3415872,PHL,BTV,"Philadelphia, PA","Burlington, VT",2001-04-01,2001,4,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Burlington International Airport,44.471901,-73.153297
+3224997,EWR,GSO,"Newark, NJ","Greensboro, NC",1993-11-01,1993,11,Newark Liberty International Airport,40.692501,-74.168701,Piedmont Triad International Airport,36.097801,-79.937302
+3549348,MSP,BRD,"Minneapolis, MN","Brainerd, MN",2003-01-01,2003,1,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Brainerd Lakes Regional Airport,46.402861,-94.129727
+2565709,CVG,BOS,"Cincinnati, OH","Boston, MA",1995-04-01,1995,4,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Logan International Airport,42.3643,-71.005203
+3531485,PHL,BGM,"Philadelphia, PA","Binghamton, NY",2009-12-01,2009,12,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Greater Binghamton/Edwin A Link field,42.20869827,-75.97979736
+1387247,HOU,ATL,"Houston, TX","Atlanta, GA",1998-03-01,1998,3,William P Hobby Airport,29.645399,-95.2789,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+2748429,SNA,SEA,"Santa Ana, CA","Seattle, WA",2004-11-01,2004,11,John Wayne Orange County International Airport,33.675701,-117.867996,Seattle–Tacoma International Airport,47.449162,-122.311134
+2962788,DTW,CAK,"Detroit, MI","Akron, OH",2001-07-01,2001,7,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Akron Canton Regional Airport,40.91609954833984,-81.44219970703125
+1855494,ROC,CLE,"Rochester, NY","Cleveland, OH",2000-01-01,2000,1,Frederick Douglass Greater Rochester International Airport,43.1189,-77.672401,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+3222118,ACY,RIC,"Atlantic City, NJ","Richmond, VA",2005-10-01,2005,10,Atlantic City International Airport,39.45759963989258,-74.57720184326172,Richmond International Airport,37.50519943237305,-77.3197021484375
+708998,DCA,CLT,"Washington, DC","Charlotte, NC",1997-05-01,1997,5,Ronald Reagan Washington National Airport,38.8521,-77.037697,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+491165,LAX,HNL,"Los Angeles, CA","Honolulu, HI",1993-11-01,1993,11,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Daniel K Inouye International Airport,21.32062,-157.924228
+3379183,MSP,LSE,"Minneapolis, MN","La Crosse, WI",2007-01-01,2007,1,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,La Crosse Regional Airport,43.879002,-91.256699
+1535446,TUS,PHX,"Tucson, AZ","Phoenix, AZ",2000-08-01,2000,8,Tucson International Airport / Morris Air National Guard Base,32.115004,-110.938053,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+2087429,MSP,GFK,"Minneapolis, MN","Grand Forks, ND",2004-04-01,2004,4,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Grand Forks International Airport,47.949299,-97.176102
+3177975,PVD,GSP,"Providence, RI","Greenville, SC",2005-05-01,2005,5,Theodore Francis Green State Airport,41.725038,-71.425668,Greenville Spartanburg International Airport,34.895699,-82.218903
+3104850,PIT,ALB,"Pittsburgh, PA","Albany, NY",1993-09-01,1993,9,Pittsburgh International Airport,40.49150085,-80.23290253,Albany International Airport,42.74829864501953,-73.80169677734375
+601796,MSP,PDX,"Minneapolis, MN","Portland, OR",2006-01-01,2006,1,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Portland International Airport,45.58869934,-122.5979996
+259758,EVV,PIT,"Evansville, IN","Pittsburgh, PA",1994-09-01,1994,9,Evansville Regional Airport,38.0369987488,-87.5324020386,Pittsburgh International Airport,40.49150085,-80.23290253
+1429748,MEM,IAH,"Memphis, TN","Houston, TX",2005-01-01,2005,1,Memphis International Airport,35.04240036010742,-89.97669982910156,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+1028837,OKC,SLC,"Oklahoma City, OK","Salt Lake City, UT",2006-03-01,2006,3,Will Rogers World Airport,35.393101,-97.6007,Salt Lake City International Airport,40.785749,-111.979746
+1144894,GTF,GEG,"Great Falls, MT","Spokane, WA",2003-07-01,2003,7,Great Falls International Airport,47.48199844,-111.3710022,Spokane International Airport,47.6199,-117.533997
+2724285,SFO,SEA,"San Francisco, CA","Seattle, WA",1993-07-01,1993,7,San Francisco International Airport,37.61899948120117,-122.375,Seattle–Tacoma International Airport,47.449162,-122.311134
+2330364,PIT,MIA,"Pittsburgh, PA","Miami, FL",2001-01-01,2001,1,Pittsburgh International Airport,40.49150085,-80.23290253,Miami International Airport,25.79319953918457,-80.29060363769531
+812232,MEM,DTW,"Memphis, TN","Detroit, MI",2008-08-01,2008,8,Memphis International Airport,35.04240036010742,-89.97669982910156,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+1190699,MKE,MSP,"Milwaukee, WI","Minneapolis, MN",2005-06-01,2005,6,General Mitchell International Airport,42.94720077514648,-87.89659881591797,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+509548,EWR,LAX,"Newark, NJ","Los Angeles, CA",1994-01-01,1994,1,Newark Liberty International Airport,40.692501,-74.168701,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+495501,SFO,HNL,"San Francisco, CA","Honolulu, HI",1990-08-01,1990,8,San Francisco International Airport,37.61899948120117,-122.375,Daniel K Inouye International Airport,21.32062,-157.924228
+3242149,BOS,DAL,"Boston, MA","Dallas, TX",2005-07-01,2005,7,Logan International Airport,42.3643,-71.005203,Dallas Love Field,32.847099,-96.851799
+413389,BNA,MEM,"Nashville, TN","Memphis, TN",2004-10-01,2004,10,Nashville International Airport,36.1245002746582,-86.6781997680664,Memphis International Airport,35.04240036010742,-89.97669982910156
+1803071,TPA,BNA,"Tampa, FL","Nashville, TN",1990-09-01,1990,9,Tampa International Airport,27.975500106811523,-82.533203125,Nashville International Airport,36.1245002746582,-86.6781997680664
+2828633,ATL,HSV,"Atlanta, GA","Huntsville, AL",1991-10-01,1991,10,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Huntsville International Carl T Jones Field,34.637199,-86.775101
+746297,ROC,IAD,"Rochester, NY","Washington, DC",2006-03-01,2006,3,Frederick Douglass Greater Rochester International Airport,43.1189,-77.672401,Washington Dulles International Airport,38.9445,-77.455803
+662357,DTW,CLT,"Detroit, MI","Charlotte, NC",2009-08-01,2009,8,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+2979265,BNA,MCO,"Nashville, TN","Orlando, FL",2004-12-01,2004,12,Nashville International Airport,36.1245002746582,-86.6781997680664,Orlando International Airport,28.429399490356445,-81.30899810791016
+3183686,SLC,FAT,"Salt Lake City, UT","Fresno, CA",2007-09-01,2007,9,Salt Lake City International Airport,40.785749,-111.979746,Fresno Yosemite International Airport,36.776199,-119.718002
+1000547,PHX,SLC,"Phoenix, AZ","Salt Lake City, UT",2004-06-01,2004,6,Phoenix Sky Harbor International Airport,33.435302,-112.005905,Salt Lake City International Airport,40.785749,-111.979746
+385662,TUL,STL,"Tulsa, OK","St. Louis, MO",1998-09-01,1998,9,Tulsa International Airport,36.19839859008789,-95.88809967041016,St Louis Lambert International Airport,38.748697,-90.370003
+498005,SFO,HNL,"San Francisco, CA","Honolulu, HI",2007-02-01,2007,2,San Francisco International Airport,37.61899948120117,-122.375,Daniel K Inouye International Airport,21.32062,-157.924228
+1515562,STL,PHX,"St. Louis, MO","Phoenix, AZ",1997-04-01,1997,4,St Louis Lambert International Airport,38.748697,-90.370003,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+1727346,MSP,SFO,"Minneapolis, MN","San Francisco, CA",1998-10-01,1998,10,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,San Francisco International Airport,37.61899948120117,-122.375
+2181269,MEM,IND,"Memphis, TN","Indianapolis, IN",2005-06-01,2005,6,Memphis International Airport,35.04240036010742,-89.97669982910156,Indianapolis International Airport,39.7173,-86.294403
+2904356,STL,SGF,"St. Louis, MO","Springfield, MO",1991-07-01,1991,7,St Louis Lambert International Airport,38.748697,-90.370003,Springfield Branson National Airport,37.245701,-93.388603
+1041281,DTW,GRR,"Detroit, MI","Grand Rapids, MI",1999-10-01,1999,10,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Gerald R. Ford International Airport,42.88079834,-85.52279663
+2615724,CLT,SAT,"Charlotte, NC","San Antonio, TX",1990-12-01,1990,12,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,San Antonio International Airport,29.533701,-98.469803
+108467,DCA,ORD,"Washington, DC","Chicago, IL",1998-12-01,1998,12,Ronald Reagan Washington National Airport,38.8521,-77.037697,Chicago O'Hare International Airport,41.9786,-87.9048
+401189,SEA,MEM,"Seattle, WA","Memphis, TN",2005-02-01,2005,2,Seattle–Tacoma International Airport,47.449162,-122.311134,Memphis International Airport,35.04240036010742,-89.97669982910156
+706006,DAY,CLT,"Dayton, OH","Charlotte, NC",2004-06-01,2004,6,James M Cox Dayton International Airport,39.902401,-84.219398,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+1239869,FAR,MSP,"Fargo, ND","Minneapolis, MN",1991-11-01,1991,11,Hector International Airport,46.92070007324219,-96.81580352783205,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+280392,ORD,LAS,"Chicago, IL","Las Vegas, NV",2008-10-01,2008,10,Chicago O'Hare International Airport,41.9786,-87.9048,Harry Reid International Airport,36.083361,-115.151817
+2096414,MSP,COS,"Minneapolis, MN","Colorado Springs, CO",1996-03-01,1996,3,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,City of Colorado Springs Municipal Airport,38.805801,-104.700996
+862444,PBI,DTW,"West Palm Beach, FL","Detroit, MI",1994-05-01,1994,5,Palm Beach International Airport,26.68320083618164,-80.09559631347656,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+2903300,ORD,SGF,"Chicago, IL","Springfield, MO",2006-11-01,2006,11,Chicago O'Hare International Airport,41.9786,-87.9048,Springfield Branson National Airport,37.245701,-93.388603
+1605486,AUS,CVG,"Austin, TX","Cincinnati, OH",2001-09-01,2001,9,Austin Bergstrom International Airport,30.197535,-97.662015,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+1582071,ILN,SJC,"Wilmington, OH","San Jose, CA",2002-11-01,2002,11,Wilmington Airpark,39.427898407,-83.792098999,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188
+3075912,ATL,JAN,"Atlanta, GA","Jackson, MS",2009-08-01,2009,8,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Jackson-Medgar Wiley Evers International Airport,32.311199,-90.075897
+2814113,CLT,CHA,"Charlotte, NC","Chattanooga, TN",1994-12-01,1994,12,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Chattanooga Metropolitan Airport (Lovell Field),35.035301,-85.203796
+2826771,SKF,RFD,"San Antonio, TX","Rockford, IL",2008-08-01,2008,8,Lackland Air Force Base,29.38419914,-98.58110046,Chicago Rockford International Airport,42.1954,-89.097198
+3345098,SLC,GRK,"Salt Lake City, UT","Killeen, TX",2008-09-01,2008,9,Salt Lake City International Airport,40.785749,-111.979746,Killeen-Fort Hood Regional Airport / Robert Gray Army Air Field,31.0672,-97.828903
+229866,GSO,PIT,"Greensboro, NC","Pittsburgh, PA",1990-02-01,1990,2,Piedmont Triad International Airport,36.097801,-79.937302,Pittsburgh International Airport,40.49150085,-80.23290253
+499801,OGG,HNL,"Kahului, HI","Honolulu, HI",1994-07-01,1994,7,Kahului International Airport,20.898543,-156.431212,Daniel K Inouye International Airport,21.32062,-157.924228
+893157,BOS,DFW,"Boston, MA","Dallas, TX",2001-09-01,2001,9,Logan International Airport,42.3643,-71.005203,Dallas Fort Worth International Airport,32.896801,-97.038002
+3012082,TPA,MCO,"Tampa, FL","Orlando, FL",2001-08-01,2001,8,Tampa International Airport,27.975500106811523,-82.533203125,Orlando International Airport,28.429399490356445,-81.30899810791016
+3364299,BOS,PWM,"Boston, MA","Portland, ME",2004-09-01,2004,9,Logan International Airport,42.3643,-71.005203,Portland International Jetport,43.646198,-70.309303
+1346300,LIT,ATL,"Little Rock, AR","Atlanta, GA",2004-07-01,2004,7,Bill & Hillary Clinton National Airport/Adams Field,34.729582,-92.223728,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+2302577,DFW,MSY,"Dallas, TX","New Orleans, LA",1993-03-01,1993,3,Dallas Fort Worth International Airport,32.896801,-97.038002,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328
+1999859,CLE,PHL,"Cleveland, OH","Philadelphia, PA",2001-10-01,2001,10,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2075293,BUF,PHL,"Buffalo, NY","Philadelphia, PA",1993-01-01,1993,1,Buffalo Niagara International Airport,42.94049835,-78.73220062,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2663816,DTW,BDL,"Detroit, MI","Hartford, CT",1993-12-01,1993,12,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Bradley International Airport,41.93851,-72.688066
+1394120,FNT,ATL,"Flint, MI","Atlanta, GA",2008-10-01,2008,10,Bishop International Airport,42.96540069580078,-83.74359893798828,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+2790669,GSO,LGA,"Greensboro, NC","New York, NY",2006-05-01,2006,5,Piedmont Triad International Airport,36.097801,-79.937302,La Guardia Airport,40.777199,-73.872597
+1148921,SEA,MSP,"Seattle, WA","Minneapolis, MN",1990-03-01,1990,3,Seattle–Tacoma International Airport,47.449162,-122.311134,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+1794261,DFW,BNA,"Dallas, TX","Nashville, TN",2003-10-01,2003,10,Dallas Fort Worth International Airport,32.896801,-97.038002,Nashville International Airport,36.1245002746582,-86.6781997680664
+2789786,HSV,LGA,"Huntsville, AL","New York, NY",2007-09-01,2007,9,Huntsville International Carl T Jones Field,34.637199,-86.775101,La Guardia Airport,40.777199,-73.872597
+1738372,DAY,SFO,"Dayton, OH","San Francisco, CA",2003-04-01,2003,4,James M Cox Dayton International Airport,39.902401,-84.219398,San Francisco International Airport,37.61899948120117,-122.375
+3365443,IAD,PWM,"Washington, DC","Portland, ME",2008-05-01,2008,5,Washington Dulles International Airport,38.9445,-77.455803,Portland International Jetport,43.646198,-70.309303
+1930815,MSY,TPA,"New Orleans, LA","Tampa, FL",1999-04-01,1999,4,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328,Tampa International Airport,27.975500106811523,-82.533203125
+2039586,STL,PHL,"St. Louis, MO","Philadelphia, PA",2008-09-01,2008,9,St Louis Lambert International Airport,38.748697,-90.370003,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+3515838,YNG,SFB,"Youngstown, OH","Orlando, FL",2007-11-01,2007,11,Youngstown Warren Regional Airport,41.26070023,-80.67910004,Orlando Sanford International Airport,28.7775993347168,-81.23750305175781
+1622933,TPA,CVG,"Tampa, FL","Cincinnati, OH",1993-12-01,1993,12,Tampa International Airport,27.975500106811523,-82.533203125,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+3173407,DTW,GSP,"Detroit, MI","Greenville, SC",1998-12-01,1998,12,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Greenville Spartanburg International Airport,34.895699,-82.218903
+2131493,DTW,DSM,"Detroit, MI","Des Moines, IA",2007-11-01,2007,11,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Des Moines International Airport,41.534,-93.663101
+1059550,SAT,EWR,"San Antonio, TX","Newark, NJ",2007-01-01,2007,1,San Antonio International Airport,29.533701,-98.469803,Newark Liberty International Airport,40.692501,-74.168701
+1762662,ATL,SMF,"Atlanta, GA","Sacramento, CA",2001-05-01,2001,5,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Sacramento International Airport,38.69540023803711,-121.59100341796876
+1155322,EWR,MSP,"Newark, NJ","Minneapolis, MN",1999-02-01,1999,2,Newark Liberty International Airport,40.692501,-74.168701,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+984248,ABI,DFW,"Abilene, TX","Dallas, TX",2005-02-01,2005,2,Abilene Regional Airport,32.4113006592,-99.6819000244,Dallas Fort Worth International Airport,32.896801,-97.038002
+1091626,LAS,EWR,"Las Vegas, NV","Newark, NJ",2009-07-01,2009,7,Harry Reid International Airport,36.083361,-115.151817,Newark Liberty International Airport,40.692501,-74.168701
+2884719,BTM,BZN,"Butte, MT","Bozeman, MT",2002-05-01,2002,5,Bert Mooney Airport,45.95479965209961,-112.49700164794922,Gallatin Field,45.77750015,-111.1529999
+3477941,PIT,CRW,"Pittsburgh, PA","Charleston, WV",1999-10-01,1999,10,Pittsburgh International Airport,40.49150085,-80.23290253,Yeager Airport,38.3731,-81.593201
+2969390,SAT,MCO,"San Antonio, TX","Orlando, FL",2006-12-01,2006,12,San Antonio International Airport,29.533701,-98.469803,Orlando International Airport,28.429399490356445,-81.30899810791016
+2991627,ORD,MCO,"Chicago, IL","Orlando, FL",2006-05-01,2006,5,Chicago O'Hare International Airport,41.9786,-87.9048,Orlando International Airport,28.429399490356445,-81.30899810791016
+2062532,BTV,PHL,"Burlington, VT","Philadelphia, PA",2002-02-01,2002,2,Burlington International Airport,44.471901,-73.153297,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2429702,DAY,DCA,"Dayton, OH","Washington, DC",2009-03-01,2009,3,James M Cox Dayton International Airport,39.902401,-84.219398,Ronald Reagan Washington National Airport,38.8521,-77.037697
+648815,SMF,SNA,"Sacramento, CA","Santa Ana, CA",1993-10-01,1993,10,Sacramento International Airport,38.69540023803711,-121.59100341796876,John Wayne Orange County International Airport,33.675701,-117.867996
+1704940,SEA,SFO,"Seattle, WA","San Francisco, CA",2007-11-01,2007,11,Seattle–Tacoma International Airport,47.449162,-122.311134,San Francisco International Airport,37.61899948120117,-122.375
+2939265,RIC,BWI,"Richmond, VA","Baltimore, MD",2000-01-01,2000,1,Richmond International Airport,37.50519943237305,-77.3197021484375,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+1813772,IAD,OKC,"Washington, DC","Oklahoma City, OK",1990-02-01,1990,2,Washington Dulles International Airport,38.9445,-77.455803,Will Rogers World Airport,35.393101,-97.6007
+927499,SGF,DFW,"Springfield, MO","Dallas, TX",2008-08-01,2008,8,Springfield Branson National Airport,37.245701,-93.388603,Dallas Fort Worth International Airport,32.896801,-97.038002
+873662,AZO,DTW,"Kalamazoo, MI","Detroit, MI",1999-07-01,1999,7,Kalamazoo Battle Creek International Airport,42.234901428222656,-85.5521011352539,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+3152168,ORD,FLL,"Chicago, IL","Fort Lauderdale, FL",2000-10-01,2000,10,Chicago O'Hare International Airport,41.9786,-87.9048,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702
+446300,LAX,MEM,"Los Angeles, CA","Memphis, TN",2007-12-01,2007,12,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Memphis International Airport,35.04240036010742,-89.97669982910156
+2715679,STL,SEA,"St. Louis, MO","Seattle, WA",2006-07-01,2006,7,St Louis Lambert International Airport,38.748697,-90.370003,Seattle–Tacoma International Airport,47.449162,-122.311134
+3371669,SHV,LRD,"Shreveport, LA","Laredo, TX",2006-10-01,2006,10,Shreveport Regional Airport,32.446602,-93.8256,Laredo International Airport,27.543800354003903,-99.46160125732422
+735634,FLO,CLT,"Florence, SC","Charlotte, NC",2008-09-01,2008,9,Florence Regional Airport,34.18539810180664,-79.7238998413086,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+1692028,PHL,JFK,"Philadelphia, PA","New York, NY",1990-02-01,1990,2,Philadelphia International Airport,39.87189865112305,-75.24109649658203,John F Kennedy International Airport,40.639447,-73.779317
+2659575,CLE,BDL,"Cleveland, OH","Hartford, CT",2001-05-01,2001,5,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099,Bradley International Airport,41.93851,-72.688066
+1584627,CLT,CVG,"Charlotte, NC","Cincinnati, OH",2007-10-01,2007,10,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+2225434,DFW,MCI,"Dallas, TX","Kansas City, MO",2004-05-01,2004,5,Dallas Fort Worth International Airport,32.896801,-97.038002,Kansas City International Airport,39.2976,-94.713898
+629651,LAS,RNO,"Las Vegas, NV","Reno, NV",2007-07-01,2007,7,Harry Reid International Airport,36.083361,-115.151817,Reno Tahoe International Airport,39.49909973144531,-119.76799774169922
+1911016,MEM,AUS,"Memphis, TN","Austin, TX",2008-04-01,2008,4,Memphis International Airport,35.04240036010742,-89.97669982910156,Austin Bergstrom International Airport,30.197535,-97.662015
+2295263,PIT,MSY,"Pittsburgh, PA","New Orleans, LA",1995-11-01,1995,11,Pittsburgh International Airport,40.49150085,-80.23290253,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328
+2080343,SBY,PHL,"Salisbury, MD","Philadelphia, PA",2004-02-01,2004,2,Salisbury Ocean City Wicomico Regional Airport,38.34049987792969,-75.51029968261719,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2036065,MHT,PHL,"Manchester, NH","Philadelphia, PA",2004-05-01,2004,5,Manchester-Boston Regional Airport,42.932598,-71.435699,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2029395,MCO,PHL,"Orlando, FL","Philadelphia, PA",2009-12-01,2009,12,Orlando International Airport,28.429399490356445,-81.30899810791016,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+1106173,IND,EWR,"Indianapolis, IN","Newark, NJ",2007-12-01,2007,12,Indianapolis International Airport,39.7173,-86.294403,Newark Liberty International Airport,40.692501,-74.168701
+1963263,PBI,TPA,"West Palm Beach, FL","Tampa, FL",1998-02-01,1998,2,Palm Beach International Airport,26.68320083618164,-80.09559631347656,Tampa International Airport,27.975500106811523,-82.533203125
+2500416,PHX,SAN,"Phoenix, AZ","San Diego, CA",2001-11-01,2001,11,Phoenix Sky Harbor International Airport,33.435302,-112.005905,San Diego International Airport,32.7336006165,-117.190002441
+1404953,AEX,ATL,"Alexandria, LA","Atlanta, GA",2000-08-01,2000,8,Alexandria International Airport,31.3274,-92.549797,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+1470629,BTR,IAH,"Baton Rouge, LA","Houston, TX",2008-01-01,2008,1,Baton Rouge Metropolitan Airport,30.533199,-91.149597,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+3456434,ATL,MOB,"Atlanta, GA","Mobile, AL",2003-06-01,2003,6,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Mobile Regional Airport,30.6912,-88.242798
+1484401,LFT,IAH,"Lafayette, LA","Houston, TX",1997-12-01,1997,12,Lafayette Regional Airport,30.205299,-91.987602,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+1614607,SYR,CVG,"Syracuse, NY","Cincinnati, OH",1999-02-01,1999,2,Syracuse Hancock International Airport,43.11119842529297,-76.1063003540039,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+780919,IAH,IAD,"Houston, TX","Washington, DC",2008-02-01,2008,2,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,Washington Dulles International Airport,38.9445,-77.455803
+2096369,LGA,COS,"New York, NY","Colorado Springs, CO",2008-08-01,2008,8,La Guardia Airport,40.777199,-73.872597,City of Colorado Springs Municipal Airport,38.805801,-104.700996
+912947,MCO,DFW,"Orlando, FL","Dallas, TX",2006-08-01,2006,8,Orlando International Airport,28.429399490356445,-81.30899810791016,Dallas Fort Worth International Airport,32.896801,-97.038002
+2116833,STL,MKE,"St. Louis, MO","Milwaukee, WI",1995-12-01,1995,12,St Louis Lambert International Airport,38.748697,-90.370003,General Mitchell International Airport,42.94720077514648,-87.89659881591797
+3091990,STL,DAY,"St. Louis, MO","Dayton, OH",2006-01-01,2006,1,St Louis Lambert International Airport,38.748697,-90.370003,James M Cox Dayton International Airport,39.902401,-84.219398
+2132462,MEM,DSM,"Memphis, TN","Des Moines, IA",2008-09-01,2008,9,Memphis International Airport,35.04240036010742,-89.97669982910156,Des Moines International Airport,41.534,-93.663101
+3156576,LGA,FLL,"New York, NY","Fort Lauderdale, FL",1995-11-01,1995,11,La Guardia Airport,40.777199,-73.872597,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702
+3532254,SHD,LYH,"Staunton, VA","Lynchburg, VA",1991-03-01,1991,3,Shenandoah Valley Regional Airport,38.263802,-78.8964,Lynchburg Regional Airport - Preston Glenn Field,37.326698,-79.200401
+3503784,CLT,ILM,"Charlotte, NC","Wilmington, NC",2006-10-01,2006,10,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Wilmington International Airport,34.270599365234375,-77.90260314941406
+1140083,MEM,GEG,"Memphis, TN","Spokane, WA",2008-04-01,2008,4,Memphis International Airport,35.04240036010742,-89.97669982910156,Spokane International Airport,47.6199,-117.533997
+1313840,ORD,ATL,"Chicago, IL","Atlanta, GA",2000-08-01,2000,8,Chicago O'Hare International Airport,41.9786,-87.9048,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+3013344,DCA,MCO,"Washington, DC","Orlando, FL",2003-10-01,2003,10,Ronald Reagan Washington National Airport,38.8521,-77.037697,Orlando International Airport,28.429399490356445,-81.30899810791016
+511340,EWR,LAX,"Newark, NJ","Los Angeles, CA",2009-11-01,2009,11,Newark Liberty International Airport,40.692501,-74.168701,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+2308334,LAX,MSY,"Los Angeles, CA","New Orleans, LA",1995-02-01,1995,2,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328
+2894456,XNA,ICT,"Fayetteville, AR","Wichita, KS",2009-02-01,2009,2,Northwest Arkansas National Airport,36.281898,-94.306801,Wichita Eisenhower National Airport,37.649899,-97.433098
+2782116,MCO,LGA,"Orlando, FL","New York, NY",2009-04-01,2009,4,Orlando International Airport,28.429399490356445,-81.30899810791016,La Guardia Airport,40.777199,-73.872597
+3104528,BWI,ALB,"Baltimore, MD","Albany, NY",2005-10-01,2005,10,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Albany International Airport,42.74829864501953,-73.80169677734375
+1623529,TPA,CVG,"Tampa, FL","Cincinnati, OH",2008-10-01,2008,10,Tampa International Airport,27.975500106811523,-82.533203125,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+2806500,CHO,LGA,"Charlottesville, VA","New York, NY",2007-07-01,2007,7,Charlottesville Albemarle Airport,38.13859939575195,-78.4529037475586,La Guardia Airport,40.777199,-73.872597
+3235035,LGA,GSO,"New York, NY","Greensboro, NC",2007-10-01,2007,10,La Guardia Airport,40.777199,-73.872597,Piedmont Triad International Airport,36.097801,-79.937302
+97232,DSM,ORD,"Des Moines, IA","Chicago, IL",1999-01-01,1999,1,Des Moines International Airport,41.534,-93.663101,Chicago O'Hare International Airport,41.9786,-87.9048
+1749893,IAH,SFO,"Houston, TX","San Francisco, CA",2004-05-01,2004,5,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,San Francisco International Airport,37.61899948120117,-122.375
+2283060,ATL,TYS,"Atlanta, GA","Knoxville, TN",2009-09-01,2009,9,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,McGhee Tyson Airport,35.811001,-83.994003
+2496887,EWR,SAN,"Newark, NJ","San Diego, CA",2009-12-01,2009,12,Newark Liberty International Airport,40.692501,-74.168701,San Diego International Airport,32.7336006165,-117.190002441
+209830,BWI,PIT,"Baltimore, MD","Pittsburgh, PA",1993-11-01,1993,11,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Pittsburgh International Airport,40.49150085,-80.23290253
+1652106,DTW,JFK,"Detroit, MI","New York, NY",2007-06-01,2007,6,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,John F Kennedy International Airport,40.639447,-73.779317
+1698126,BIF,JFK,"El Paso, TX","New York, NY",2007-06-01,2007,6,Biggs Army Air Field (Fort Bliss),31.84950066,-106.3799973,John F Kennedy International Airport,40.639447,-73.779317
+497919,SFO,HNL,"San Francisco, CA","Honolulu, HI",2006-05-01,2006,5,San Francisco International Airport,37.61899948120117,-122.375,Daniel K Inouye International Airport,21.32062,-157.924228
+1009184,AUS,SLC,"Austin, TX","Salt Lake City, UT",2006-06-01,2006,6,Austin Bergstrom International Airport,30.197535,-97.662015,Salt Lake City International Airport,40.785749,-111.979746
+1296440,BNA,ATL,"Nashville, TN","Atlanta, GA",2008-09-01,2008,9,Nashville International Airport,36.1245002746582,-86.6781997680664,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+863833,CMH,DTW,"Columbus, OH","Detroit, MI",1992-03-01,1992,3,John Glenn Columbus International Airport,39.998001,-82.891899,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+834873,MSP,DTW,"Minneapolis, MN","Detroit, MI",2008-06-01,2008,6,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+399383,JLN,STL,"Joplin, MO","St. Louis, MO",2000-02-01,2000,2,Joplin Regional Airport,37.151798,-94.498299,St Louis Lambert International Airport,38.748697,-90.370003
+2031914,ORD,PHL,"Chicago, IL","Philadelphia, PA",2006-04-01,2006,4,Chicago O'Hare International Airport,41.9786,-87.9048,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+3427853,CAE,SAV,"Columbia, SC","Savannah, GA",2006-09-01,2006,9,Columbia Metropolitan Airport,33.938801,-81.119499,Savannah Hilton Head International Airport,32.12760162,-81.20210266
+1700423,PDX,RDM,"Portland, OR","Bend, OR",2009-04-01,2009,4,Portland International Airport,45.58869934,-122.5979996,Roberts Field,44.2541008,-121.1500015
+3531932,ATL,LYH,"Atlanta, GA","Lynchburg, VA",1996-03-01,1996,3,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Lynchburg Regional Airport - Preston Glenn Field,37.326698,-79.200401
+493906,LAX,HNL,"Los Angeles, CA","Honolulu, HI",2002-12-01,2002,12,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Daniel K Inouye International Airport,21.32062,-157.924228
+388579,OKC,STL,"Oklahoma City, OK","St. Louis, MO",1994-03-01,1994,3,Will Rogers World Airport,35.393101,-97.6007,St Louis Lambert International Airport,38.748697,-90.370003
+640433,PHX,SNA,"Phoenix, AZ","Santa Ana, CA",1991-04-01,1991,4,Phoenix Sky Harbor International Airport,33.435302,-112.005905,John Wayne Orange County International Airport,33.675701,-117.867996
+2874150,LIT,MDW,"Little Rock, AR","Chicago, IL",2009-07-01,2009,7,Bill & Hillary Clinton National Airport/Adams Field,34.729582,-92.223728,Chicago Midway International Airport,41.785999,-87.752403
+1671342,AUS,JFK,"Austin, TX","New York, NY",2007-01-01,2007,1,Austin Bergstrom International Airport,30.197535,-97.662015,John F Kennedy International Airport,40.639447,-73.779317
+1397800,CHA,ATL,"Chattanooga, TN","Atlanta, GA",2005-06-01,2005,6,Chattanooga Metropolitan Airport (Lovell Field),35.035301,-85.203796,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+957341,JAN,DFW,"Jackson, MS","Dallas, TX",1993-11-01,1993,11,Jackson-Medgar Wiley Evers International Airport,32.311199,-90.075897,Dallas Fort Worth International Airport,32.896801,-97.038002
+3350498,LGA,LEX,"New York, NY","Lexington, KY",2008-01-01,2008,1,La Guardia Airport,40.777199,-73.872597,Blue Grass Airport,38.036499,-84.605904
+295101,LAX,LAS,"Los Angeles, CA","Las Vegas, NV",1999-08-01,1999,8,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Harry Reid International Airport,36.083361,-115.151817
+537536,COS,LAX,"Colorado Springs, CO","Los Angeles, CA",2001-04-01,2001,4,City of Colorado Springs Municipal Airport,38.805801,-104.700996,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+3562823,FNT,APN,"Flint, MI","Alpena, MI",2004-04-01,2004,4,Bishop International Airport,42.96540069580078,-83.74359893798828,Alpena County Regional Airport,45.0780983,-83.56030273
+702387,LIT,CLT,"Little Rock, AR","Charlotte, NC",2008-12-01,2008,12,Bill & Hillary Clinton National Airport/Adams Field,34.729582,-92.223728,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+2015477,BWI,PHL,"Baltimore, MD","Philadelphia, PA",1996-05-01,1996,5,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2678804,DSM,BDL,"Des Moines, IA","Hartford, CT",2003-09-01,2003,9,Des Moines International Airport,41.534,-93.663101,Bradley International Airport,41.93851,-72.688066
+46732,MIA,ORD,"Miami, FL","Chicago, IL",1998-05-01,1998,5,Miami International Airport,25.79319953918457,-80.29060363769531,Chicago O'Hare International Airport,41.9786,-87.9048
+277734,MEM,LAS,"Memphis, TN","Las Vegas, NV",2009-02-01,2009,2,Memphis International Airport,35.04240036010742,-89.97669982910156,Harry Reid International Airport,36.083361,-115.151817
+1520237,OMA,PHX,"Omaha, NE","Phoenix, AZ",2004-07-01,2004,7,Eppley Airfield,41.3032,-95.894096,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+1488390,LRD,IAH,"Laredo, TX","Houston, TX",2001-01-01,2001,1,Laredo International Airport,27.543800354003903,-99.46160125732422,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+3080733,LFT,JAN,"Lafayette, LA","Jackson, MS",2001-02-01,2001,2,Lafayette Regional Airport,30.205299,-91.987602,Jackson-Medgar Wiley Evers International Airport,32.311199,-90.075897
+3402875,ORD,PBI,"Chicago, IL","West Palm Beach, FL",2003-04-01,2003,4,Chicago O'Hare International Airport,41.9786,-87.9048,Palm Beach International Airport,26.68320083618164,-80.09559631347656
+1637168,HOU,CVG,"Houston, TX","Cincinnati, OH",2004-09-01,2004,9,William P Hobby Airport,29.645399,-95.2789,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+1171176,ATL,MSP,"Atlanta, GA","Minneapolis, MN",1997-05-01,1997,5,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+3354693,DFW,ILN,"Dallas, TX","Wilmington, OH",2003-01-01,2003,1,Dallas Fort Worth International Airport,32.896801,-97.038002,Wilmington Airpark,39.427898407,-83.792098999
+2224725,DFW,MCI,"Dallas, TX","Kansas City, MO",1991-11-01,1991,11,Dallas Fort Worth International Airport,32.896801,-97.038002,Kansas City International Airport,39.2976,-94.713898
+407093,EWR,MEM,"Newark, NJ","Memphis, TN",2006-02-01,2006,2,Newark Liberty International Airport,40.692501,-74.168701,Memphis International Airport,35.04240036010742,-89.97669982910156
+2655753,RST,EKO,"Rochester, MN","Elko, NV",1994-06-01,1994,6,Rochester International Airport,43.908298,-92.5,Elko Regional Airport,40.82490158081055,-115.79199981689452
+712343,CAE,CLT,"Columbia, SC","Charlotte, NC",1999-02-01,1999,2,Columbia Metropolitan Airport,33.938801,-81.119499,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594
+2628362,JFK,SAT,"New York, NY","San Antonio, TX",2004-07-01,2004,7,John F Kennedy International Airport,40.639447,-73.779317,San Antonio International Airport,29.533701,-98.469803
+1279075,CLT,ATL,"Charlotte, NC","Atlanta, GA",2009-06-01,2009,6,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+3292203,MKE,BFI,"Milwaukee, WI","Seattle, WA",2003-02-01,2003,2,General Mitchell International Airport,42.94720077514648,-87.89659881591797,Boeing Field King County International Airport,47.529999,-122.302002
+3433715,CLE,MHT,"Cleveland, OH","Manchester, NH",2006-12-01,2006,12,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099,Manchester-Boston Regional Airport,42.932598,-71.435699
+1792349,ORD,BNA,"Chicago, IL","Nashville, TN",1999-03-01,1999,3,Chicago O'Hare International Airport,41.9786,-87.9048,Nashville International Airport,36.1245002746582,-86.6781997680664
+511430,BOS,LAX,"Boston, MA","Los Angeles, CA",1991-01-01,1991,1,Logan International Airport,42.3643,-71.005203,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+2225460,DFW,MCI,"Dallas, TX","Kansas City, MO",2004-09-01,2004,9,Dallas Fort Worth International Airport,32.896801,-97.038002,Kansas City International Airport,39.2976,-94.713898
+1078090,ATL,EWR,"Atlanta, GA","Newark, NJ",2004-03-01,2004,3,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Newark Liberty International Airport,40.692501,-74.168701
+338962,BWI,STL,"Baltimore, MD","St. Louis, MO",2007-12-01,2007,12,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,St Louis Lambert International Airport,38.748697,-90.370003
+792668,EWR,DTW,"Newark, NJ","Detroit, MI",2003-07-01,2003,7,Newark Liberty International Airport,40.692501,-74.168701,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+2584516,DFW,BOS,"Dallas, TX","Boston, MA",2003-09-01,2003,9,Dallas Fort Worth International Airport,32.896801,-97.038002,Logan International Airport,42.3643,-71.005203
+1012021,MSP,SLC,"Minneapolis, MN","Salt Lake City, UT",2004-09-01,2004,9,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Salt Lake City International Airport,40.785749,-111.979746
+2127358,CMH,MKE,"Columbus, OH","Milwaukee, WI",1995-09-01,1995,9,John Glenn Columbus International Airport,39.998001,-82.891899,General Mitchell International Airport,42.94720077514648,-87.89659881591797
+3267291,EWR,PVD,"Newark, NJ","Providence, RI",2006-11-01,2006,11,Newark Liberty International Airport,40.692501,-74.168701,Theodore Francis Green State Airport,41.725038,-71.425668
+1265826,FAI,ANC,"Fairbanks, AK","Anchorage, AK",1998-01-01,1998,1,Fairbanks International Airport,64.81510162,-147.8560028,Ted Stevens Anchorage International Airport,61.1744,-149.996002
+2997640,RDU,MCO,"Raleigh, NC","Orlando, FL",2004-03-01,2004,3,Raleigh Durham International Airport,35.877602,-78.787498,Orlando International Airport,28.429399490356445,-81.30899810791016
+1002109,ATL,SLC,"Atlanta, GA","Salt Lake City, UT",2001-05-01,2001,5,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Salt Lake City International Airport,40.785749,-111.979746
+2128294,IAH,MKE,"Houston, TX","Milwaukee, WI",1998-01-01,1998,1,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,General Mitchell International Airport,42.94720077514648,-87.89659881591797
+3432178,GSO,ROA,"Greensboro, NC","Roanoke, VA",1992-05-01,1992,5,Piedmont Triad International Airport,36.097801,-79.937302,Roanoke–Blacksburg Regional Airport,37.3255,-79.975403
+2071260,PBI,PHL,"West Palm Beach, FL","Philadelphia, PA",1999-04-01,1999,4,Palm Beach International Airport,26.68320083618164,-80.09559631347656,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2732452,PHL,SEA,"Philadelphia, PA","Seattle, WA",2000-11-01,2000,11,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Seattle–Tacoma International Airport,47.449162,-122.311134
+152297,PIA,ORD,"Peoria, IL","Chicago, IL",1993-01-01,1993,1,General Wayne A. Downing Peoria International Airport,40.6642,-89.693298,Chicago O'Hare International Airport,41.9786,-87.9048
+2189822,STL,IND,"St. Louis, MO","Indianapolis, IN",2001-12-01,2001,12,St Louis Lambert International Airport,38.748697,-90.370003,Indianapolis International Airport,39.7173,-86.294403
+2428530,MCI,DCA,"Kansas City, MO","Washington, DC",2000-06-01,2000,6,Kansas City International Airport,39.2976,-94.713898,Ronald Reagan Washington National Airport,38.8521,-77.037697
+1880985,JFK,CLE,"New York, NY","Cleveland, OH",2000-08-01,2000,8,John F Kennedy International Airport,40.639447,-73.779317,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+849701,TPA,DTW,"Tampa, FL","Detroit, MI",1999-10-01,1999,10,Tampa International Airport,27.975500106811523,-82.533203125,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+3530520,PIT,BGM,"Pittsburgh, PA","Binghamton, NY",1991-10-01,1991,10,Pittsburgh International Airport,40.49150085,-80.23290253,Greater Binghamton/Edwin A Link field,42.20869827,-75.97979736
+1814400,PHX,OKC,"Phoenix, AZ","Oklahoma City, OK",1997-05-01,1997,5,Phoenix Sky Harbor International Airport,33.435302,-112.005905,Will Rogers World Airport,35.393101,-97.6007
+2028917,MCO,PHL,"Orlando, FL","Philadelphia, PA",2006-12-01,2006,12,Orlando International Airport,28.429399490356445,-81.30899810791016,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2058873,LAX,PHL,"Los Angeles, CA","Philadelphia, PA",2002-02-01,2002,2,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2511367,LAX,SAN,"Los Angeles, CA","San Diego, CA",1999-03-01,1999,3,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,San Diego International Airport,32.7336006165,-117.190002441
+901691,PHX,DFW,"Phoenix, AZ","Dallas, TX",1996-12-01,1996,12,Phoenix Sky Harbor International Airport,33.435302,-112.005905,Dallas Fort Worth International Airport,32.896801,-97.038002
+542307,JFK,LAX,"New York, NY","Los Angeles, CA",1995-06-01,1995,6,John F Kennedy International Airport,40.639447,-73.779317,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+2494010,MAF,LBB,"Midland, TX","Lubbock, TX",2003-09-01,2003,9,Midland International Air and Space Port,31.942499,-102.202003,Lubbock Preston Smith International Airport,33.663601,-101.822998
+2939263,RIC,BWI,"Richmond, VA","Baltimore, MD",2000-01-01,2000,1,Richmond International Airport,37.50519943237305,-77.3197021484375,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+2439012,ILM,DCA,"Wilmington, NC","Washington, DC",2004-02-01,2004,2,Wilmington International Airport,34.270599365234375,-77.90260314941406,Ronald Reagan Washington National Airport,38.8521,-77.037697
+541559,JFK,LAX,"New York, NY","Los Angeles, CA",1992-06-01,1992,6,John F Kennedy International Airport,40.639447,-73.779317,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+383624,ICT,STL,"Wichita, KS","St. Louis, MO",1999-05-01,1999,5,Wichita Eisenhower National Airport,37.649899,-97.433098,St Louis Lambert International Airport,38.748697,-90.370003
+1642647,SEA,LWS,"Seattle, WA","Lewiston, ID",2000-03-01,2000,3,Seattle–Tacoma International Airport,47.449162,-122.311134,Lewiston Nez Perce County Airport,46.3745002746582,-117.01499938964844
+594664,DTW,PDX,"Detroit, MI","Portland, OR",2002-05-01,2002,5,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Portland International Airport,45.58869934,-122.5979996
+389573,OKC,STL,"Oklahoma City, OK","St. Louis, MO",2009-09-01,2009,9,Will Rogers World Airport,35.393101,-97.6007,St Louis Lambert International Airport,38.748697,-90.370003
+1290342,DTW,ATL,"Detroit, MI","Atlanta, GA",1997-06-01,1997,6,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+1585240,MSY,CVG,"New Orleans, LA","Cincinnati, OH",1990-09-01,1990,9,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+2984600,ATL,MCO,"Atlanta, GA","Orlando, FL",2003-11-01,2003,11,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Orlando International Airport,28.429399490356445,-81.30899810791016
+2447269,BWI,CMH,"Baltimore, MD","Columbus, OH",2003-04-01,2003,4,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,John Glenn Columbus International Airport,39.998001,-82.891899
+224680,STL,PIT,"St. Louis, MO","Pittsburgh, PA",2003-02-01,2003,2,St Louis Lambert International Airport,38.748697,-90.370003,Pittsburgh International Airport,40.49150085,-80.23290253
+1623665,DCA,CVG,"Washington, DC","Cincinnati, OH",1992-01-01,1992,1,Ronald Reagan Washington National Airport,38.8521,-77.037697,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+1767154,LAX,SMF,"Los Angeles, CA","Sacramento, CA",1996-01-01,1996,1,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997,Sacramento International Airport,38.69540023803711,-121.59100341796876
+2681448,PHL,BDL,"Philadelphia, PA","Hartford, CT",1992-11-01,1992,11,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Bradley International Airport,41.93851,-72.688066
+3230788,MEM,GSO,"Memphis, TN","Greensboro, NC",2003-05-01,2003,5,Memphis International Airport,35.04240036010742,-89.97669982910156,Piedmont Triad International Airport,36.097801,-79.937302
+1134081,MYR,EWR,"Myrtle Beach, SC","Newark, NJ",2007-10-01,2007,10,Myrtle Beach International Airport,33.6796989441,-78.9282989502,Newark Liberty International Airport,40.692501,-74.168701
+1571462,STL,SJC,"St. Louis, MO","San Jose, CA",1990-05-01,1990,5,St Louis Lambert International Airport,38.748697,-90.370003,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188
+251011,PHL,PIT,"Philadelphia, PA","Pittsburgh, PA",2003-11-01,2003,11,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Pittsburgh International Airport,40.49150085,-80.23290253
+105958,BTV,ORD,"Burlington, VT","Chicago, IL",2008-08-01,2008,8,Burlington International Airport,44.471901,-73.153297,Chicago O'Hare International Airport,41.9786,-87.9048
+1404134,VLD,ATL,"Valdosta, GA","Atlanta, GA",2001-04-01,2001,4,Valdosta Regional Airport,30.78249931335449,-83.27670288085938,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+1031628,PDX,SLC,"Portland, OR","Salt Lake City, UT",1991-05-01,1991,5,Portland International Airport,45.58869934,-122.5979996,Salt Lake City International Airport,40.785749,-111.979746
+1850280,BOS,CLE,"Boston, MA","Cleveland, OH",2000-01-01,2000,1,Logan International Airport,42.3643,-71.005203,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+2625773,LAS,SAT,"Las Vegas, NV","San Antonio, TX",1999-04-01,1999,4,Harry Reid International Airport,36.083361,-115.151817,San Antonio International Airport,29.533701,-98.469803
+442839,LIT,MEM,"Little Rock, AR","Memphis, TN",1998-09-01,1998,9,Bill & Hillary Clinton National Airport/Adams Field,34.729582,-92.223728,Memphis International Airport,35.04240036010742,-89.97669982910156
+2759860,CWA,GRB,"Wausau, WI","Green Bay, WI",1992-01-01,1992,1,Central Wisconsin Airport,44.7775993347,-89.6668014526,Austin Straubel International Airport,44.483459,-88.130805
+1267310,FAI,ANC,"Fairbanks, AK","Anchorage, AK",2007-09-01,2007,9,Fairbanks International Airport,64.81510162,-147.8560028,Ted Stevens Anchorage International Airport,61.1744,-149.996002
+1779166,CLT,BNA,"Charlotte, NC","Nashville, TN",2004-07-01,2004,7,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Nashville International Airport,36.1245002746582,-86.6781997680664
+2015831,BWI,PHL,"Baltimore, MD","Philadelphia, PA",2000-10-01,2000,10,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2463362,DCA,CMH,"Washington, DC","Columbus, OH",1996-08-01,1996,8,Ronald Reagan Washington National Airport,38.8521,-77.037697,John Glenn Columbus International Airport,39.998001,-82.891899
+2611072,CMH,BOS,"Columbus, OH","Boston, MA",2006-09-01,2006,9,John Glenn Columbus International Airport,39.998001,-82.891899,Logan International Airport,42.3643,-71.005203
+1830401,EWR,OMA,"Newark, NJ","Omaha, NE",2004-04-01,2004,4,Newark Liberty International Airport,40.692501,-74.168701,Eppley Airfield,41.3032,-95.894096
+1153094,CLT,MSP,"Charlotte, NC","Minneapolis, MN",2005-08-01,2005,8,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+519612,PHX,LAX,"Phoenix, AZ","Los Angeles, CA",1999-09-01,1999,9,Phoenix Sky Harbor International Airport,33.435302,-112.005905,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+1593673,PIT,CVG,"Pittsburgh, PA","Cincinnati, OH",1996-03-01,1996,3,Pittsburgh International Airport,40.49150085,-80.23290253,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+328872,MSY,STL,"New Orleans, LA","St. Louis, MO",1994-05-01,1994,5,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328,St Louis Lambert International Airport,38.748697,-90.370003
+3199417,PDX,RDD,"Portland, OR","Redding, CA",2008-12-01,2008,12,Portland International Airport,45.58869934,-122.5979996,Redding Municipal Airport,40.50899887,-122.2929993
+1466288,PHL,IAH,"Philadelphia, PA","Houston, TX",1999-03-01,1999,3,Philadelphia International Airport,39.87189865112305,-75.24109649658203,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+2226879,MHT,MCI,"Manchester, NH","Kansas City, MO",2003-12-01,2003,12,Manchester-Boston Regional Airport,42.932598,-71.435699,Kansas City International Airport,39.2976,-94.713898
+1666963,ORD,JFK,"Chicago, IL","New York, NY",1998-01-01,1998,1,Chicago O'Hare International Airport,41.9786,-87.9048,John F Kennedy International Airport,40.639447,-73.779317
+2946683,BDL,BWI,"Hartford, CT","Baltimore, MD",1995-01-01,1995,1,Bradley International Airport,41.93851,-72.688066,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+2464733,MDW,CMH,"Chicago, IL","Columbus, OH",1998-02-01,1998,2,Chicago Midway International Airport,41.785999,-87.752403,John Glenn Columbus International Airport,39.998001,-82.891899
+482461,MDW,BHM,"Chicago, IL","Birmingham, AL",1999-11-01,1999,11,Chicago Midway International Airport,41.785999,-87.752403,Birmingham-Shuttlesworth International Airport,33.562901,-86.753502
+1256287,MSP,ANC,"Minneapolis, MN","Anchorage, AK",2002-06-01,2002,6,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Ted Stevens Anchorage International Airport,61.1744,-149.996002
+3539669,CLT,FLO,"Charlotte, NC","Florence, SC",2005-06-01,2005,6,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Florence Regional Airport,34.18539810180664,-79.7238998413086
+299598,HNL,LAS,"Honolulu, HI","Las Vegas, NV",1993-01-01,1993,1,Daniel K Inouye International Airport,21.32062,-157.924228,Harry Reid International Airport,36.083361,-115.151817
+3065258,EWR,MDT,"Newark, NJ","Harrisburg, PA",2003-11-01,2003,11,Newark Liberty International Airport,40.692501,-74.168701,Harrisburg International Airport,40.193501,-76.763397
+1469499,LEX,IAH,"Lexington, KY","Houston, TX",2009-12-01,2009,12,Blue Grass Airport,38.036499,-84.605904,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+1555168,SNA,PHX,"Santa Ana, CA","Phoenix, AZ",2000-08-01,2000,8,John Wayne Orange County International Airport,33.675701,-117.867996,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+2521662,BFI,SAN,"Seattle, WA","San Diego, CA",2007-11-01,2007,11,Boeing Field King County International Airport,47.529999,-122.302002,San Diego International Airport,32.7336006165,-117.190002441
+747126,BWI,IAD,"Baltimore, MD","Washington, DC",2002-02-01,2002,2,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Washington Dulles International Airport,38.9445,-77.455803
+3124636,LGA,ROC,"New York, NY","Rochester, NY",2006-12-01,2006,12,La Guardia Airport,40.777199,-73.872597,Frederick Douglass Greater Rochester International Airport,43.1189,-77.672401
+2557208,FCA,MSO,"Kalispell, MT","Missoula, MT",1990-05-01,1990,5,Glacier Park International Airport,48.31050109863281,-114.25599670410156,Missoula International Airport,46.91630173,-114.0910034
+2747886,SJC,SEA,"San Jose, CA","Seattle, WA",2009-01-01,2009,1,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188,Seattle–Tacoma International Airport,47.449162,-122.311134
+1770199,SLC,SMF,"Salt Lake City, UT","Sacramento, CA",2009-08-01,2009,8,Salt Lake City International Airport,40.785749,-111.979746,Sacramento International Airport,38.69540023803711,-121.59100341796876
+1217568,GTF,MSP,"Great Falls, MT","Minneapolis, MN",2008-10-01,2008,10,Great Falls International Airport,47.48199844,-111.3710022,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+3195052,MKE,CLL,"Milwaukee, WI","College Station, TX",2006-07-01,2006,7,General Mitchell International Airport,42.94720077514648,-87.89659881591797,Easterwood Field,30.58860016,-96.36380005
+3357687,ABE,ILN,"Allentown, PA","Wilmington, OH",2003-12-01,2003,12,Lehigh Valley International Airport,40.651773,-75.442797,Wilmington Airpark,39.427898407,-83.792098999
+1076812,ATL,EWR,"Atlanta, GA","Newark, NJ",1994-10-01,1994,10,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Newark Liberty International Airport,40.692501,-74.168701
+2790495,GSO,LGA,"Greensboro, NC","New York, NY",2001-08-01,2001,8,Piedmont Triad International Airport,36.097801,-79.937302,La Guardia Airport,40.777199,-73.872597
+3502193,PVD,ELM,"Providence, RI","Elmira, NY",2006-10-01,2006,10,Theodore Francis Green State Airport,41.725038,-71.425668,Elmira Corning Regional Airport,42.1599006652832,-76.8916015625
+3381758,DFW,XNA,"Dallas, TX","Fayetteville, AR",2002-10-01,2002,10,Dallas Fort Worth International Airport,32.896801,-97.038002,Northwest Arkansas National Airport,36.281898,-94.306801
+1970624,MSY,HOU,"New Orleans, LA","Houston, TX",2008-09-01,2008,9,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328,William P Hobby Airport,29.645399,-95.2789
+1849190,EWR,CLE,"Newark, NJ","Cleveland, OH",2006-09-01,2006,9,Newark Liberty International Airport,40.692501,-74.168701,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+2660604,CLT,BDL,"Charlotte, NC","Hartford, CT",2003-05-01,2003,5,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Bradley International Airport,41.93851,-72.688066
+2211748,CLT,MCI,"Charlotte, NC","Kansas City, MO",1999-09-01,1999,9,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Kansas City International Airport,39.2976,-94.713898
+1382209,IAH,ATL,"Houston, TX","Atlanta, GA",1998-06-01,1998,6,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+1357541,JAX,ATL,"Jacksonville, FL","Atlanta, GA",1992-04-01,1992,4,Jacksonville International Airport,30.49410057067871,-81.68789672851562,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+2487607,ALO,CID,"Waterloo, IA","Cedar Rapids, IA",1992-02-01,1992,2,Waterloo Regional Airport,42.55709838867188,-92.40029907226562,The Eastern Iowa Airport,41.884701,-91.7108
+1547215,CMH,PHX,"Columbus, OH","Phoenix, AZ",2008-12-01,2008,12,John Glenn Columbus International Airport,39.998001,-82.891899,Phoenix Sky Harbor International Airport,33.435302,-112.005905
+1408214,SEA,IAH,"Seattle, WA","Houston, TX",1991-06-01,1991,6,Seattle–Tacoma International Airport,47.449162,-122.311134,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+2242527,TUL,MCI,"Tulsa, OK","Kansas City, MO",1997-08-01,1997,8,Tulsa International Airport,36.19839859008789,-95.88809967041016,Kansas City International Airport,39.2976,-94.713898
+1791927,ORD,BNA,"Chicago, IL","Nashville, TN",1993-04-01,1993,4,Chicago O'Hare International Airport,41.9786,-87.9048,Nashville International Airport,36.1245002746582,-86.6781997680664
+3284816,CVG,FWA,"Cincinnati, OH","Fort Wayne, IN",2002-06-01,2002,6,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Fort Wayne International Airport,40.9785,-85.195099
+965193,CMH,DFW,"Columbus, OH","Dallas, TX",1993-09-01,1993,9,John Glenn Columbus International Airport,39.998001,-82.891899,Dallas Fort Worth International Airport,32.896801,-97.038002
+1973230,PHX,HOU,"Phoenix, AZ","Houston, TX",2006-12-01,2006,12,Phoenix Sky Harbor International Airport,33.435302,-112.005905,William P Hobby Airport,29.645399,-95.2789
+2014460,BNA,PHL,"Nashville, TN","Philadelphia, PA",1998-09-01,1998,9,Nashville International Airport,36.1245002746582,-86.6781997680664,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+2704612,DTW,SEA,"Detroit, MI","Seattle, WA",1997-05-01,1997,5,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Seattle–Tacoma International Airport,47.449162,-122.311134
+565783,PHL,LAX,"Philadelphia, PA","Los Angeles, CA",2000-02-01,2000,2,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Los Angeles / Tom Bradley International Airport,33.942501,-118.407997
+2794660,IND,LGA,"Indianapolis, IN","New York, NY",1990-05-01,1990,5,Indianapolis International Airport,39.7173,-86.294403,La Guardia Airport,40.777199,-73.872597
+45951,MIA,ORD,"Miami, FL","Chicago, IL",1992-06-01,1992,6,Miami International Airport,25.79319953918457,-80.29060363769531,Chicago O'Hare International Airport,41.9786,-87.9048
+3378677,MSP,LSE,"Minneapolis, MN","La Crosse, WI",1999-05-01,1999,5,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,La Crosse Regional Airport,43.879002,-91.256699
+1755416,SNA,SFO,"Santa Ana, CA","San Francisco, CA",1998-07-01,1998,7,John Wayne Orange County International Airport,33.675701,-117.867996,San Francisco International Airport,37.61899948120117,-122.375
+3419825,FLL,PNS,"Fort Lauderdale, FL","Pensacola, FL",2005-07-01,2005,7,Fort Lauderdale Hollywood International Airport,26.072599,-80.152702,Pensacola International Airport,30.4734,-87.1866
+1782094,CVG,BNA,"Cincinnati, OH","Nashville, TN",1994-05-01,1994,5,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Nashville International Airport,36.1245002746582,-86.6781997680664
+280952,DFW,LAS,"Dallas, TX","Las Vegas, NV",1994-05-01,1994,5,Dallas Fort Worth International Airport,32.896801,-97.038002,Harry Reid International Airport,36.083361,-115.151817
+1179110,ORD,MSP,"Chicago, IL","Minneapolis, MN",1992-06-01,1992,6,Chicago O'Hare International Airport,41.9786,-87.9048,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+1350327,SFO,ATL,"San Francisco, CA","Atlanta, GA",1993-09-01,1993,9,San Francisco International Airport,37.61899948120117,-122.375,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+2804542,BDL,LGA,"Hartford, CT","New York, NY",1994-06-01,1994,6,Bradley International Airport,41.93851,-72.688066,La Guardia Airport,40.777199,-73.872597
+3260429,CAE,MHR,"Columbia, SC","Sacramento, CA",2003-12-01,2003,12,Columbia Metropolitan Airport,33.938801,-81.119499,Sacramento Mather Airport,38.553902,-121.297997
+1422629,BWI,IAH,"Baltimore, MD","Houston, TX",2001-06-01,2001,6,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+1600178,MCO,CVG,"Orlando, FL","Cincinnati, OH",2007-02-01,2007,2,Orlando International Airport,28.429399490356445,-81.30899810791016,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+71931,MSP,ORD,"Minneapolis, MN","Chicago, IL",2001-05-01,2001,5,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Chicago O'Hare International Airport,41.9786,-87.9048
+1916959,LIT,AUS,"Little Rock, AR","Austin, TX",1996-07-01,1996,7,Bill & Hillary Clinton National Airport/Adams Field,34.729582,-92.223728,Austin Bergstrom International Airport,30.197535,-97.662015
+1280232,MSY,ATL,"New Orleans, LA","Atlanta, GA",1991-02-01,1991,2,Louis Armstrong New Orleans International Airport,29.99340057373047,-90.25800323486328,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+482244,JAX,BHM,"Jacksonville, FL","Birmingham, AL",2008-12-01,2008,12,Jacksonville International Airport,30.49410057067871,-81.68789672851562,Birmingham-Shuttlesworth International Airport,33.562901,-86.753502
+3075862,ATL,JAN,"Atlanta, GA","Jackson, MS",2008-12-01,2008,12,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Jackson-Medgar Wiley Evers International Airport,32.311199,-90.075897
+3577106,ABQ,HOB,"Albuquerque, NM","Hobbs, NM",1997-03-01,1997,3,Albuquerque International Sunport,35.040199,-106.609001,Lea County Regional Airport,32.6875,-103.217003
+399317,JLN,STL,"Joplin, MO","St. Louis, MO",1996-12-01,1996,12,Joplin Regional Airport,37.151798,-94.498299,St Louis Lambert International Airport,38.748697,-90.370003
+1859215,PIT,CLE,"Pittsburgh, PA","Cleveland, OH",1994-05-01,1994,5,Pittsburgh International Airport,40.49150085,-80.23290253,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+2377212,ORD,BUF,"Chicago, IL","Buffalo, NY",1990-12-01,1990,12,Chicago O'Hare International Airport,41.9786,-87.9048,Buffalo Niagara International Airport,42.94049835,-78.73220062
+181855,MCI,OAK,"Kansas City, MO","Oakland, CA",2005-09-01,2005,9,Kansas City International Airport,39.2976,-94.713898,Metropolitan Oakland International Airport,37.721298,-122.221001
+2245384,HOU,MCI,"Houston, TX","Kansas City, MO",1999-10-01,1999,10,William P Hobby Airport,29.645399,-95.2789,Kansas City International Airport,39.2976,-94.713898
+3394727,CLT,PBI,"Charlotte, NC","West Palm Beach, FL",2006-09-01,2006,9,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Palm Beach International Airport,26.68320083618164,-80.09559631347656
+2857586,EWR,MDW,"Newark, NJ","Chicago, IL",1998-10-01,1998,10,Newark Liberty International Airport,40.692501,-74.168701,Chicago Midway International Airport,41.785999,-87.752403
+1202420,DSM,MSP,"Des Moines, IA","Minneapolis, MN",1991-11-01,1991,11,Des Moines International Airport,41.534,-93.663101,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+2507484,MSP,SAN,"Minneapolis, MN","San Diego, CA",1999-07-01,1999,7,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,San Diego International Airport,32.7336006165,-117.190002441
+2458701,LGA,CMH,"New York, NY","Columbus, OH",2008-11-01,2008,11,La Guardia Airport,40.777199,-73.872597,John Glenn Columbus International Airport,39.998001,-82.891899
+1691008,SAV,JFK,"Savannah, GA","New York, NY",1996-08-01,1996,8,Savannah Hilton Head International Airport,32.12760162,-81.20210266,John F Kennedy International Airport,40.639447,-73.779317
+2467795,IAH,CMH,"Houston, TX","Columbus, OH",2009-04-01,2009,4,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,John Glenn Columbus International Airport,39.998001,-82.891899
+417981,ATL,MEM,"Atlanta, GA","Memphis, TN",2007-02-01,2007,2,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Memphis International Airport,35.04240036010742,-89.97669982910156
+2109147,ATL,MKE,"Atlanta, GA","Milwaukee, WI",1997-05-01,1997,5,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,General Mitchell International Airport,42.94720077514648,-87.89659881591797
+3316054,SAV,JAX,"Savannah, GA","Jacksonville, FL",1990-09-01,1990,9,Savannah Hilton Head International Airport,32.12760162,-81.20210266,Jacksonville International Airport,30.49410057067871,-81.68789672851562
+215559,MCO,PIT,"Orlando, FL","Pittsburgh, PA",1994-03-01,1994,3,Orlando International Airport,28.429399490356445,-81.30899810791016,Pittsburgh International Airport,40.49150085,-80.23290253
+2363547,IAH,MIA,"Houston, TX","Miami, FL",2007-10-01,2007,10,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438,Miami International Airport,25.79319953918457,-80.29060363769531
+819373,ORD,DTW,"Chicago, IL","Detroit, MI",2009-01-01,2009,1,Chicago O'Hare International Airport,41.9786,-87.9048,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203
+360037,MSP,STL,"Minneapolis, MN","St. Louis, MO",1998-05-01,1998,5,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,St Louis Lambert International Airport,38.748697,-90.370003
+1426259,ATL,IAH,"Atlanta, GA","Houston, TX",1990-05-01,1990,5,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+2002265,CLT,PHL,"Charlotte, NC","Philadelphia, PA",2005-05-01,2005,5,Charlotte Douglas International Airport,35.2140007019043,-80.94309997558594,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+3386097,DFW,EFD,"Dallas, TX","Houston, TX",2001-06-01,2001,6,Dallas Fort Worth International Airport,32.896801,-97.038002,Ellington Airport,29.6072998047,-95.1587982178
+1166512,BWI,MSP,"Baltimore, MD","Minneapolis, MN",2001-02-01,2001,2,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802
+225276,ERI,PIT,"Erie, PA","Pittsburgh, PA",1997-04-01,1997,4,Erie International Tom Ridge Field,42.083127,-80.173867,Pittsburgh International Airport,40.49150085,-80.23290253
+443717,MCI,MEM,"Kansas City, MO","Memphis, TN",1990-05-01,1990,5,Kansas City International Airport,39.2976,-94.713898,Memphis International Airport,35.04240036010742,-89.97669982910156
+2520241,SJC,SAN,"San Jose, CA","San Diego, CA",1997-06-01,1997,6,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188,San Diego International Airport,32.7336006165,-117.190002441
+2263316,ELP,MAF,"El Paso, TX","Midland, TX",1995-05-01,1995,5,El Paso International Airport,31.80719948,-106.3779984,Midland International Air and Space Port,31.942499,-102.202003
+2965013,OMA,CAK,"Omaha, NE","Akron, OH",1999-11-01,1999,11,Eppley Airfield,41.3032,-95.894096,Akron Canton Regional Airport,40.91609954833984,-81.44219970703125
+1611339,LGA,CVG,"New York, NY","Cincinnati, OH",2009-07-01,2009,7,La Guardia Airport,40.777199,-73.872597,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801
+2243266,OKC,MCI,"Oklahoma City, OK","Kansas City, MO",1990-07-01,1990,7,Will Rogers World Airport,35.393101,-97.6007,Kansas City International Airport,39.2976,-94.713898
+3291866,MOD,SCK,"Modesto, CA","Stockton, CA",1991-06-01,1991,6,Modesto City Co-Harry Sham Field,37.625801,-120.954002,Stockton Metropolitan Airport,37.894199371338,-121.2379989624
+416322,ATL,MEM,"Atlanta, GA","Memphis, TN",1995-11-01,1995,11,Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101,Memphis International Airport,35.04240036010742,-89.97669982910156
+2673327,DFW,BDL,"Dallas, TX","Hartford, CT",1995-09-01,1995,9,Dallas Fort Worth International Airport,32.896801,-97.038002,Bradley International Airport,41.93851,-72.688066
+223834,STL,PIT,"St. Louis, MO","Pittsburgh, PA",1994-06-01,1994,6,St Louis Lambert International Airport,38.748697,-90.370003,Pittsburgh International Airport,40.49150085,-80.23290253
+929641,GSO,DFW,"Greensboro, NC","Dallas, TX",2004-07-01,2004,7,Piedmont Triad International Airport,36.097801,-79.937302,Dallas Fort Worth International Airport,32.896801,-97.038002
+1950800,RDU,TPA,"Raleigh, NC","Tampa, FL",1997-12-01,1997,12,Raleigh Durham International Airport,35.877602,-78.787498,Tampa International Airport,27.975500106811523,-82.533203125
+317968,SJC,LAS,"San Jose, CA","Las Vegas, NV",2008-06-01,2008,6,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188,Harry Reid International Airport,36.083361,-115.151817
+2350431,JFK,MIA,"New York, NY","Miami, FL",2003-01-01,2003,1,John F Kennedy International Airport,40.639447,-73.779317,Miami International Airport,25.79319953918457,-80.29060363769531
+2647010,PDX,LNK,"Portland, OR","Lincoln, NE",1995-01-01,1995,1,Portland International Airport,45.58869934,-122.5979996,Lincoln Airport,40.85100173950195,-96.75920104980467
+426794,LAS,MEM,"Las Vegas, NV","Memphis, TN",1998-05-01,1998,5,Harry Reid International Airport,36.083361,-115.151817,Memphis International Airport,35.04240036010742,-89.97669982910156
+1647988,BOS,JFK,"Boston, MA","New York, NY",1995-02-01,1995,2,Logan International Airport,42.3643,-71.005203,John F Kennedy International Airport,40.639447,-73.779317
+2393999,CLE,DCA,"Cleveland, OH","Washington, DC",2004-08-01,2004,8,Cleveland Hopkins International Airport,41.4117012024,-81.8498001099,Ronald Reagan Washington National Airport,38.8521,-77.037697
+3052252,MCI,RDU,"Kansas City, MO","Raleigh, NC",2000-10-01,2000,10,Kansas City International Airport,39.2976,-94.713898,Raleigh Durham International Airport,35.877602,-78.787498
+171530,PHL,CHS,"Philadelphia, PA","Charleston, SC",2006-02-01,2006,2,Philadelphia International Airport,39.87189865112305,-75.24109649658203,Charleston International Airport,32.898602,-80.040497
+1444025,MOB,IAH,"Mobile, AL","Houston, TX",1991-08-01,1991,8,Mobile Regional Airport,30.6912,-88.242798,George Bush Intercontinental Houston Airport,29.984399795532227,-95.34140014648438
+214810,MIA,PIT,"Miami, FL","Pittsburgh, PA",1998-04-01,1998,4,Miami International Airport,25.79319953918457,-80.29060363769531,Pittsburgh International Airport,40.49150085,-80.23290253
+2046371,MSP,PHL,"Minneapolis, MN","Philadelphia, PA",2004-02-01,2004,2,Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,44.882,-93.221802,Philadelphia International Airport,39.87189865112305,-75.24109649658203
+171171,SAV,CHS,"Savannah, GA","Charleston, SC",1991-01-01,1991,1,Savannah Hilton Head International Airport,32.12760162,-81.20210266,Charleston International Airport,32.898602,-80.040497
+1697448,YIP,JFK,"Detroit, MI","New York, NY",2000-06-01,2000,6,Willow Run Airport,42.23789978,-83.53040314,John F Kennedy International Airport,40.639447,-73.779317
+2865976,LAS,MDW,"Las Vegas, NV","Chicago, IL",1997-08-01,1997,8,Harry Reid International Airport,36.083361,-115.151817,Chicago Midway International Airport,41.785999,-87.752403
+2950882,CMH,BWI,"Columbus, OH","Baltimore, MD",2001-10-01,2001,10,John Glenn Columbus International Airport,39.998001,-82.891899,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+3070443,ORD,MDT,"Chicago, IL","Harrisburg, PA",2006-07-01,2006,7,Chicago O'Hare International Airport,41.9786,-87.9048,Harrisburg International Airport,40.193501,-76.763397
+1820706,STL,OKC,"St. Louis, MO","Oklahoma City, OK",1997-05-01,1997,5,St Louis Lambert International Airport,38.748697,-90.370003,Will Rogers World Airport,35.393101,-97.6007
+1093776,STL,EWR,"St. Louis, MO","Newark, NJ",1994-12-01,1994,12,St Louis Lambert International Airport,38.748697,-90.370003,Newark Liberty International Airport,40.692501,-74.168701
+978451,GPT,DFW,"Gulfport, MS","Dallas, TX",2008-05-01,2008,5,Gulfport Biloxi International Airport,30.407301,-89.070099,Dallas Fort Worth International Airport,32.896801,-97.038002
+2780841,MCO,LGA,"Orlando, FL","New York, NY",1993-12-01,1993,12,Orlando International Airport,28.429399490356445,-81.30899810791016,La Guardia Airport,40.777199,-73.872597
+424992,DFW,MEM,"Dallas, TX","Memphis, TN",1998-08-01,1998,8,Dallas Fort Worth International Airport,32.896801,-97.038002,Memphis International Airport,35.04240036010742,-89.97669982910156
+35652,PHX,ORD,"Phoenix, AZ","Chicago, IL",2000-01-01,2000,1,Phoenix Sky Harbor International Airport,33.435302,-112.005905,Chicago O'Hare International Airport,41.9786,-87.9048
+3074160,CVG,JAN,"Cincinnati, OH","Jackson, MS",1994-01-01,1994,1,Cincinnati Northern Kentucky International Airport,39.048801,-84.667801,Jackson-Medgar Wiley Evers International Airport,32.311199,-90.075897
+3211879,BWI,RIC,"Baltimore, MD","Richmond, VA",1995-08-01,1995,8,Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297,Richmond International Airport,37.50519943237305,-77.3197021484375
+1569961,LAS,SJC,"Las Vegas, NV","San Jose, CA",1994-08-01,1994,8,Harry Reid International Airport,36.083361,-115.151817,Norman Y. Mineta San Jose International Airport,37.362452,-121.929188
+3045313,DFW,RDU,"Dallas, TX","Raleigh, NC",2001-02-01,2001,2,Dallas Fort Worth International Airport,32.896801,-97.038002,Raleigh Durham International Airport,35.877602,-78.787498
+2636510,ELP,SAT,"El Paso, TX","San Antonio, TX",2008-01-01,2008,1,El Paso International Airport,31.80719948,-106.3779984,San Antonio International Airport,29.533701,-98.469803
+498808,SMF,HNL,"Sacramento, CA","Honolulu, HI",2003-06-01,2003,6,Sacramento International Airport,38.69540023803711,-121.59100341796876,Daniel K Inouye International Airport,21.32062,-157.924228
+2566870,DTW,BOS,"Detroit, MI","Boston, MA",1992-10-01,1992,10,Detroit Metropolitan Wayne County Airport,42.212398529052734,-83.35340118408203,Logan International Airport,42.3643,-71.005203
+128679,TUL,ORD,"Tulsa, OK","Chicago, IL",2009-07-01,2009,7,Tulsa International Airport,36.19839859008789,-95.88809967041016,Chicago O'Hare International Airport,41.9786,-87.9048

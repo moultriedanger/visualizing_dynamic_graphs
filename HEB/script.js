@@ -22,9 +22,9 @@ const scales = {
 
   // used to scale number of segments per line
   segments: d3.scaleLinear()
-    //What value the 
+    //The hyponenuse is the longest possible line
     .domain([0, hypotenuse])
-    .range([1, 10])
+    .range([1, 10]) //Each line has 1-10 segments?
 };
 
 // have these already created for easier drawing
@@ -57,7 +57,7 @@ Promise.all(promises).then(processData);
 // process airport and flight data
 function processData(values) {
   console.assert(values.length === 2);
-
+  
   let airports = values[0];
   let flights  = values[1];
 
@@ -184,6 +184,7 @@ function drawAirports(airports) {
 function drawPolygons(airports) {
   // convert array of airports into geojson format
   const geojson = airports.map(function(airport) {
+    
     return {
       type: "Feature",
       properties: airport,
@@ -196,7 +197,7 @@ function drawPolygons(airports) {
 
   // calculate voronoi polygons
   const polygons = d3.geoVoronoi().polygons(geojson);
-  // console.log(polygons);
+  console.log(polygons);
 
   g.voronoi.selectAll("path")
     .data(polygons.features)

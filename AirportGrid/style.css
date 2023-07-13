@@ -1,0 +1,88 @@
+.grid-container{
+  display:inline-grid;
+  grid-template: 2000px 2000px/200px 200px;
+  grid-template-areas: 'labels graph'
+  'labels graph';
+  gap: 10px;
+  
+}
+
+#labels{
+  grid-area: labels;
+  border: solid black 2px;
+}
+
+#graph{
+  grid-area: graph;
+}
+
+body {
+    /* background-color: rgb(94, 165, 252); */
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .land {
+    fill: #dddddd;
+  }
+  
+  .border {
+    fill: none;
+    stroke-width: 1px;
+  }
+  
+  .interior {
+    stroke: white;
+  }
+  
+  .exterior {
+    stroke: #bbbbbb;
+  }
+  
+  .airport {
+    fill: rgb(229, 204, 153);
+    opacity: 0.6;
+    stroke: #252525;
+  }
+  
+  .flight {
+    fill: none;
+    stroke: #c16666;
+    /* //stroke-width: 1px; */
+    stroke-opacity: .5;
+    stroke-width:3
+    
+  }
+
+  .voronoi {
+    fill: none;
+    stroke: none;
+    stroke-width: 1px;
+  }
+  
+  /* This allows the buttons and lines to be turned red */
+  .highlight {
+    opacity: 1 !important;
+    stroke: red !important;
+    stroke-width: 2px !important;
+    stroke-opacity: 0.8 !important;
+  }
+  
+  g#voronoi {
+    pointer-events: all;
+  }
+  
+  /* shadow trick from bl.ocks.org */
+  #tooltip {
+    font-size: 10pt;
+    font-weight: 900;
+    fill: white;
+    text-shadow: 1px 1px 0 #252525, 1px -1px 0 #252525, -1px 1px 0 #252525, -1px -1px 0 #252525;
+  }
+
+  .airportName{
+    font-weight: bold;
+  }
+  
+
+

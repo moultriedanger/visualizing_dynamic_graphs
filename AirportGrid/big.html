@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flight Paths Grid</title>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/d3-geo-voronoi@1"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://unpkg.com/d3-delaunay@4"></script>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- must be 960x600 to match topojson us atlas files -->
+    <svg width="2000" height="2000">
+      <g id="basemap"></g>
+      <g id="flights"></g>
+      <g id="airports"></g>
+      <g id="voronoi"></g>
+      <g id="airportText"></g>
+    </svg>
+    <script src="bigData.js"></script>
+  </body>
+</html>
