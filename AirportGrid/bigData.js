@@ -8,7 +8,8 @@ const g = {    basemap:  svg.select("g#basemap"),
     flights:  svg.select("g#flights"),
     airports: svg.select("g#airports"),
     airportText: svg.select("g#airportText"),
-    voronoi:  svg.select("g#voronoi")
+    voronoi:  svg.select("g#voronoi"),
+    months: svg.select('g#months')
   };
 const tooltip = d3.select("text#tooltip");
   //console.assert(tooltip.size() === 1);
@@ -67,6 +68,7 @@ var airport_locs = {}
     // done filtering airports can draw
     drawNames(airports);
     drawAirports(airports);
+    drawMonths();
     drawPolygons(airports);
   
     //filter out flights that are not between airports we have leftover
@@ -102,26 +104,10 @@ var airport_locs = {}
           //d.classed("highlight", true);
           d.flights[i].style.stroke = 'blue'
         }
-
-        let airList = document.getElementsByClassName("airportName")
-  
-        if(d.iata[4] == 0){
-          for(let i = 0; i < airList.length; i ++){
-            if(d.iata == airList[i].innerHTML){
-              airList[i].style.display = 'inline'
-            }
-          }
-        }
-        
       })
       .on('mouseout', function(d){
         for(let i = 0; i < d.flights.length; i ++){
           d.flights[i].style.stroke = '#c16666'
-        }
-
-        let airList = document.getElementsByClassName('airportName')
-        for(let i = 0; i < airList.length; i ++){
-          airList[i].style.display ='none'
         }
       })
       .each(function(d) {
@@ -129,10 +115,17 @@ var airport_locs = {}
         // makes it fast to select airports on hover
         d.bubble = this;
       });
-      let airList = document.getElementsByClassName('airportName')
-        for(let i = 0; i < airList.length; i ++){
-          airList[i].style.display ='none'
-        }
+
+      // let airList = document.getElementsByClassName("airportName")
+      // for(let i = 0; i < airList.length; i ++){
+      //   if((airList[i].innerHTML)[4]==0){
+      //     airList[i].innerHTML.slice(0,3)
+      //     // style.display = 'inline'
+      //   }
+      //   else{
+      //     airList[i].style.display = 'none'
+      //   }
+      // }
   }
   function drawPolygons(airports) {
   // convert array of airports into geojson format
@@ -224,7 +217,38 @@ var airport_locs = {}
       .attr("x", d => d.x - 83) // calculated on load
       .attr("y", d => d.y)
       .text(d => d.iata)
+
+      let airList = document.getElementsByClassName("airportName")
+  
+      for(let i = 0; i < airList.length; i ++){
+        if((airList[i].innerHTML)[4]==0){
+          airList[i].innerHTML.slice(0,3)
+          // style.display = 'inline'
+        }
+        else{
+          airList[i].style.display = 'none'
+        }
+      }
+      g.airportText.selectAll("text")
+        .text(d => d.iata.slice(0,3))
   }
+  function drawMonths(months){
+    var svg = d3.select('#months')
+      .append("svg")
+      .attr("width", airports.width)
+      .attr("height", airports.height)
+
+    var x = d3.scalePoint()
+      .domain(["JAN", "FEB", "MAR", "APRL", "MAY", 'JUN', 'JUL', 'AUG', 'SEPT', 'OCT','NOV', 'DEC'])         // This is what is written on the Axis: from 0 to 100
+      .range([85, 1200]);    
+    
+      svg
+      .append("g")
+      .style('font', '20px times')
+      .attr("transform", "translate(58,750)")      // This controls the vertical position of the Axis
+      .call(d3.axisBottom(x));
+  }
+
   
   function drawFlights(airports, flights) {
     // break each flight between airports into multiple segments
