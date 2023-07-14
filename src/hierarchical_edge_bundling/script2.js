@@ -10,6 +10,31 @@ const width  = parseInt(svg.attr("width"));
 const height = parseInt(svg.attr("height"));
 const hypotenuse = Math.sqrt(width * width + height * height);
 
+const HYPERPARAMS = {
+
+  // used to scale airport bubbles
+  "AIRPORTS_SCALE_MIN": 1, // 4
+  "AIRPORTS_SCALE_MAX": 2.5, // 18
+
+  // used to scale number of segments per line
+  "SEGMENTS_SCALE_DOMAIN_MIN": 0, 
+  "SEGMENTS_SCALE_DOMAIN_MAX": hypotenuse,
+  "SEGMENTS_SCALE_RANGE_MIN": 3, // 20
+  "SEGMENTS_SCALE_RANGE_MAX": 10, // 30
+
+  // settle at a layout faster
+  "ALPHA_DECAY": 0.1, 
+
+  // nearby nodes attract each other
+  "FORCE_CHARGE_MANY_BODY": 40, // 10
+
+  // edges want to be as short as possible
+  // prevents too much stretching
+  "FORCE_LINK_STRENGTH": 2, // 0.7
+  "FORCE_LINK_DISTANCE": 0,
+
+}
+
 // must be hard-coded to match our topojson projection
 // source: https://github.com/topojson/us-atlas
 const projection = d3.geoAlbers().scale(1280).translate([480, 300]);
@@ -17,14 +42,12 @@ const projection = d3.geoAlbers().scale(1280).translate([480, 300]);
 const scales = {
   // used to scale airport bubbles
   airports: d3.scaleSqrt()
-    // .range([4, 18]),
-    .range([1.5, 2.5]),
+    .range([HYPERPARAMS.AIRPORTS_SCALE_MIN, HYPERPARAMS.AIRPORTS_SCALE_MAX]),
 
   // used to scale number of segments per line
   segments: d3.scaleLinear()
-    .domain([0, hypotenuse])
-    // .range([20, 30])
-    .range([10, 20])
+    .domain([HYPERPARAMS.SEGMENTS_SCALE_DOMAIN_MIN, HYPERPARAMS.SEGMENTS_SCALE_DOMAIN_MAX])
+    .range([HYPERPARAMS.SEGMENTS_SCALE_RANGE_MIN, HYPERPARAMS.SEGMENTS_SCALE_RANGE_MAX])
 };
 
 // have these already created for easier drawing
@@ -70,11 +93,14 @@ function processData(values) {
   // calculate incoming and outgoing degree based on flights
   // flights are given by airport iata code (not index)
   flights.forEach(function(link) {
+    console.log(link.origin);
     link.source = iata.get(link.origin);
     link.target = iata.get(link.destination);
 
     link.source.outgoing += link.count;
     link.target.incoming += link.count;
+
+    link.passengers = link.count;
   });
 
 
@@ -82,7 +108,6 @@ function processData(values) {
   // let old = airports.length;
   // airports = airports.filter(airport => airport.x >= 0 && airport.y >= 0);
   // console.log(" removed: " + (old - airports.length) + " airports out of bounds");
-  // console.log(airports);
   // // remove airports with NA state
   // old = airports.length;
   // airports = airports.filter(airport => airport.state !== "NA");
@@ -100,7 +125,6 @@ function processData(values) {
   // old = airports.length;
   // airports = airports.slice(0, 50);
   // console.log(" removed: " + (old - airports.length) + " airports with low outgoing degree");
-  // console.log(airports);
   // done filtering airports can draw
   
   drawAirports(airports);
@@ -166,29 +190,32 @@ function drawAirports(airports) {
     .data(airports, d => d.iata)
     .enter()
     .append("circle")
-    // .attr("r",  d => scales.airports(d.outgoing))
-    .attr("r",  4)
+    // .attr("r",  d => scales.airports(d.outgoing/10000))
+    .attr("r",  d => scales.airports(d.outgoing/100))
+    // .attr("r",  4)
     .attr("cx", d => d.x) // calculated on load
     .attr("cy", d => d.y) // calculated on load
     .attr("class", "airport")
     // .style("fill", function(d) { return color(d.cluster); })
+    .style("fill", function(d) { return d.color; })
     .each(function(d) {
       // adds the circle object to our airport
       // makes it fast to select airports on hover
       d.bubble = this;
     })
     .on("mouseover", function(d) {
+      
       d.flights.forEach(x => {
-        x.style['stroke'] = "red";
-        x.style["stroke-width"] = 5;
+        // x.style['stroke'] = "red";
+        // x.style["stroke-width"] = 5;
         x.style['stroke-opacity'] = 1;
       });
     })
     .on("mouseout", function(d) {
       d.flights.forEach(x => { 
-        x.style['stroke'] = "black";
-        x.style["stroke-width"] = 1;
-        x.style['stroke-opacity'] = 0.1;
+        // x.style['stroke'] = "black";
+        // x.style["stroke-width"] = 1;
+        x.style['stroke-opacity'] = 0.8;
       });
     })
     
@@ -207,10 +234,8 @@ function drawPolygons(airports) {
     };
   });
 
-  console.log(geojson);
   // calculate voronoi polygons
   const polygons = d3.geoVoronoi().polygons(geojson);
-  // console.log(polygons);
 
   g.voronoi.selectAll("path")
     .data(polygons.features)
@@ -274,7 +299,7 @@ function drawPolygons(airports) {
 function drawFlights(airports, flights) {
   // break each flight between airports into multiple segments
   let bundle = generateSegments(airports, flights);
-  console.log(bundle);
+  // console.log(bundle);
 
   // https://github.com/d3/d3-shape#curveBundle
   let line = d3.line()
@@ -293,40 +318,49 @@ function drawFlights(airports, flights) {
     .attr("d", line)
     .attr("class", "flight")
     // .style("stroke", function(d) { return color(d[0].cluster); })
-    .style("stroke", "black")
-    .style("stroke-width", 1)
+    .style("stroke", function(d) { 
+      if (d[0].cluster == d[d.length-1].cluster) {
+        return d[0].color; 
+      } else {
+        return "black";
+      }
+    })
+    // .style("stroke", "black")
+    .style("stroke-width", function(d, i){
+      // console.log(flights[i].count / 1000);
+      // return flights[i].count / 10000;
+      return flights[i].count**(-0.5/10**10) ;
+    })
     .each(function(d) {
       // adds the path object to our source airport
       // makes it fast to select outgoing paths
       d[0].flights.push(this);
     })
     .on("mouseover", function(d) {
-      console.log(this);
-      this.style['stroke'] = "red";
-      this.style["stroke-width"] = 10;
+      // this.style['stroke'] = "red";
+      // this.style["stroke-width"] = 10;
       this.style['stroke-opacity'] = 1;
     })
     .on("mouseout", function(d) {
-      this.style['stroke'] = "black";
-      this.style["stroke-width"] = 1;
+      // this.style['stroke'] = "black";
+      // this.style["stroke-width"] = 1;
       this.style['stroke-opacity'] = 0.1;
     });
 
   // https://github.com/d3/d3-force
   let layout = d3.forceSimulation()
     // settle at a layout faster
-    .alphaDecay(0.1)
-    // .alphaDecay(1)
+    .alphaDecay(HYPERPARAMS.ALPHA_DECAY)
     // nearby nodes attract each other
     .force("charge", d3.forceManyBody()
-      .strength(10)
+      .strength(HYPERPARAMS.FORCE_CHARGE_MANY_BODY)
       .distanceMax(scales.airports.range()[1] * 2)
     )
     // edges want to be as short as possible
     // prevents too much stretching
     .force("link", d3.forceLink()
-      .strength(0.7)
-      .distance(0)
+      .strength(HYPERPARAMS.FORCE_LINK_STRENGTH)
+      .distance(HYPERPARAMS.FORCE_LINK_DISTANCE)
     )
     .on("tick", function(d) {
       links.attr("d", line);
@@ -438,7 +472,10 @@ function typeAirport(airport) {
 // see flights.csv
 // convert count to number
 function typeFlight(flight) {
+  // flight.color = flight.color;
+  // console.log(flight.color);
   flight.count = parseInt(flight.count);
+  flight.passengers = 0;
   return flight;
 }
 

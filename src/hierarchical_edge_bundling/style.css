@@ -29,9 +29,9 @@ body {
 
 .flight {
   fill: none;
-  /* stroke: #252525; */
-  stroke-width: 1px;
-  stroke-opacity: 0.1;
+  stroke: #252525;
+  stroke-width: 5px;
+  stroke-opacity: 0.5;
 }
 
 .voronoi {
