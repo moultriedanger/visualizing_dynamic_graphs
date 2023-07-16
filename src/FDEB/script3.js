@@ -1,6 +1,7 @@
 const urls = {
   airports: "grid_locs.csv",
-  flights: "flights.csv"
+  flights:  "flights.csv", 
+  walks:    "walks.csv"
 };
 const svg        = d3.select("svg");
 const width      = parseInt(svg.attr("width"));
@@ -18,11 +19,11 @@ const HYPERPARAMS = {
   // settle at a layout faster
   "ALPHA_DECAY":                0.1, 
   // nearby nodes attract each other
-  "FORCE_CHARGE_MANY_BODY":     40, // 10
+  "FORCE_CHARGE_MANY_BODY":    0, // 10
   // edges want to be as short as possible
   // prevents too much stretching
-  "FORCE_LINK_STRENGTH":        2, // 0.7
-  "FORCE_LINK_DISTANCE":        0,
+  "FORCE_LINK_STRENGTH":        1, // 0.7
+  "FORCE_LINK_DISTANCE":        1,
 }
 const scales = {
   // used to scale airport bubbles
@@ -41,7 +42,8 @@ const g = {
 // load the airport and flight data together
 const promises = [
   d3.csv(urls.airports, typeAirport),
-  d3.csv(urls.flights,  typeFlight)
+  d3.csv(urls.flights,  typeFlight),
+  d3.csv(urls.walks,    typeWalk),
 ];
 Promise.all(promises).then(processData);
 
@@ -68,11 +70,24 @@ function typeFlight(flight) {
   return flight;
 }
 
+function typeWalk(walk){
+    length = 0
+    for(var i = 0; i <= 12*10; i++){
+        if(walk[i] != ""){
+            length += 1;
+        }
+    }
+    walk.length = length;
+    // console.log(walk);
+    return walk;
+}
+
 // process airport and flight data
 function processData(values) {
 
   let airports = values[0];
   let flights  = values[1];
+  let walks    = values[2];
 
   // convert airports array (pre filter) into map for fast lookup
   let iata = new Map(airports.map(node => [node.iata, node]));
@@ -89,8 +104,9 @@ function processData(values) {
   });
 
   drawAirports(airports);
-  drawFlights(airports, flights);
-}
+//   drawFlights(airports, flights);
+  drawWalks(airports, flights, walks, iata);
+}   
 
 function drawAirports(airports) {
 
@@ -170,19 +186,19 @@ function drawFlights(airports, flights) {
 
 // Turns a single edge into several segments that can
 // be used for simple edge bundling.
-function generateSegments(nodes, links) {
+function generateSegments(airports, flights) {
   // generate separate graph for edge bundling
   // nodes: all nodes including control nodes
   // links: all individual segments (source to target)
   // paths: all segments combined into single path for drawing
   let bundle = {nodes: [], links: [], paths: []};
   // make existing nodes fixed
-  bundle.nodes = nodes.map(function(d, i) {
+  bundle.nodes = airports.map(function(d, i) {
     d.fx = d.x;
     d.fy = d.y;
     return d;
   });
-  links.forEach(function(d, i) {
+  flights.forEach(function(d, i) {
     // calculate the distance between the source and target
     let length = distance(d.source, d.target);
     // calculate total number of inner nodes for this link
@@ -195,29 +211,125 @@ function generateSegments(nodes, links) {
       .domain([0, total + 1])
       .range([d.source.y, d.target.y]);
     // initialize source node
-    let source = d.source;
-    let target = null;
+    let inner_a = d.source;
+    let inner_b = null;
     // add all points to local path
-    let local = [source];
+    let local = [inner_a];
     for (let j = 1; j <= total; j++) {
-      // calculate target node
-      target = { x: xscale(j), y: yscale(j) };
-      local.push(target);
-      bundle.nodes.push(target);
+      // calculate inner_b node
+      inner_b = { x: xscale(j), y: yscale(j) };
+      local.push(inner_b);
+      bundle.nodes.push(inner_b);
       bundle.links.push({
-        source: source,
-        target: target
+        // source: inner_a,
+        // target: inner_b
+        source: inner_a,
+        target: inner_b
       });
-      source = target;
+      inner_a = inner_b;
     }
     local.push(d.target);
     // add last link to target node
     bundle.links.push({
-      source: target,
+      source: inner_b,
       target: d.target
     });
     bundle.paths.push(local);
   });
-  console.log(bundle);
+
+  console.log(bundle.paths[0]);
   return bundle;
+}
+
+function drawWalks(airports, flights, walks, iata) {
+
+    let bundle = {nodes: [], links: [], paths: []};
+    
+    bundle.nodes = airports.map(function(d, i) {
+        if (d.iata.split("_")[1] == "1" || d.iata.split("_")[1] == "13"){
+          d.fx = d.x;
+          d.fy = d.y;
+        }
+        else{
+          d.x = d.x;
+          d.y = d.y;  
+        }
+        // d.fx = d.x;
+        // d.fy = d.y;
+        return d;
+    });
+
+    bundle.links = flights.map(function(d, i) {
+        return {
+            'source': d.source, // iata.get(d.origin),
+            'target': d.target // iata.get(d.destination)
+        };
+    });
+
+    bundle.paths = walks.map(function(d, i) {
+        new_walk = [];
+        for(let i = 0; i < d.length; i++) {
+            new_walk.push(iata.get(d[i]));
+        }
+        return new_walk;
+    });
+
+    console.log(bundle);
+
+    // https://github.com/d3/d3-shape#curveBundle
+    let line = d3.line()
+        .curve(d3.curveBundle)
+        .x(airport => airport.x)
+        .y(airport => airport.y);
+
+    let links = g.flights.selectAll("path.flight")
+        .data(bundle.paths)
+        .enter()
+        .append("path")
+        .attr("d", line)
+        .attr("class", "flight")
+        .style("stroke", function(d) { 
+            if (d[0].cluster == d[d.length-1].cluster) {
+                return d[0].color; 
+            } else { 
+                return "black"; 
+            }
+        })
+        .style("stroke-width", function(d, i){
+            return 2; //flights[i].count**(-0.5/10**10) ;
+        })
+        .style("stroke-opacity", function(d, i){
+            return 0.01; //flights[i].count**(-0.5/10**10) ;
+        })
+        .each(function(d, i) {
+            // adds the path object to our source airport
+            // makes it fast to select outgoing paths
+            // d[0].flights.push(this);
+            // console.log(d[i]);
+            d[0].flights.push(this);
+        })
+        .on("mouseover", function(d) { this.style['stroke-opacity'] = 1;   })
+        .on("mouseout", function(d)  { this.style['stroke-opacity'] = 0.1; });
+
+    // https://github.com/d3/d3-force
+    let layout = d3.forceSimulation()
+        // settle at a layout faster
+        .alphaDecay(HYPERPARAMS.ALPHA_DECAY)
+        // nearby nodes attract each other
+        .force("charge", d3.forceManyBody()
+            .strength(HYPERPARAMS.FORCE_CHARGE_MANY_BODY)
+            .distanceMax(scales.airports.range()[1] * 2)
+        )
+        // edges want to be as short as possible
+        // prevents too much stretching
+        .force("link", d3.forceLink()
+            .strength(HYPERPARAMS.FORCE_LINK_STRENGTH)
+            .distance(HYPERPARAMS.FORCE_LINK_DISTANCE)
+        )
+        .on("tick", function(d) { links.attr("d", line); })
+        .on("end", function(d)  { console.log("layout complete"); });
+
+    layout.nodes(bundle.nodes).force("link").links(bundle.links);
+
+    console.log(bundle);
 }
