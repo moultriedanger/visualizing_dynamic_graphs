@@ -9,11 +9,67 @@
     <script src="https://unpkg.com/d3-delaunay@4"></script>
 
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="slider.css" />
+    <header>
+      <div class="header">
+        <h1>Airport Flights Grid</h1>
+      </div>
+    </header>
   </head>
-
   <body>
     <!-- must be 960x600 to match topojson us atlas files -->
-    <svg width="2000" height="2000">
+    <div class="slideContainer" height="100" width="100">
+      <div class="grid-element">
+        <h2 class="label">Alpha Decay:</h2>
+      </div>
+      <div class="grid-element">
+        <input
+          type="range"
+          min="0"
+          max="1.0"
+          step=".1"
+          value="0.0"
+          class="slider"
+          id="alpha_decay_slider"
+        />
+        <p id="alphaOutput">Value</p>
+      </div>
+      <div class="grid-element">
+        <h2 class="label">Force Charge Strength:</h2>
+      </div>
+      <div class="grid-element">
+        <input
+          type="range"
+          min="0"
+          max="10"
+          step="1"
+          value="0"
+          class="slider"
+          id="force_charge_slider"
+        />
+        <p id="chargeOutput">Value</p>
+      </div>
+      <div class="grid-element">
+        <h2 class="label">Force Link Strength:</h2>
+      </div>
+      <div class="grid-element">
+        <input
+          type="range"
+          min="0.0"
+          max="5.0"
+          step=".1"
+          value="0.0"
+          class="slider"
+          id="force_link_slider"
+        />
+        <p id="linkOutput">Value</p>
+      </div>
+      <div>
+        <button id="applyButton">Apply</button>
+      </div>
+    </div>
+    <svg id="graph-box" width="1330" height="800">
+      <!-- 60% is good for width -->
       <g id="basemap"></g>
       <g id="flights"></g>
       <g id="airports"></g>

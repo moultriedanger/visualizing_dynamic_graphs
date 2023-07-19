@@ -4,6 +4,52 @@ const height = parseInt(svg.attr("height"));
 const hypotenuse = Math.sqrt(width * width + height * height);
 const projection = d3.geoAlbers().scale(1280).translate([480, 300]);
 
+var alphaDecay = document.getElementById("alpha_decay_slider");
+var alphaOutput = document.getElementById("alphaOutput")
+alphaOutput.innerHTML = alphaDecay.value;
+
+var forceCharge = document.getElementById("force_charge_slider");
+var forceOutput = document.getElementById("chargeOutput")
+forceOutput.innerHTML = forceCharge.value;
+
+var forceLink = document.getElementById("force_link_slider");
+var linkOutput = document.getElementById("linkOutput")
+linkOutput.innerHTML = forceLink.value;
+
+alphaDecay.oninput = function(){
+    alphaOutput.innerHTML = this.value
+}
+
+forceCharge.oninput = function(){
+    forceOutput.innerHTML = this.value
+}
+
+forceLink.oninput = function(){
+    linkOutput.innerHTML = this.value
+}
+
+document.getElementById('applyButton').addEventListener('click', function(){
+  
+  d3.selectAll("path").remove();
+  d3.selectAll("circle").remove();
+  
+  var alphaDecay = document.getElementById("alpha_decay_slider").value;
+  var forceCharge = document.getElementById("force_charge_slider").value;
+  var forceLink = document.getElementById("force_link_slider").value;
+    
+  console.log(alphaDecay, forceCharge, forceLink);
+  // load the airport and flight data together
+  const promises = [
+    d3.csv(urls.airports, typeAirport),
+    d3.csv(urls.flights, typeFlight)
+  ];
+
+  Promise.all(promises).then(processData);
+
+  //drawFlights(airports, flights, alphaDecay, forceCharge, forceLink)
+})
+
+
 const g = {    basemap:  svg.select("g#basemap"),
     flights:  svg.select("g#flights"),
     airports: svg.select("g#airports"),
@@ -29,7 +75,7 @@ var airport_locs = {}
     segments: d3.scaleLinear()
         //The hyponenuse is the longest possible line
         .domain([0, hypotenuse/2])
-        .range([1, 10]) //Each line has 1-10 segments?
+        .range([1, 5]) //Each line has 1-10 segments?
     };
   
   // load the airport and flight data together
@@ -76,8 +122,11 @@ var airport_locs = {}
     //flights = flights.filter(link => iata.has(link.source.iata) && iata.has(link.target.iata));
     console.log(" removed: " + (old - flights.length) + " flights");
   
+  var alphaDecay = document.getElementById("alpha_decay_slider").value;
+  var forceCharge = document.getElementById("force_charge_slider").value;
+  var forceLink = document.getElementById("force_link_slider").value;
     // done filtering flights can draw
-    drawFlights(airports, flights);
+    drawFlights(airports, flights, alphaDecay, forceCharge, forceLink);
     // console.log({airports: airports});
     // console.log({flights: flights});
   }
@@ -93,7 +142,7 @@ var airport_locs = {}
       .data(airports, d => d.iata)
       .enter()
       .append("circle")
-      .attr("r",  d => scales.airports(d.outgoing/10))
+      .attr("r",  d => scales.airports(d.outgoing/15))
       //.attr("r",  3)
       .attr("cx", d => d.x) // calculated on load
       .attr("cy", d => d.y) // calculated on load
@@ -115,17 +164,6 @@ var airport_locs = {}
         // makes it fast to select airports on hover
         d.bubble = this;
       });
-
-      // let airList = document.getElementsByClassName("airportName")
-      // for(let i = 0; i < airList.length; i ++){
-      //   if((airList[i].innerHTML)[4]==0){
-      //     airList[i].innerHTML.slice(0,3)
-      //     // style.display = 'inline'
-      //   }
-      //   else{
-      //     airList[i].style.display = 'none'
-      //   }
-      // }
   }
   function drawPolygons(airports) {
   // convert array of airports into geojson format
@@ -214,16 +252,15 @@ var airport_locs = {}
       .enter()
       .append('text')
       .attr('class','airportName')
-      .attr("x", d => d.x - 83) // calculated on load
+      .attr("x", d => d.x - 175) // calculated on load
       .attr("y", d => d.y)
       .text(d => d.iata)
 
       let airList = document.getElementsByClassName("airportName")
   
       for(let i = 0; i < airList.length; i ++){
-        if((airList[i].innerHTML)[4]==0){
+        if((airList[i].innerHTML)[4]==1 && (airList[i].innerHTML)[5] == null){
           airList[i].innerHTML.slice(0,3)
-          // style.display = 'inline'
         }
         else{
           airList[i].style.display = 'none'
@@ -231,6 +268,7 @@ var airport_locs = {}
       }
       g.airportText.selectAll("text")
         .text(d => d.iata.slice(0,3))
+
   }
   function drawMonths(months){
     var svg = d3.select('#months')
@@ -244,13 +282,13 @@ var airport_locs = {}
     
       svg
       .append("g")
-      .style('font', '20px times')
+      .style('font', '20px sans-serif')
+      //.style('font', 'bold')
       .attr("transform", "translate(58,750)")      // This controls the vertical position of the Axis
       .call(d3.axisBottom(x));
   }
 
-  
-  function drawFlights(airports, flights) {
+  function drawFlights(airports, flights, alphaDecay, forceCharge, forceLink) {
     // break each flight between airports into multiple segments
     
     let bundle = generateSegments(airports, flights);
@@ -267,30 +305,29 @@ var airport_locs = {}
       .append("path")
       .attr("d", line)
       .attr("class", "flight")
-      //.style('stroke', 'red')
+      // .style('stroke-width',function(d,i){
+      //   return flights[i].count /(1000)
+      // })
+      //.style('')
       .each(function(d) {
         // adds the path object to our source airport
         // makes it fast to select outgoing paths
         d[0].flights.push(this);
       })
-      // .on("mouseover", function(d){
-      //   console.log("mousover");
-      //   this.style.stroke = "blue";
-      // }) ;
 
-    // https://github.com/d3/d3-force
+    //https://github.com/d3/d3-force
     let layout = d3.forceSimulation()
       // settle at a layout faster
-      .alphaDecay(.1)
+      .alphaDecay(alphaDecay)  //.1
       // nearby nodes attract each other
       .force("charge", d3.forceManyBody()
-        .strength(5)
+        .strength(forceCharge) //5
         .distanceMax(scales.airports.range()[1] * 2)
       )
       // edges want to be as short as possible
       // prevents too much stretching
       .force("link", d3.forceLink()
-        .strength(.1)
+        .strength(forceLink) //.1
         .distance(0)
       )
       .on("tick", function(d) {
@@ -301,10 +338,6 @@ var airport_locs = {}
       });
   
     layout.nodes(bundle.nodes).force("link").links(bundle.links);
-
-    // document.findElementsByClass('flight').on("mousover", function(this, d){
-
-    //});
   }
   
   // Turns a single edge into several segments that can
@@ -316,6 +349,7 @@ var airport_locs = {}
     // paths: all segments combined into single path for drawing
     let bundle = {nodes: [], links: [], paths: []};
   
+    // console.log(nodes);
     // make existing nodes fixed
     bundle.nodes = nodes.map(function(d, i) {
       d.fx = d.x;
