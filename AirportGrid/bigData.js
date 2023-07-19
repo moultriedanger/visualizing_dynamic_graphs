@@ -4,28 +4,52 @@ const height = parseInt(svg.attr("height"));
 const hypotenuse = Math.sqrt(width * width + height * height);
 const projection = d3.geoAlbers().scale(1280).translate([480, 300]);
 
+//Aplha decay slider function
 var alphaDecay = document.getElementById("alpha_decay_slider");
 var alphaOutput = document.getElementById("alphaOutput")
 alphaOutput.innerHTML = alphaDecay.value;
+alphaDecay.oninput = function(){
+  alphaOutput.innerHTML = this.value
+}
 
+//Force charge slider fucntion
 var forceCharge = document.getElementById("force_charge_slider");
 var forceOutput = document.getElementById("chargeOutput")
 forceOutput.innerHTML = forceCharge.value;
-
-var forceLink = document.getElementById("force_link_slider");
-var linkOutput = document.getElementById("linkOutput")
-linkOutput.innerHTML = forceLink.value;
-
-alphaDecay.oninput = function(){
-    alphaOutput.innerHTML = this.value
-}
-
 forceCharge.oninput = function(){
-    forceOutput.innerHTML = this.value
+  forceOutput.innerHTML = this.value
 }
 
+//Force link slider function
+var forceLink = document.getElementById("force_link_slider");
+var linkOutput = document.getElementById("linkOutput");
+linkOutput.innerHTML = forceLink.value;
 forceLink.oninput = function(){
     linkOutput.innerHTML = this.value
+}
+
+//Stroke Width slider function
+var strokeWidth = document.getElementById('stroke_width_slider');
+var strokeOutput = document.getElementById("strokeOutput");
+strokeOutput.innerHTML = strokeWidth.value
+strokeWidth.oninput = function(){
+    strokeOutput.innerHTML = this.value
+}
+
+//Stroke opacity slider function
+var strokeOpacity = document.getElementById('stroke_opacity_slider');
+var opacityOutput = document.getElementById("opacityOutput");
+opacityOutput.innerHTML = strokeOpacity.value
+strokeOpacity.oninput = function(){
+    opacityOutput.innerHTML = this.value
+}
+
+//Circle radius slider function
+var circleRadius = document.getElementById('circle_radius_slider');
+var radiusOutput = document.getElementById("radiusOutput");
+radiusOutput.innerHTML = circleRadius.value
+circleRadius.oninput = function(){
+  radiusOutput.innerHTML = this.value
 }
 
 document.getElementById('applyButton').addEventListener('click', function(){
@@ -36,8 +60,11 @@ document.getElementById('applyButton').addEventListener('click', function(){
   var alphaDecay = document.getElementById("alpha_decay_slider").value;
   var forceCharge = document.getElementById("force_charge_slider").value;
   var forceLink = document.getElementById("force_link_slider").value;
+  var strokeWidth = document.getElementById('stroke_width_slider').value;
+  var strokeOpacity = document.getElementById('stroke_opacity_slider').value;
+  var circleRadius = document.getElementById('circle_radius_slider').value;
     
-  console.log(alphaDecay, forceCharge, forceLink);
+  console.log(alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity, circleRadius);
   // load the airport and flight data together
   const promises = [
     d3.csv(urls.airports, typeAirport),
@@ -45,10 +72,7 @@ document.getElementById('applyButton').addEventListener('click', function(){
   ];
 
   Promise.all(promises).then(processData);
-
-  //drawFlights(airports, flights, alphaDecay, forceCharge, forceLink)
 })
-
 
 const g = {    basemap:  svg.select("g#basemap"),
     flights:  svg.select("g#flights"),
@@ -58,7 +82,6 @@ const g = {    basemap:  svg.select("g#basemap"),
     months: svg.select('g#months')
   };
 const tooltip = d3.select("text#tooltip");
-  //console.assert(tooltip.size() === 1);
 
 const urls={
     airports: "grid_locs.csv",
@@ -110,10 +133,10 @@ var airport_locs = {}
       link.target.incoming += 1;//link.count;
       //console.log(link.target.incoming);
     });
-  
+    var circleRadius = document.getElementById('circle_radius_slider').value;
     // done filtering airports can draw
     drawNames(airports);
-    drawAirports(airports);
+    drawAirports(airports,circleRadius);
     drawMonths();
     drawPolygons(airports);
   
@@ -122,27 +145,30 @@ var airport_locs = {}
     //flights = flights.filter(link => iata.has(link.source.iata) && iata.has(link.target.iata));
     console.log(" removed: " + (old - flights.length) + " flights");
   
-  var alphaDecay = document.getElementById("alpha_decay_slider").value;
-  var forceCharge = document.getElementById("force_charge_slider").value;
-  var forceLink = document.getElementById("force_link_slider").value;
+    var alphaDecay = document.getElementById("alpha_decay_slider").value;
+    var forceCharge = document.getElementById("force_charge_slider").value;
+    var forceLink = document.getElementById("force_link_slider").value;
+    var strokeWidth = document.getElementById('stroke_width_slider').value;
+    var strokeOpacity = document.getElementById('stroke_opacity_slider').value;
+  
     // done filtering flights can draw
-    drawFlights(airports, flights, alphaDecay, forceCharge, forceLink);
+    drawFlights(airports, flights, alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity);
     // console.log({airports: airports});
     // console.log({flights: flights});
+    
   }
 
-  function drawAirports(airports) {
+  function drawAirports(airports,circleRadius) {
      
     // adjust scale
     // const extent = d3.extent(airports, d => d.outgoing);
     // scales.airports.domain(extent);
-    // console.log(airports)
     // draw airport bubbles
     g.airports.selectAll("circle.airport")
       .data(airports, d => d.iata)
       .enter()
       .append("circle")
-      .attr("r",  d => scales.airports(d.outgoing/15))
+      .attr("r",  d => scales.airports(d.outgoing/circleRadius))
       //.attr("r",  3)
       .attr("cx", d => d.x) // calculated on load
       .attr("cy", d => d.y) // calculated on load
@@ -152,11 +178,13 @@ var airport_locs = {}
         for(let i = 0; i < d.flights.length; i++){
           //d.classed("highlight", true);
           d.flights[i].style.stroke = 'blue'
+          d.flights[i].style.opacity = 1
+
         }
       })
       .on('mouseout', function(d){
         for(let i = 0; i < d.flights.length; i ++){
-          d.flights[i].style.stroke = '#c16666'
+          d.flights[i].style.stroke = 'red'
         }
       })
       .each(function(d) {
@@ -252,23 +280,32 @@ var airport_locs = {}
       .enter()
       .append('text')
       .attr('class','airportName')
-      .attr("x", d => d.x - 175) // calculated on load
+      .attr("x", d => d.x - 80) // calculated on load
       .attr("y", d => d.y)
-      .text(d => d.iata)
+      .text(d => d.iata.slice(0, 3))
 
       let airList = document.getElementsByClassName("airportName")
-  
+      
       for(let i = 0; i < airList.length; i ++){
-        if((airList[i].innerHTML)[4]==1 && (airList[i].innerHTML)[5] == null){
-          airList[i].innerHTML.slice(0,3)
-        }
-        else{
-          airList[i].style.display = 'none'
+        // if((airList[i].innerHTML)[4]!=0){
+          if (i % 13 != 0){
+            airList[i].style.display = 'none' 
+          //airList[i].remove();
         }
       }
-      g.airportText.selectAll("text")
-        .text(d => d.iata.slice(0,3))
-
+      
+      // g.airportText.selectAll("text")
+      //   .text(function(d){
+      //     console.log(d.iata.length);
+      //     if (d.iata.length > 3){
+      //       return d.iata.slice(0, 3)
+      //     }
+      //     else{
+      //       return d.iata;
+      //     }
+      //   });
+        // .text(d => d.iata.slice(0,3))
+      
   }
   function drawMonths(months){
     var svg = d3.select('#months')
@@ -287,8 +324,7 @@ var airport_locs = {}
       .attr("transform", "translate(58,750)")      // This controls the vertical position of the Axis
       .call(d3.axisBottom(x));
   }
-
-  function drawFlights(airports, flights, alphaDecay, forceCharge, forceLink) {
+  function drawFlights(airports, flights, alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity) {
     // break each flight between airports into multiple segments
     
     let bundle = generateSegments(airports, flights);
@@ -305,9 +341,9 @@ var airport_locs = {}
       .append("path")
       .attr("d", line)
       .attr("class", "flight")
-      // .style('stroke-width',function(d,i){
-      //   return flights[i].count /(1000)
-      // })
+      .style('stroke-width', strokeWidth)
+      .style('opacity', strokeOpacity)
+      
       //.style('')
       .each(function(d) {
         // adds the path object to our source airport

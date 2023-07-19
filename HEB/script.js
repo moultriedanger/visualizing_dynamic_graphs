@@ -79,12 +79,6 @@ function processData(values) {
     link.target.incoming += 1;
   });
 
-  // link.source = iata.get(link.origin);
-  //   link.target = iata.get(link.destination);
-    
-  //   link.source.outgoing += link.count;
-  //   link.target.incoming += link.count;
-
   // remove airports out of bounds
   let old = airports.length;
   console.log(airports.length);
@@ -106,9 +100,9 @@ function processData(values) {
   airports.sort((a, b) => d3.descending(a.outgoing, b.outgoing));
 
   // // keep only the top airports
-  old = airports.length;
-  airports = airports.slice(0, 50);
-  console.log(" removed: " + (old - airports.length) + " airports with low outgoing degree");
+  // old = airports.length;
+  // airports = airports.slice(0, 50);
+  // console.log(" removed: " + (old - airports.length) + " airports with low outgoing degree");
 
   // done filtering airports can draw
   drawAirports(airports);
@@ -279,15 +273,16 @@ function drawFlights(airports, flights) {
       // adds the path object to our source airport
       // makes it fast to select outgoing paths
       d[0].flights.push(this);
+      console.log('hello')
     });
 
-  // https://github.com/d3/d3-force
+  //https://github.com/d3/d3-force
   let layout = d3.forceSimulation()
     // settle at a layout faster
     .alphaDecay(.1)
     // nearby nodes attract each other
     .force("charge", d3.forceManyBody()
-      .strength(10)
+      .strength(3)
       .distanceMax(scales.airports.range()[1] * 2)
     )
     // edges want to be as short as possible

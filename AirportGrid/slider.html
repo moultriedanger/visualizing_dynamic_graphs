@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="slider.css" />
+    <title>Slider Bar</title>
+  </head>
+  <body>
+    <h1>Slider:</h1>
+    <div class="slideContainer" height="100" width="100">
+      <div class="grid-element">
+        <h2 class="label">Alpha Decay:</h2>
+      </div>
+      <div class="grid-element">
+        <input
+          type="range"
+          min="0"
+          max="1.0"
+          step=".1"
+          value=".1"
+          class="slider"
+          id="alpha_decay_slider"
+        />
+        <p id="alphaOutput">Value:</p>
+      </div>
+      <div class="grid-element">
+        <h2 class="label">Force Charge Strength:</h2>
+      </div>
+      <div class="grid-element">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="force_charge_slider"
+        />
+        <p id="chargeOutput">Value:</p>
+      </div>
+      <div class="grid-element">
+        <h2 class="label">Force Link Strength:</h2>
+      </div>
+      <div class="grid-element">
+        <input
+          type="range"
+          min="0"
+          max="20"
+          value="10"
+          class="slider"
+          id="force_link_slider"
+        />
+        <p id="linkOutput">Value:</p>
+      </div>
+      <div>
+        <button id="alphaDecayButton" onClick="registerValues()">Apply</button>
+      </div>
+    </div>
+
+    <script src="slider.js"></script>
+  </body>
+</html>

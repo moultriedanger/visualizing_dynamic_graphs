@@ -2,7 +2,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Flight Paths Grid</title>
-
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/d3-geo-voronoi@1"></script>
     <script src="https://unpkg.com/topojson@3"></script>
@@ -13,70 +12,131 @@
     <header>
       <div class="header">
         <h1>Airport Flights Grid</h1>
+
+        <label>Other Links:</label>
+        <select name="links" id="" size="1" onchange="window.location.href=this.value;">
+          <option value="">Select Option</option>
+          <option value="http://127.0.0.1:5500/HEB/index.html">Airport Graph</option>
+          <option value="">Force-Directed Bundling</option>
+          <option value="">Other</option>
+        </select>
+      </div>
       </div>
     </header>
   </head>
   <body>
-    <!-- must be 960x600 to match topojson us atlas files -->
-    <div class="slideContainer" height="100" width="100">
-      <div class="grid-element">
-        <h2 class="label">Alpha Decay:</h2>
+    <div class="grid-container">
+      <div id="slideContainer" class="grid-item">
+        <div class="grid-element">
+          <h2 class="label">Alpha Decay:</h2>
+        </div>
+        <div class="grid-element">
+          <input
+            type="range"
+            min="0"
+            max="1.0"
+            step=".1"
+            value="0.0"
+            class="slider"
+            id="alpha_decay_slider"
+          />
+          <p id="alphaOutput">Value</p>
+        </div>
+
+        <div class="grid-element">
+          <h2 class="label">Force Charge Strength:</h2>
+        </div>
+        <div class="grid-element">
+          <input
+            type="range"
+            min="0"
+            max="10"
+            step="1"
+            value="0"
+            class="slider"
+            id="force_charge_slider"
+          />
+          <p id="chargeOutput">Value</p>
+        </div>
+
+        <div class="grid-element">
+          <h2 class="label">Force Link Strength:</h2>
+        </div>
+        <div class="grid-element">
+          <input
+            type="range"
+            min="0.0"
+            max="5.0"
+            step=".1"
+            value="0.0"
+            class="slider"
+            id="force_link_slider"
+          />
+          <p id="linkOutput">Value</p>
+        </div>
+
+        <div class="grid-element">
+          <h2 class="label">Stroke Width</h2>
+        </div>
+        <div class="grid-element">
+          <input
+            type="range"
+            min="1.0"
+            max="5.0"
+            step=".1"
+            value="1.0"
+            class="slider"
+            id="stroke_width_slider"
+          />
+          <p id="strokeOutput">Value</p>
+        </div>
+
+        <div class="grid-element">
+          <h2 class="label">Stroke Opacity</h2>
+        </div>
+        <div class="grid-element">
+          <input
+            type="range"
+            min="0.0"
+            max="1.0"
+            step=".1"
+            value="0.5"
+            class="slider"
+            id="stroke_opacity_slider"
+          />
+          <p id="opacityOutput">Value</p>
+        </div>
+
+        <div class="grid-element">
+          <h2 class="label">Circle Radius</h2>
+        </div>
+        <div class="grid-element">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            step="1"
+            value="5"
+            class="slider"
+            id="circle_radius_slider"
+          />
+          <p id="radiusOutput">Value</p>
+        </div>
+
+        <div>
+          <button id="applyButton">Apply Changes</button>
+        </div>
       </div>
-      <div class="grid-element">
-        <input
-          type="range"
-          min="0"
-          max="1.0"
-          step=".1"
-          value="0.0"
-          class="slider"
-          id="alpha_decay_slider"
-        />
-        <p id="alphaOutput">Value</p>
-      </div>
-      <div class="grid-element">
-        <h2 class="label">Force Charge Strength:</h2>
-      </div>
-      <div class="grid-element">
-        <input
-          type="range"
-          min="0"
-          max="10"
-          step="1"
-          value="0"
-          class="slider"
-          id="force_charge_slider"
-        />
-        <p id="chargeOutput">Value</p>
-      </div>
-      <div class="grid-element">
-        <h2 class="label">Force Link Strength:</h2>
-      </div>
-      <div class="grid-element">
-        <input
-          type="range"
-          min="0.0"
-          max="5.0"
-          step=".1"
-          value="0.0"
-          class="slider"
-          id="force_link_slider"
-        />
-        <p id="linkOutput">Value</p>
-      </div>
-      <div>
-        <button id="applyButton">Apply</button>
-      </div>
+      <svg id="graph-box" class="grid-item" width="1330" height="800">
+        <!-- 60% is good for width -->
+        <g id="basemap"></g>
+        <g id="flights"></g>
+        <g id="airports"></g>
+        <g id="voronoi"></g>
+        <g id="airportText"></g>
+        <g id="months"></g>
+      </svg>
     </div>
-    <svg id="graph-box" width="1330" height="800">
-      <!-- 60% is good for width -->
-      <g id="basemap"></g>
-      <g id="flights"></g>
-      <g id="airports"></g>
-      <g id="voronoi"></g>
-      <g id="airportText"></g>
-      <g id="months"></g>
-    </svg>
     <script src="bigData.js"></script>
   </body>
 </html>
