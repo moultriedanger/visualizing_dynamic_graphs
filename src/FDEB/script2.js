@@ -13,12 +13,12 @@ const HYPERPARAMS = {
   // used to scale number of segments per line
   "SEGMENTS_SCALE_DOMAIN_MIN":  0, 
   "SEGMENTS_SCALE_DOMAIN_MAX":  hypotenuse,
-  "SEGMENTS_SCALE_RANGE_MIN":   3,  // 20
-  "SEGMENTS_SCALE_RANGE_MAX":   10, // 30
+  "SEGMENTS_SCALE_RANGE_MIN":   4,  // 20
+  "SEGMENTS_SCALE_RANGE_MAX":   6, // 30
   // settle at a layout faster
   "ALPHA_DECAY":                0.1, 
   // nearby nodes attract each other
-  "FORCE_CHARGE_MANY_BODY":     40, // 10
+  "FORCE_CHARGE_MANY_BODY":     0, // 10
   // edges want to be as short as possible
   // prevents too much stretching
   "FORCE_LINK_STRENGTH":        2, // 0.7
@@ -99,7 +99,7 @@ function drawAirports(airports) {
     .data(airports, d => d.iata)
     .enter()
     .append("circle")
-    .attr("r",  d => scales.airports(d.outgoing/100))
+    .attr("r",  d => scales.airports(d.outgoing/100000))
     .attr("cx", d => d.x) // calculated on load
     .attr("cy", d => d.y) // calculated on load
     .attr("class", "airport")
@@ -186,7 +186,7 @@ function generateSegments(nodes, links) {
     // calculate the distance between the source and target
     let length = distance(d.source, d.target);
     // calculate total number of inner nodes for this link
-    let total = Math.round(scales.segments(length));
+    let total = 5;// Math.round(scales.segments(length));
     // create scales from source to target
     let xscale = d3.scaleLinear()
       .domain([0, total + 1]) // source, inner nodes, target

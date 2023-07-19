@@ -1,44 +1,57 @@
+
 const urls = {
   airports: "grid_locs.csv",
   flights:  "flights.csv", 
   walks:    "walks.csv"
 };
-const svg        = d3.select("svg");
-const width      = parseInt(svg.attr("width"));
-const height     = parseInt(svg.attr("height"));
-const hypotenuse = Math.sqrt(width * width + height * height);
-const HYPERPARAMS = {
-  // used to scale airport bubbles
-  "AIRPORTS_SCALE_MIN":         1,   // 4
-  "AIRPORTS_SCALE_MAX":         2.5, // 18
-  // used to scale number of segments per line
-  "SEGMENTS_SCALE_DOMAIN_MIN":  0, 
-  "SEGMENTS_SCALE_DOMAIN_MAX":  hypotenuse,
-  "SEGMENTS_SCALE_RANGE_MIN":   3,  // 20
-  "SEGMENTS_SCALE_RANGE_MAX":   10, // 30
-  // settle at a layout faster
-  "ALPHA_DECAY":                0.1, 
-  // nearby nodes attract each other
-  "FORCE_CHARGE_MANY_BODY":    0, // 10
-  // edges want to be as short as possible
-  // prevents too much stretching
-  "FORCE_LINK_STRENGTH":        1, // 0.7
-  "FORCE_LINK_DISTANCE":        1,
-}
+
+const svg                 = d3.select("svg");
+const width               = parseInt(svg.attr("width"));
+const height              = parseInt(svg.attr("height"));
+const hypotenuse          = Math.sqrt(width * width + height * height);
+
+// used to scale airport bubbles
+const node_size_min       = 1;          // 4
+const node_size_max       = 2.5;        // 18
+
+// used to scale number of segments per line
+const min_segments_domain = 0;
+const max_segments_domain = hypotenuse; 
+const min_segments_range  = 3;          // 20
+const max_segments_range  = 10;         // 30
+
+// settle at a layout faster
+const alpha_decay         = 0.1;
+
+// nearby nodes attract each other
+const force_charge_many   = 0;         // 10
+const force_distance_max  = 0;              // scales.airports.range()[1] * 2
+// edges want to be as short as possible
+// prevents too much stretching
+const force_link_strength = 1;          // 0.7, 0.001
+const force_link_distance = 0;             // 100
+
 const scales = {
   // used to scale airport bubbles
-  airports: d3.scaleSqrt()
-    .range([HYPERPARAMS.AIRPORTS_SCALE_MIN, HYPERPARAMS.AIRPORTS_SCALE_MAX]),
+  // airports: d3.scaleSqrt()
+  airports: d3.scalePow().exponent(0.9)
+    .range([node_size_min, node_size_max]),
   // used to scale number of segments per line
   segments: d3.scaleLinear()
-    .domain([HYPERPARAMS.SEGMENTS_SCALE_DOMAIN_MIN, HYPERPARAMS.SEGMENTS_SCALE_DOMAIN_MAX])
-    .range([HYPERPARAMS.SEGMENTS_SCALE_RANGE_MIN, HYPERPARAMS.SEGMENTS_SCALE_RANGE_MAX]) };
+    .domain([min_segments_domain, max_segments_domain])
+    .range( [min_segments_range,  max_segments_range]) 
+  
+};
+
+const stroke_width   = function(d, i){ return 5;    };  //flights[i].count**(-0.5/10**10) ;
+const stroke_opacity = function(d, i){ return 0.1; };
+const node_radius    = function(d, i){ return scales.airports(d.outgoing/100000)}
+
 // have these already created for easier drawing
 const g = {
-  basemap:  svg.select("g#basemap"),
   flights:  svg.select("g#flights"),
-  airports: svg.select("g#airports"),
-  voronoi:  svg.select("g#voronoi") };
+  airports: svg.select("g#airports") 
+};
 // load the airport and flight data together
 const promises = [
   d3.csv(urls.airports, typeAirport),
@@ -71,14 +84,13 @@ function typeFlight(flight) {
 }
 
 function typeWalk(walk){
-    length = 0
-    for(var i = 0; i <= 12*10; i++){
+    walk.length = 0
+    for(var i = 0; i < 12; i++){
         if(walk[i] != ""){
-            length += 1;
+            walk.length += 1;
         }
     }
-    walk.length = length;
-    // console.log(walk);
+    // walk.length = length;
     return walk;
 }
 
@@ -104,7 +116,6 @@ function processData(values) {
   });
 
   drawAirports(airports);
-//   drawFlights(airports, flights);
   drawWalks(airports, flights, walks, iata);
 }   
 
@@ -115,7 +126,7 @@ function drawAirports(airports) {
     .data(airports, d => d.iata)
     .enter()
     .append("circle")
-    .attr("r",  d => scales.airports(d.outgoing/100))
+    .attr("r", node_radius)
     .attr("cx", d => d.x) // calculated on load
     .attr("cy", d => d.y) // calculated on load
     .attr("class", "airport")
@@ -129,116 +140,8 @@ function drawAirports(airports) {
       d.flights.forEach(x => { x.style['stroke-opacity'] = 1; });
     })
     .on("mouseout", function(d) {
-      d.flights.forEach(x => {  x.style['stroke-opacity'] = 0.8; });
+      d.flights.forEach(x => {  x.style['stroke-opacity'] = stroke_opacity(x); });
     })
-}
-
-function drawFlights(airports, flights) {
-  // break each flight between airports into multiple segments
-  let bundle = generateSegments(airports, flights);
-
-  // https://github.com/d3/d3-shape#curveBundle
-  let line = d3.line()
-    .curve(d3.curveBundle)
-    .x(airport => airport.x)
-    .y(airport => airport.y);
-
-  let links = g.flights.selectAll("path.flight")
-    .data(bundle.paths)
-    .enter()
-    .append("path")
-    .attr("d", line)
-    .attr("class", "flight")
-    .style("stroke", function(d) { 
-      if (d[0].cluster == d[d.length-1].cluster) { return d[0].color; } else { return "black"; }
-    })
-    .style("stroke-width", function(d, i){
-      return flights[i].count**(-0.5/10**10) ;
-    })
-    .each(function(d) {
-      // adds the path object to our source airport
-      // makes it fast to select outgoing paths
-      d[0].flights.push(this);
-    })
-    .on("mouseover", function(d) { this.style['stroke-opacity'] = 1;   })
-    .on("mouseout", function(d)  { this.style['stroke-opacity'] = 0.1; });
-
-  // https://github.com/d3/d3-force
-  let layout = d3.forceSimulation()
-    // settle at a layout faster
-    .alphaDecay(HYPERPARAMS.ALPHA_DECAY)
-    // nearby nodes attract each other
-    .force("charge", d3.forceManyBody()
-      .strength(HYPERPARAMS.FORCE_CHARGE_MANY_BODY)
-      .distanceMax(scales.airports.range()[1] * 2)
-    )
-    // edges want to be as short as possible
-    // prevents too much stretching
-    .force("link", d3.forceLink()
-      .strength(HYPERPARAMS.FORCE_LINK_STRENGTH)
-      .distance(HYPERPARAMS.FORCE_LINK_DISTANCE)
-    )
-    .on("tick", function(d) { links.attr("d", line); })
-    .on("end", function(d)  { console.log("layout complete"); });
-
-  layout.nodes(bundle.nodes).force("link").links(bundle.links);
-}
-
-// Turns a single edge into several segments that can
-// be used for simple edge bundling.
-function generateSegments(airports, flights) {
-  // generate separate graph for edge bundling
-  // nodes: all nodes including control nodes
-  // links: all individual segments (source to target)
-  // paths: all segments combined into single path for drawing
-  let bundle = {nodes: [], links: [], paths: []};
-  // make existing nodes fixed
-  bundle.nodes = airports.map(function(d, i) {
-    d.fx = d.x;
-    d.fy = d.y;
-    return d;
-  });
-  flights.forEach(function(d, i) {
-    // calculate the distance between the source and target
-    let length = distance(d.source, d.target);
-    // calculate total number of inner nodes for this link
-    let total = Math.round(scales.segments(length));
-    // create scales from source to target
-    let xscale = d3.scaleLinear()
-      .domain([0, total + 1]) // source, inner nodes, target
-      .range([d.source.x, d.target.x]);
-    let yscale = d3.scaleLinear()
-      .domain([0, total + 1])
-      .range([d.source.y, d.target.y]);
-    // initialize source node
-    let inner_a = d.source;
-    let inner_b = null;
-    // add all points to local path
-    let local = [inner_a];
-    for (let j = 1; j <= total; j++) {
-      // calculate inner_b node
-      inner_b = { x: xscale(j), y: yscale(j) };
-      local.push(inner_b);
-      bundle.nodes.push(inner_b);
-      bundle.links.push({
-        // source: inner_a,
-        // target: inner_b
-        source: inner_a,
-        target: inner_b
-      });
-      inner_a = inner_b;
-    }
-    local.push(d.target);
-    // add last link to target node
-    bundle.links.push({
-      source: inner_b,
-      target: d.target
-    });
-    bundle.paths.push(local);
-  });
-
-  console.log(bundle.paths[0]);
-  return bundle;
 }
 
 function drawWalks(airports, flights, walks, iata) {
@@ -246,7 +149,9 @@ function drawWalks(airports, flights, walks, iata) {
     let bundle = {nodes: [], links: [], paths: []};
     
     bundle.nodes = airports.map(function(d, i) {
-        if (d.iata.split("_")[1] == "1" || d.iata.split("_")[1] == "13"){
+        if (d.iata.split("_")[1] == "1" || 
+            d.iata.split("_")[1] == "12"){
+          // if (d.iata.split("_")[1] == "1" || d.iata.split("_")[1] == "13"){
           d.fx = d.x;
           d.fy = d.y;
         }
@@ -254,8 +159,6 @@ function drawWalks(airports, flights, walks, iata) {
           d.x = d.x;
           d.y = d.y;  
         }
-        // d.fx = d.x;
-        // d.fy = d.y;
         return d;
     });
 
@@ -295,12 +198,8 @@ function drawWalks(airports, flights, walks, iata) {
                 return "black"; 
             }
         })
-        .style("stroke-width", function(d, i){
-            return 2; //flights[i].count**(-0.5/10**10) ;
-        })
-        .style("stroke-opacity", function(d, i){
-            return 0.01; //flights[i].count**(-0.5/10**10) ;
-        })
+        .style("stroke-width", stroke_width)
+        .style("stroke-opacity", stroke_opacity)
         .each(function(d, i) {
             // adds the path object to our source airport
             // makes it fast to select outgoing paths
@@ -309,22 +208,22 @@ function drawWalks(airports, flights, walks, iata) {
             d[0].flights.push(this);
         })
         .on("mouseover", function(d) { this.style['stroke-opacity'] = 1;   })
-        .on("mouseout", function(d)  { this.style['stroke-opacity'] = 0.1; });
+        .on("mouseout", function(d)  { this.style['stroke-opacity'] = stroke_opacity(d); });
 
     // https://github.com/d3/d3-force
     let layout = d3.forceSimulation()
         // settle at a layout faster
-        .alphaDecay(HYPERPARAMS.ALPHA_DECAY)
+        .alphaDecay(alpha_decay)
         // nearby nodes attract each other
         .force("charge", d3.forceManyBody()
-            .strength(HYPERPARAMS.FORCE_CHARGE_MANY_BODY)
-            .distanceMax(scales.airports.range()[1] * 2)
+            .strength(force_charge_many)
+            .distanceMax(force_distance_max)
         )
         // edges want to be as short as possible
         // prevents too much stretching
         .force("link", d3.forceLink()
-            .strength(HYPERPARAMS.FORCE_LINK_STRENGTH)
-            .distance(HYPERPARAMS.FORCE_LINK_DISTANCE)
+            .strength(force_link_strength)
+            .distance(force_link_distance)
         )
         .on("tick", function(d) { links.attr("d", line); })
         .on("end", function(d)  { console.log("layout complete"); });
@@ -332,4 +231,11 @@ function drawWalks(airports, flights, walks, iata) {
     layout.nodes(bundle.nodes).force("link").links(bundle.links);
 
     console.log(bundle);
+
+    // bundle.paths.forEach(function(d, i) {
+    //   let last = d[d.length-1];
+    //   console.log("last");
+    //   last.fx = last.x;
+    //   last.fy = last.y;
+    // });
 }
