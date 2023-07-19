@@ -1,8 +1,9 @@
 
 const urls = {
-  airports: "grid_locs.csv",
-  flights:  "flights.csv", 
-  walks:    "walks.csv"
+  airports_c: "grid_locs.csv",
+  airports_f: "grid_locs.csv",
+  flights:    "flights.csv", 
+  walks:      "walks.csv"
 };
 
 const svg                 = d3.select("svg");
@@ -24,12 +25,12 @@ const max_segments_range  = 10;         // 30
 const alpha_decay         = 0.1;
 
 // nearby nodes attract each other
-const force_charge_many   = 0;         // 10
-const force_distance_max  = 0;              // scales.airports.range()[1] * 2
+const force_charge_many   = 10;         // 10
+const force_distance_max  = 0;         // scales.airports.range()[1] * 2
 // edges want to be as short as possible
 // prevents too much stretching
-const force_link_strength = 1;          // 0.7, 0.001
-const force_link_distance = 0;             // 100
+const force_link_strength = 0.01;         // 0.7, 0.001
+const force_link_distance = 0;         // 100
 
 const scales = {
   // used to scale airport bubbles
@@ -45,39 +46,43 @@ const scales = {
 
 const stroke_width   = function(d, i){ return 5;    };  //flights[i].count**(-0.5/10**10) ;
 const stroke_opacity = function(d, i){ return 0.1; };
-const node_radius    = function(d, i){ return scales.airports(d.outgoing/100000)}
+const node_radius    = function(d, i){ return scales.airports(d.outgoing/100000);}
 
 // have these already created for easier drawing
 const g = {
-  flights:  svg.select("g#flights"),
-  airports: svg.select("g#airports") 
+  flights    : svg.select("g#flights"),
+  airports_c : svg.select("g#airports_c"),
+  airports_f : svg.select("g#airports_f")
 };
+
 // load the airport and flight data together
 const promises = [
-  d3.csv(urls.airports, typeAirport),
-  d3.csv(urls.flights,  typeFlight),
-  d3.csv(urls.walks,    typeWalk),
+  d3.csv(urls.airports_f, typeAirportFixed),
+  d3.csv(urls.airports_c, typeAirportControl),
+  d3.csv(urls.flights,    typeFlight),
+  d3.csv(urls.walks,      typeWalk),
 ];
+
 Promise.all(promises).then(processData);
 
-function distance(source, target) {
-  const dx2 = Math.pow(target.x - source.x, 2);
-  const dy2 = Math.pow(target.y - source.y, 2);
-  return Math.sqrt(dx2 + dy2);
-}
-
-// see airports.csv
-function typeAirport(airport) {
+function typeAirportFixed(airport) {
   airport.y = parseFloat(airport.longitude);
   airport.x = parseFloat(airport.latitude);
-  airport.outgoing = 0;  // eventually tracks number of outgoing flights
-  airport.incoming = 0;  // eventually tracks number of incoming flights
-  airport.flights = [];  // eventually tracks outgoing flights
+  airport.outgoing = 0; 
+  airport.incoming = 0; 
+  airport.flights = [];
   return airport;
 }
 
-// see flights.csv
-// convert count to number
+function typeAirportControl(airport) {
+  airport.y = parseFloat(airport.longitude);
+  airport.x = parseFloat(airport.latitude);
+  airport.outgoing = 0;  
+  airport.incoming = 0;  
+  airport.flights = [];  
+  return airport;
+}
+
 function typeFlight(flight) {
   flight.count = parseInt(flight.count);
   return flight;
@@ -85,9 +90,14 @@ function typeFlight(flight) {
 
 function typeWalk(walk){
     walk.length = 0
+    let start = false;
     for(var i = 0; i < 12; i++){
         if(walk[i] != ""){
-            walk.length += 1;
+          if (start == false){
+            start = true;
+            walk.start = i;
+          }
+          walk.length += 1;
         }
     }
     // walk.length = length;
@@ -97,32 +107,34 @@ function typeWalk(walk){
 // process airport and flight data
 function processData(values) {
 
-  let airports = values[0];
-  let flights  = values[1];
-  let walks    = values[2];
+  let airports_c = values[0];
+  let airports_f = values[1];
+  let flights    = values[2];
+  let walks      = values[3];
 
   // convert airports array (pre filter) into map for fast lookup
-  let iata = new Map(airports.map(node => [node.iata, node]));
+  let iata_c = new Map(airports_c.map(node => [node.iata, node]));
+  let iata_f = new Map(airports_f.map(node => [node.iata, node]));
 
   // calculate incoming and outgoing degree based on flights
   // flights are given by airport iata code (not index)
   flights.forEach(function(link) {
     
-    link.source = iata.get(link.origin);
-    link.target = iata.get(link.destination);
+    link.source = iata_c.get(link.origin);
+    link.target = iata_c.get(link.destination);
 
     link.source.outgoing += link.count;
     link.target.incoming += link.count;
   });
 
-  drawAirports(airports);
-  drawWalks(airports, flights, walks, iata);
+  drawAirports(airports_c);
+  drawWalks(airports_f, airports_c, flights, walks, iata_f, iata_c);
 }   
 
 function drawAirports(airports) {
 
   // draw airport bubbles
-  g.airports.selectAll("circle.airport")
+  g.airports_f.selectAll("circle.airport")
     .data(airports, d => d.iata)
     .enter()
     .append("circle")
@@ -144,36 +156,37 @@ function drawAirports(airports) {
     })
 }
 
-function drawWalks(airports, flights, walks, iata) {
+function drawWalks(airports_f, airports_c, flights, walks, iata_f, iata_c) {
 
-    let bundle = {nodes: [], links: [], paths: []};
+    let bundle = {nodes_c: [], links: [], paths: [], nodes_f: []};
     
-    bundle.nodes = airports.map(function(d, i) {
-        if (d.iata.split("_")[1] == "1" || 
-            d.iata.split("_")[1] == "12"){
-          // if (d.iata.split("_")[1] == "1" || d.iata.split("_")[1] == "13"){
-          d.fx = d.x;
-          d.fy = d.y;
-        }
-        else{
-          d.x = d.x;
-          d.y = d.y;  
-        }
+    bundle.nodes_c = airports_c.map(function(d, i) {
+        d.x = d.x;
+        d.y = d.y;  
         return d;
+    });
+
+    bundle.nodes_f = airports_f.map(function(d, i) {
+      d.fx = d.x;
+      d.fy = d.y;
+      return d;
     });
 
     bundle.links = flights.map(function(d, i) {
         return {
-            'source': d.source, // iata.get(d.origin),
-            'target': d.target // iata.get(d.destination)
+          'source': d.source, 
+          'target': d.target 
         };
     });
 
     bundle.paths = walks.map(function(d, i) {
         new_walk = [];
-        for(let i = 0; i < d.length; i++) {
-            new_walk.push(iata.get(d[i]));
+        console.log(d);
+        new_walk.push(iata_f.get(d[0]));
+        for(let i = 1; i < d.length-1; i++) {
+            new_walk.push(iata_c.get(d[i]));
         }
+        new_walk.push(iata_f.get(d[d.length-1]));
         return new_walk;
     });
 
@@ -228,9 +241,7 @@ function drawWalks(airports, flights, walks, iata) {
         .on("tick", function(d) { links.attr("d", line); })
         .on("end", function(d)  { console.log("layout complete"); });
 
-    layout.nodes(bundle.nodes).force("link").links(bundle.links);
-
-    console.log(bundle);
+    layout.nodes(bundle.nodes_c).force("link").links(bundle.links);
 
     // bundle.paths.forEach(function(d, i) {
     //   let last = d[d.length-1];
