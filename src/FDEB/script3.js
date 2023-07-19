@@ -29,7 +29,7 @@ const force_charge_many   = 10;         // 10
 const force_distance_max  = 0;         // scales.airports.range()[1] * 2
 // edges want to be as short as possible
 // prevents too much stretching
-const force_link_strength = 0.01;         // 0.7, 0.001
+const force_link_strength = 0.1;         // 0.7, 0.001
 const force_link_distance = 0;         // 100
 
 const scales = {
@@ -45,7 +45,7 @@ const scales = {
 };
 
 const stroke_width   = function(d, i){ return 5;    };  //flights[i].count**(-0.5/10**10) ;
-const stroke_opacity = function(d, i){ return 0.1; };
+const stroke_opacity = function(d, i){ return 0.2; };
 const node_radius    = function(d, i){ return scales.airports(d.outgoing/100000);}
 
 // have these already created for easier drawing
@@ -91,7 +91,7 @@ function typeFlight(flight) {
 function typeWalk(walk){
     walk.length = 0
     let start = false;
-    for(var i = 0; i < 12; i++){
+    for(var i = 0; i < 3; i++){
         if(walk[i] != ""){
           if (start == false){
             start = true;
@@ -181,7 +181,7 @@ function drawWalks(airports_f, airports_c, flights, walks, iata_f, iata_c) {
 
     bundle.paths = walks.map(function(d, i) {
         new_walk = [];
-        console.log(d);
+        // console.log(d);
         new_walk.push(iata_f.get(d[0]));
         for(let i = 1; i < d.length-1; i++) {
             new_walk.push(iata_c.get(d[i]));
@@ -208,7 +208,7 @@ function drawWalks(airports_f, airports_c, flights, walks, iata_f, iata_c) {
             if (d[0].cluster == d[d.length-1].cluster) {
                 return d[0].color; 
             } else { 
-                return "black"; 
+                return d[0].color; 
             }
         })
         .style("stroke-width", stroke_width)
@@ -238,6 +238,7 @@ function drawWalks(airports_f, airports_c, flights, walks, iata_f, iata_c) {
             .strength(force_link_strength)
             .distance(force_link_distance)
         )
+        // .force("center", 0)
         .on("tick", function(d) { links.attr("d", line); })
         .on("end", function(d)  { console.log("layout complete"); });
 
