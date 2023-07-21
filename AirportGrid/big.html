@@ -13,13 +13,13 @@
       <div class="header">
         <h1>Airport Flights Grid</h1>
 
-        <label>Other Links:</label>
+        <!-- <label>Other Links:</label>
         <select name="links" id="" size="1" onchange="window.location.href=this.value;">
           <option value="">Select Option</option>
           <option value="http://127.0.0.1:5500/HEB/index.html">Airport Graph</option>
           <option value="">Force-Directed Bundling</option>
           <option value="">Other</option>
-        </select>
+        </select> -->
       </div>
       </div>
     </header>
@@ -29,14 +29,12 @@
       <div id="slideContainer" class="grid-item">
         <div class="grid-element">
           <h2 class="label">Alpha Decay:</h2>
-        </div>
-        <div class="grid-element">
           <input
             type="range"
             min="0"
             max="1.0"
             step=".1"
-            value="0.0"
+            value="0.2"
             class="slider"
             id="alpha_decay_slider"
           />
@@ -45,14 +43,12 @@
 
         <div class="grid-element">
           <h2 class="label">Force Charge Strength:</h2>
-        </div>
-        <div class="grid-element">
           <input
             type="range"
             min="0"
-            max="10"
+            max="50"
             step="1"
-            value="0"
+            value="10"
             class="slider"
             id="force_charge_slider"
           />
@@ -61,14 +57,12 @@
 
         <div class="grid-element">
           <h2 class="label">Force Link Strength:</h2>
-        </div>
-        <div class="grid-element">
           <input
             type="range"
             min="0.0"
-            max="5.0"
+            max="20"
             step=".1"
-            value="0.0"
+            value="4.0"
             class="slider"
             id="force_link_slider"
           />
@@ -77,14 +71,12 @@
 
         <div class="grid-element">
           <h2 class="label">Stroke Width</h2>
-        </div>
-        <div class="grid-element">
           <input
             type="range"
             min="1.0"
-            max="5.0"
+            max="15.0"
             step=".1"
-            value="1.0"
+            value="10.0"
             class="slider"
             id="stroke_width_slider"
           />
@@ -93,8 +85,6 @@
 
         <div class="grid-element">
           <h2 class="label">Stroke Opacity</h2>
-        </div>
-        <div class="grid-element">
           <input
             type="range"
             min="0.0"
@@ -109,8 +99,6 @@
 
         <div class="grid-element">
           <h2 class="label">Circle Radius</h2>
-        </div>
-        <div class="grid-element">
           <input
             type="range"
             min="1"
@@ -123,11 +111,11 @@
           <p id="radiusOutput">Value</p>
         </div>
 
-        <div>
+        <div class="grid-element">
           <button id="applyButton">Apply Changes</button>
         </div>
       </div>
-      <svg id="graph-box" class="grid-item" width="1330" height="800">
+      <svg id="graph-box" class="grid-item" width="1100" height="100%">
         <!-- 60% is good for width -->
         <g id="basemap"></g>
         <g id="flights"></g>

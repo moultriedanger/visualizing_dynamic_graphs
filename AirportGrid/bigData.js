@@ -46,11 +46,12 @@ strokeOpacity.oninput = function(){
 
 //Circle radius slider function
 var circleRadius = document.getElementById('circle_radius_slider');
-var radiusOutput = document.getElementById("radiusOutput");
-radiusOutput.innerHTML = circleRadius.value
-circleRadius.oninput = function(){
-  radiusOutput.innerHTML = this.value
-}
+circleRadius.addEventListener('input', function(){
+  var radiusOutput = document.getElementById("radiusOutput");
+  radiusOutput.innerHTML = this.value;
+  d3.selectAll('circle').style('r', this.value)
+  console.log(this.value)
+});
 
 document.getElementById('applyButton').addEventListener('click', function(){
   
@@ -84,8 +85,8 @@ const g = {    basemap:  svg.select("g#basemap"),
 const tooltip = d3.select("text#tooltip");
 
 const urls={
-    airports: "grid_locs.csv",
-    flights: "flights.csv"
+    airports: "grid_locs_new.csv",
+    flights: "flights_new.csv"
 };
 var airport_locs = {}
 
@@ -125,19 +126,20 @@ var airport_locs = {}
   
     // // calculate incoming and outgoing degree based on flights
     // // flights are given by airport iata code (not index)
-    flights.forEach(function(link) {
+    flights.forEach(function(link, i) {
       link.source = iata.get(link.origin);
       link.target = iata.get(link.destination);
       
       link.source.outgoing += 1;//link.count;
       link.target.incoming += 1;//link.count;
+      link.count = flights[i].count;
       //console.log(link.target.incoming);
     });
     var circleRadius = document.getElementById('circle_radius_slider').value;
     // done filtering airports can draw
     drawNames(airports);
     drawAirports(airports,circleRadius);
-    drawMonths();
+    drawMonths(airports);
     drawPolygons(airports);
   
     //filter out flights that are not between airports we have leftover
@@ -169,22 +171,22 @@ var airport_locs = {}
       .enter()
       .append("circle")
       .attr("r",  d => scales.airports(d.outgoing/circleRadius))
-      //.attr("r",  3)
       .attr("cx", d => d.x) // calculated on load
       .attr("cy", d => d.y) // calculated on load
       .attr("class", "airport")
+      .style('fill', function(d){return d.color})
       .on("mouseover", function(d){
         //console.log(d.flights);
         for(let i = 0; i < d.flights.length; i++){
           //d.classed("highlight", true);
           d.flights[i].style.stroke = 'blue'
-          d.flights[i].style.opacity = 1
+          // d.flights[i].style.opacity = 1
 
         }
       })
       .on('mouseout', function(d){
         for(let i = 0; i < d.flights.length; i ++){
-          d.flights[i].style.stroke = 'red'
+          d.flights[i].style.stroke = d.color;//'red'
         }
       })
       .each(function(d) {
@@ -258,6 +260,7 @@ var airport_locs = {}
       tooltip.style("visibility", "visible");
     })
     .on("mouseout", function(d) {
+      console.log('mouseout1');
       let airport = d.properties.site.properties;
 
       d3.select(airport.bubble)
@@ -307,22 +310,25 @@ var airport_locs = {}
         // .text(d => d.iata.slice(0,3))
       
   }
-  function drawMonths(months){
+  function drawMonths(airports){
+    let lastIndex = airports.length-1;
+
+    console.log(lastIndex);
     var svg = d3.select('#months')
       .append("svg")
-      .attr("width", airports.width)
-      .attr("height", airports.height)
 
     var x = d3.scalePoint()
       .domain(["JAN", "FEB", "MAR", "APRL", "MAY", 'JUN', 'JUL', 'AUG', 'SEPT', 'OCT','NOV', 'DEC'])         // This is what is written on the Axis: from 0 to 100
-      .range([85, 1200]);    
-    
+      .range([0, 800]);   
+      //Variable for range 
+
       svg
       .append("g")
       .style('font', '20px sans-serif')
-      //.style('font', 'bold')
-      .attr("transform", "translate(58,750)")      // This controls the vertical position of the Axis
+      //Base the month list of off of airports list to get the right value. Look at 36!!
+      .attr("transform", "translate("+(airports[0].longitude + 36)+','+(airports[lastIndex].latitude + airports[0].latitude)+")")      // This controls the vertical position of the Axis
       .call(d3.axisBottom(x));
+
   }
   function drawFlights(airports, flights, alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity) {
     // break each flight between airports into multiple segments
@@ -341,14 +347,19 @@ var airport_locs = {}
       .append("path")
       .attr("d", line)
       .attr("class", "flight")
-      .style('stroke-width', strokeWidth)
+      .style('stroke-width', function(d, i){ 
+        // console.log(flights[i]);
+        return flights[i].count/100;
+        // return strokeWidth;
+      })
       .style('opacity', strokeOpacity)
+      .style('stroke', function(d){return d[0].color;})
       
       //.style('')
       .each(function(d) {
         // adds the path object to our source airport
         // makes it fast to select outgoing paths
-        d[0].flights.push(this);
+        d[0].flights.push(this);//.color
       })
 
     //https://github.com/d3/d3-force
