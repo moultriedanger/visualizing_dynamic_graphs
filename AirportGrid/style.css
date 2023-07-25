@@ -1,21 +1,34 @@
 .grid-container{
   display:grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 100%;
-  /* column-gap: 20px; */
-  /* margin-left: 200px */
+  /* grid-template-columns: 15% 85%;
+  grid-template-rows: 100% 25%; */
+  /* column-gap: 1%; */
+  grid-template: 11% 20% 20% 20% 20%/ 20% 20% 20% 20% 20% 20%;
+  grid-template-areas: "logo logo logo logo logo"
+                      "sliders graph graph graph graph"
+                      "sliders graph graph graph graph"
+                      "sliders graph graph graph graph"
+                      "sliders graph graph graph graph"
+                      "sliders graph graph graph graph"
+                      
 }
-
 #slideContainer{
-  display: inline-block;
-  border-radius: 10px;
+  display: block;
+  /* border-radius: 10px; */
   padding: 20px;
   align-items: center;
+  grid-area: sliders;
+}
+
+#furmanLogo{
+  grid-area: logo;
+  text-align: center;
 }
 
 .grid-element{
   /* border: solid black 1px; */
   align-items: center;
+  justify-content: center;
 }
 
 .slider{
@@ -52,13 +65,12 @@ p{
 
 .header {
   width: 100%;
-  height: 10%;
-  /* padding: 1%; */
+  padding: 2px;
   text-align: center;
   background: #4f77dc;
   color: white;
-  font-size: 100%;
-  /* margin: 10px; */
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 
 #labels{
@@ -141,8 +153,13 @@ g#voronoi {
 }
 
 #graph-box{
-  padding: 30px;
-  border-radius: 10px;
+  /* width: 100vw;
+  height:100vh; */
+  width: 100%;
+  height: 100%;
+  grid-area: graph;
+  /* padding: 30px; */
+  /* border-radius: 10px; */
 }
 
 #airports{
@@ -160,4 +177,23 @@ g#voronoi {
 
 .grid-item{
   border: solid rgb(48, 151, 185) 3px
+}
+
+h1.boxLabel{
+  color:rgb(237, 142, 142);
+  text-align: center;
+}
+
+#stylesBox{
+  margin: 5px;
+  border: solid black 2px;
+  border-radius:8px;
+  padding: 10px
+}
+
+#forceParam{
+  margin: 5px;
+  border: solid black 2px;
+  border-radius:8px;
+  padding: 10px
 }

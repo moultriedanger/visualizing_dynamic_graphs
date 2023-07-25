@@ -1,8 +1,9 @@
 const svg  = d3.select("svg");
-const width  = parseInt(svg.attr("width"));
-const height = parseInt(svg.attr("height"));
+const width  = window.innerWidth;//parseInt(svg.attr("width"));
+const height = window.innerHeight//parseInt(svg.attr("height"));
+
 const hypotenuse = Math.sqrt(width * width + height * height);
-const projection = d3.geoAlbers().scale(1280).translate([480, 300]);
+const projection = d3.geoAlbers().scale(1280).translate([480, 300]); //1280, 480, 300
 
 //Aplha decay slider function
 var alphaDecay = document.getElementById("alpha_decay_slider");
@@ -28,31 +29,6 @@ forceLink.oninput = function(){
     linkOutput.innerHTML = this.value
 }
 
-//Stroke Width slider function
-var strokeWidth = document.getElementById('stroke_width_slider');
-var strokeOutput = document.getElementById("strokeOutput");
-strokeOutput.innerHTML = strokeWidth.value
-strokeWidth.oninput = function(){
-    strokeOutput.innerHTML = this.value
-}
-
-//Stroke opacity slider function
-var strokeOpacity = document.getElementById('stroke_opacity_slider');
-var opacityOutput = document.getElementById("opacityOutput");
-opacityOutput.innerHTML = strokeOpacity.value
-strokeOpacity.oninput = function(){
-    opacityOutput.innerHTML = this.value
-}
-
-//Circle radius slider function
-var circleRadius = document.getElementById('circle_radius_slider');
-circleRadius.addEventListener('input', function(){
-  var radiusOutput = document.getElementById("radiusOutput");
-  radiusOutput.innerHTML = this.value;
-  d3.selectAll('circle').style('r', this.value)
-  console.log(this.value)
-});
-
 document.getElementById('applyButton').addEventListener('click', function(){
   
   d3.selectAll("path").remove();
@@ -61,11 +37,8 @@ document.getElementById('applyButton').addEventListener('click', function(){
   var alphaDecay = document.getElementById("alpha_decay_slider").value;
   var forceCharge = document.getElementById("force_charge_slider").value;
   var forceLink = document.getElementById("force_link_slider").value;
-  var strokeWidth = document.getElementById('stroke_width_slider').value;
-  var strokeOpacity = document.getElementById('stroke_opacity_slider').value;
-  var circleRadius = document.getElementById('circle_radius_slider').value;
     
-  console.log(alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity, circleRadius);
+  //console.log(alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity, circleRadius);
   // load the airport and flight data together
   const promises = [
     d3.csv(urls.airports, typeAirport),
@@ -75,7 +48,7 @@ document.getElementById('applyButton').addEventListener('click', function(){
   Promise.all(promises).then(processData);
 })
 
-const g = {    basemap:  svg.select("g#basemap"),
+const g = {    //basemap:  svg.select("g#basemap"),
     flights:  svg.select("g#flights"),
     airports: svg.select("g#airports"),
     airportText: svg.select("g#airportText"),
@@ -116,8 +89,6 @@ var airport_locs = {}
     let airports = values[0];
     let flights  = values[1];
   
-    // console.log(flights)
-  
     console.log("airports: " + airports.length);
     console.log(" flights: " + flights.length);
   
@@ -156,12 +127,11 @@ var airport_locs = {}
     // done filtering flights can draw
     drawFlights(airports, flights, alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity);
     // console.log({airports: airports});
-    // console.log({flights: flights});
     
+    // console.log({flights: flights});
   }
 
   function drawAirports(airports,circleRadius) {
-     
     // adjust scale
     // const extent = d3.extent(airports, d => d.outgoing);
     // scales.airports.domain(extent);
@@ -171,7 +141,10 @@ var airport_locs = {}
       .enter()
       .append("circle")
       .attr("r",  d => scales.airports(d.outgoing/circleRadius))
-      .attr("cx", d => d.x) // calculated on load
+      .attr("cx", function(d,i){
+        return d.x; //30*(i%13);
+      })
+       // calculated on load
       .attr("cy", d => d.y) // calculated on load
       .attr("class", "airport")
       .style('fill', function(d){return d.color})
@@ -193,6 +166,16 @@ var airport_locs = {}
         // adds the circle object to our airport
         // makes it fast to select airports on hover
         d.bubble = this;
+      });
+       
+      //Change circle radius via the slider
+      var circleRadius = document.getElementById('circle_radius_slider');
+      var radiusOutput = document.getElementById("radiusOutput");
+      radiusOutput.innerHTML = circleRadius.value
+      circleRadius.addEventListener('input', function(airports){
+        radiusOutput.innerHTML = this.value;
+        d3.selectAll('circle')
+        .attr("r",  d => scales.airports(d.outgoing/this.value))
       });
   }
   function drawPolygons(airports) {
@@ -385,10 +368,30 @@ var airport_locs = {}
       });
   
     layout.nodes(bundle.nodes).force("link").links(bundle.links);
+
+    //Stroke Width slider function
+    var strokeWidth = document.getElementById('stroke_width_slider');
+    var strokeOutput = document.getElementById("strokeOutput");
+    strokeOutput.innerHTML = strokeWidth.value;
+    strokeWidth.oninput = function(){
+      strokeOutput.innerHTML = this.value;
+      var val = this.value
+      var fPaths = d3.selectAll("path.flight")
+      console.log(val);
+
+      d3.selectAll("path.flight")
+      .style('stroke-width', function(d, i){return flights[i].count/(val);});
+    }
+    //Stroke opacity slider function
+    var strokeOpacity = document.getElementById('stroke_opacity_slider');
+    var opacityOutput = document.getElementById("opacityOutput");
+    opacityOutput.innerHTML = strokeOpacity.value
+    strokeOpacity.oninput = function(){
+      d3.selectAll('path')
+      .style('opacity', this.value)
+      opacityOutput.innerHTML = this.value
+    }
   }
-  
-  // Turns a single edge into several segments that can
-  // be used for simple edge bundling.
   function generateSegments(nodes, links) {
     // generate separate graph for edge bundling
     // nodes: all nodes including control nodes
