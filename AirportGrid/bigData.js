@@ -58,8 +58,8 @@ const g = {    //basemap:  svg.select("g#basemap"),
 const tooltip = d3.select("text#tooltip");
 
 const urls={
-    airports: "grid_locs_new.csv",
-    flights: "flights_new.csv"
+    airports: "grid_locs.csv",
+    flights: "flights.csv"
 };
 var airport_locs = {}
 
@@ -109,6 +109,7 @@ var airport_locs = {}
     var circleRadius = document.getElementById('circle_radius_slider').value;
     // done filtering airports can draw
     drawNames(airports);
+    //Draws the airports and adds event listeners
     drawAirports(airports,circleRadius);
     drawMonths(airports);
     drawPolygons(airports);
@@ -154,20 +155,38 @@ var airport_locs = {}
           //d.classed("highlight", true);
           d.flights[i].style.stroke = 'blue'
           // d.flights[i].style.opacity = 1
-
         }
+        console.log(d.x,d.y)
+        const div = document.createElement('div')
+        div.style.height = '70px';
+        div.style.width = '70px';
+        div.style.background = 'red';
+        div.style.color = "white";
+        div.style.fontSize = "12px"
+        div.style.borderRadius = "5px"
+        div.id = 'popUp';
+        div.style.textAlign = 'center'
+        //div.innerHtml = `${d.x}`;
+        // div.innerHTML = d.x + "," + d.y
+        //div.innerHTML = ""+ d.iata;
+        div.innerHTML = "Outgoing:" + d.outgoing;
+        //document.body.appendChild(div);
+        document.body.append(div)
       })
       .on('mouseout', function(d){
         for(let i = 0; i < d.flights.length; i ++){
           d.flights[i].style.stroke = d.color;//'red'
         }
+        var popBox = document.getElementById('popUp');
+        popBox.remove();
       })
       .each(function(d) {
         // adds the circle object to our airport
         // makes it fast to select airports on hover
         d.bubble = this;
-      });
-       
+      })
+      
+      
       //Change circle radius via the slider
       var circleRadius = document.getElementById('circle_radius_slider');
       var radiusOutput = document.getElementById("radiusOutput");
@@ -332,7 +351,7 @@ var airport_locs = {}
       .attr("class", "flight")
       .style('stroke-width', function(d, i){ 
         // console.log(flights[i]);
-        return flights[i].count/100;
+        return flights[i].count/10000;
         // return strokeWidth;
       })
       .style('opacity', strokeOpacity)
