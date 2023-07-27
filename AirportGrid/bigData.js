@@ -37,6 +37,7 @@ document.getElementById('applyButton').addEventListener('click', function(){
   var alphaDecay = document.getElementById("alpha_decay_slider").value;
   var forceCharge = document.getElementById("force_charge_slider").value;
   var forceLink = document.getElementById("force_link_slider").value;
+  var strokeWidth = document.getElementById("stroke_width_slider").value;
     
   //console.log(alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity, circleRadius);
   // load the airport and flight data together
@@ -152,9 +153,7 @@ var airport_locs = {}
       .on("mouseover", function(d){
         //console.log(d.flights);
         for(let i = 0; i < d.flights.length; i++){
-          //d.classed("highlight", true);
           d.flights[i].style.stroke = 'blue'
-          // d.flights[i].style.opacity = 1
         }
         console.log(d.x,d.y)
         const div = document.createElement('div')
@@ -315,7 +314,6 @@ var airport_locs = {}
   function drawMonths(airports){
     let lastIndex = airports.length-1;
 
-    console.log(lastIndex);
     var svg = d3.select('#months')
       .append("svg")
 
@@ -350,9 +348,7 @@ var airport_locs = {}
       .attr("d", line)
       .attr("class", "flight")
       .style('stroke-width', function(d, i){ 
-        // console.log(flights[i]);
-        return flights[i].count/10000;
-        // return strokeWidth;
+        return flights[i].count/100;
       })
       .style('opacity', strokeOpacity)
       .style('stroke', function(d){return d[0].color;})

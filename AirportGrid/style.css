@@ -15,14 +15,13 @@
 #slideContainer{
   display: block;
   /* border-radius: 10px; */
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   grid-area: sliders;
 }
 
 #furmanLogo{
   grid-area: logo;
- justify-content: left;
 }
 
 .grid-element{
@@ -67,19 +66,21 @@ p{
 header {
   width: 100%;
   padding: 2px;
-  background: #c59cff;
+  background: #ebebeb;
   margin-bottom: 5px;
+  border: solid rgb(75, 75, 75) 3px;
 }
 
 #headText{
-  color:black;
   font-size: 35px;
-  color: white;
+  color: #582C83;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .headContainer{
   display: grid;
   grid-template-columns: 35% 60%;
+  
 }
 
 #labels{
@@ -167,7 +168,8 @@ g#voronoi {
   width: 100%;
   height: 100%;
   grid-area: graph;
-  /* padding: 30px; */
+  border: solid rgb(48, 151, 185) 3px;
+  padding-top:18px;
   /* border-radius: 10px; */
 }
 
@@ -179,14 +181,14 @@ g#voronoi {
 #applyButton{
   background-color: tomato;
   color: white;
-  padding: 7px;
-  border: solid black 2px;
+  padding: 10px;
+  border: none;
   border-radius: 8px;
   text-align: center;
 }
 
 .grid-item{
-  border: solid rgb(48, 151, 185) 3px
+  /* border: solid rgb(48, 151, 185) 3px */
 }
 
 h1.boxLabel{
@@ -196,14 +198,13 @@ h1.boxLabel{
 
 #stylesBox{
   margin: 5px;
-  border: solid rgb(0, 0, 0) 4px;
+  margin-bottom: 15px;
   border-radius:12px;
-  padding: 10px;
+  padding: 7px;
+  border: 2px #54585a solid;
+  box-shadow: 6px 4px 8px -2px;
 }
 
-#forceParam{
-  margin: 5px;
-  border: solid black 4px;
-  border-radius:12px;
-  padding: 10px
-}
+
+
+  
