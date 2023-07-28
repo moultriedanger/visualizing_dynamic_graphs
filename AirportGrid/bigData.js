@@ -129,7 +129,6 @@ var airport_locs = {}
     // done filtering flights can draw
     drawFlights(airports, flights, alphaDecay, forceCharge, forceLink, strokeWidth, strokeOpacity);
     // console.log({airports: airports});
-    
     // console.log({flights: flights});
   }
 
@@ -142,9 +141,9 @@ var airport_locs = {}
       .data(airports, d => d.iata)
       .enter()
       .append("circle")
-      .attr("r",  d => scales.airports(d.outgoing/circleRadius))
+      .attr("r",  d => scales.airports(d.outgoing*circleRadius))
       .attr("cx", function(d,i){
-        return d.x; //30*(i%13);
+        return d.x; 
       })
        // calculated on load
       .attr("cy", d => d.y) // calculated on load
@@ -155,36 +154,35 @@ var airport_locs = {}
         for(let i = 0; i < d.flights.length; i++){
           d.flights[i].style.stroke = 'blue'
         }
-        console.log(d.x,d.y)
-        const div = document.createElement('div')
-        div.style.height = '70px';
-        div.style.width = '70px';
-        div.style.background = 'red';
-        div.style.color = "white";
-        div.style.fontSize = "12px"
-        div.style.borderRadius = "5px"
-        div.id = 'popUp';
-        div.style.textAlign = 'center'
-        //div.innerHtml = `${d.x}`;
-        // div.innerHTML = d.x + "," + d.y
-        //div.innerHTML = ""+ d.iata;
-        div.innerHTML = "Outgoing:" + d.outgoing;
-        //document.body.appendChild(div);
-        document.body.append(div)
+        // console.log(d.x,d.y)
+        // const div = document.createElement('div')
+        // div.style.height = '70px';
+        // div.style.width = '70px';
+        // div.style.background = 'red';
+        // div.style.color = "white";
+        // div.style.fontSize = "12px"
+        // div.style.borderRadius = "5px"
+        // div.id = 'popUp';
+        // div.style.textAlign = 'center'
+        // //div.innerHtml = `${d.x}`;
+        // // div.innerHTML = d.x + "," + d.y
+        // //div.innerHTML = ""+ d.iata;
+        // div.innerHTML = "Outgoing:" + d.outgoing;
+        // //document.body.appendChild(div);
+        // document.body.append(div)
       })
       .on('mouseout', function(d){
         for(let i = 0; i < d.flights.length; i ++){
           d.flights[i].style.stroke = d.color;//'red'
         }
-        var popBox = document.getElementById('popUp');
-        popBox.remove();
+        // var popBox = document.getElementById('popUp');
+        // popBox.remove();
       })
       .each(function(d) {
         // adds the circle object to our airport
         // makes it fast to select airports on hover
         d.bubble = this;
       })
-      
       
       //Change circle radius via the slider
       var circleRadius = document.getElementById('circle_radius_slider');
@@ -193,7 +191,7 @@ var airport_locs = {}
       circleRadius.addEventListener('input', function(airports){
         radiusOutput.innerHTML = this.value;
         d3.selectAll('circle')
-        .attr("r",  d => scales.airports(d.outgoing/this.value))
+        .attr("r",  d => scales.airports(d.outgoing*this.value))
       });
   }
   function drawPolygons(airports) {
@@ -387,9 +385,9 @@ var airport_locs = {}
     //Stroke Width slider function
     var strokeWidth = document.getElementById('stroke_width_slider');
     var strokeOutput = document.getElementById("strokeOutput");
-    strokeOutput.innerHTML = strokeWidth.value;
+    strokeOutput.innerHTML = 100 - strokeWidth.value;
     strokeWidth.oninput = function(){
-      strokeOutput.innerHTML = this.value;
+      strokeOutput.innerHTML = 100.0 -this.value;
       var val = this.value
       var fPaths = d3.selectAll("path.flight")
       console.log(val);

@@ -10,7 +10,7 @@
                       "sliders graph graph graph graph"
                       "sliders graph graph graph graph"
                       "sliders graph graph graph graph"
-                      "sliders graph graph graph graph"            
+                      "sliders . . . ."            
 }
 #slideContainer{
   display: block;
@@ -42,6 +42,20 @@
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
+  /* rotate:180deg; */
+}
+#stroke_width_slider{
+  -webkit-appearance: none;
+  width: 70%;
+  appearance: none;
+  height: 15px; /* Specified height */
+  border-radius: 5px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  rotate:180deg;
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -65,9 +79,9 @@ p{
 
 header {
   width: 100%;
-  padding: 2px;
+  padding: 10px;
   background: #ebebeb;
-  margin-bottom: 5px;
+  margin-bottom: 1%;
   border: solid rgb(75, 75, 75) 3px;
 }
 
@@ -89,6 +103,8 @@ header {
 
 #graph{
   grid-area: graph;
+  border: solid rgb(48, 151, 185) 3px;
+  margin-top: 2%;
 }
 
 body {
@@ -168,7 +184,6 @@ g#voronoi {
   width: 100%;
   height: 100%;
   grid-area: graph;
-  border: solid rgb(48, 151, 185) 3px;
   padding-top:18px;
   /* border-radius: 10px; */
 }
